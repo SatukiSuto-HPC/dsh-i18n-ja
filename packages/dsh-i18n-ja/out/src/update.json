@@ -1,0 +1,174 @@
+{
+ "update.label": {
+  "en": "Check for updates",
+  "zh": "检查更新"
+ },
+ "update.badge": {
+  "en": "Update available",
+  "zh": "有更新"
+ },
+ "update.availableLabel": {
+  "en": "New version available. Check for updates",
+  "zh": "发现新版本，检查更新"
+ },
+ "update.title": {
+  "en": "Check for updates",
+  "zh": "检查更新"
+ },
+ "update.checking": {
+  "en": "Checking the remote repository for newer releases…",
+  "zh": "正在检查远程仓库中的新版本…"
+ },
+ "update.upToDate": {
+  "en": "Everything is up to date",
+  "zh": "当前已是最新版本"
+ },
+ "update.upToDateDetail": {
+  "en": "{name} is at the latest version v{version}.",
+  "zh": "{name} 已是最新版本 v{version}。"
+ },
+ "update.requiresDsh": {
+  "en": "Requires DSH {version}",
+  "zh": "需要 DSH {version}"
+ },
+ "update.found": {
+  "en": "A new version is available",
+  "zh": "发现新版本"
+ },
+ "update.foundDetail": {
+  "en": "{name} has a newer release v{version}. Confirm to start the update.",
+  "zh": "{name} 有新版本 v{version}。确认后开始更新。"
+ },
+ "update.start": {
+  "en": "Update now",
+  "zh": "开始更新"
+ },
+ "update.updating": {
+  "en": "Updating {name} to v{version}; this may take 1-2 minutes…",
+  "zh": "正在更新 {name} 至 v{version}，可能需要 1-2 分钟…"
+ },
+ "update.cooldownNotice": {
+  "en": "This user-initiated update bypasses pnpm's 24-hour release cooldown (supply-chain protection) and installs the selected version immediately.",
+  "zh": "本次更新由你主动触发，将跳过 pnpm 的 24 小时发布冷却期（供应链保护）直接安装所选版本。"
+ },
+ "update.updatingTitle": {
+  "en": "Updating…",
+  "zh": "正在更新…"
+ },
+ "update.done": {
+  "en": "Update complete",
+  "zh": "更新完成"
+ },
+ "update.doneDetail": {
+  "en": "All components are up to date.",
+  "zh": "所有组件已更新到最新版本。"
+ },
+ "update.restartHint": {
+  "en": "Restart dsh web for the new version to take effect: stop it with Ctrl+C in the terminal, then run dsh web again.",
+  "zh": "请重启 dsh web 使新版本生效：在终端按 Ctrl+C 停止后重新运行 dsh web。"
+ },
+ "update.linkMode": {
+  "en": "Local development mode",
+  "zh": "当前为本地开发模式"
+ },
+ "update.linkModeDetail": {
+  "en": "dsh-web or one of its components is installed via a local link and cannot be updated remotely. Latest npm release: {version}. Sync the local checkout, or remove a standalone link duplicated by the aggregate.",
+  "zh": "dsh-web 或其组件通过本地链接安装（开发模式），无法自动更新。npm 上最新版本：{version}。请同步本地仓库，或移除与全家桶重复的独立链接。"
+ },
+ "update.missing": {
+  "en": "dsh-web not found",
+  "zh": "未找到 dsh-web 安装"
+ },
+ "update.missingDetail": {
+  "en": "Could not locate the installed dsh-web aggregate package. Install it with: dsh plugin --profile <profile> add @linxin666/dsh-web-all",
+  "zh": "无法定位已安装的 dsh-web 聚合包。请先运行 dsh plugin --profile <profile> add @linxin666/dsh-web-all。"
+ },
+ "update.offline": {
+  "en": "Cannot reach the update source",
+  "zh": "无法连接更新源"
+ },
+ "update.offlineDetail": {
+  "en": "The network is unavailable or the update service is failing; try again later.",
+  "zh": "网络不可用或更新服务异常，请稍后重试。"
+ },
+ "update.unmounted": {
+  "en": "The update service is not loaded",
+  "zh": "更新服务未加载"
+ },
+ "update.unmountedDetail": {
+  "en": "The running dsh web process loads a plugin build without the update service; restart dsh web (Ctrl+C, then run dsh web again) and retry.",
+  "zh": "当前 dsh web 进程运行的插件版本不含更新服务，请重启 dsh web（Ctrl+C 后重新运行）后再试。"
+ },
+ "update.error": {
+  "en": "Update failed",
+  "zh": "更新失败"
+ },
+ "update.packages": {
+  "en": "Component versions",
+  "zh": "组件版本"
+ },
+ "update.releaseNotes": {
+  "en": "v{version} release notes",
+  "zh": "v{version} 更新说明"
+ },
+ "update.releaseFeatures": {
+  "en": "New Features",
+  "zh": "新增功能"
+ },
+ "update.releaseFixes": {
+  "en": "Bug Fixes",
+  "zh": "修复"
+ },
+ "update.releaseOther": {
+  "en": "Other Changes",
+  "zh": "其他变动"
+ },
+ "update.releaseUnavailable": {
+  "en": "Release notes are unavailable for this version; see the GitHub release instead.",
+  "zh": "本次发布说明暂不可用，可前往 GitHub Release 查看。"
+ },
+ "update.componentVersions": {
+  "en": "View component versions",
+  "zh": "查看组件版本"
+ },
+ "update.retry": {
+  "en": "Check again",
+  "zh": "重新检查"
+ },
+ "update.close": {
+  "en": "Close update panel",
+  "zh": "关闭更新面板"
+ },
+ "update.error.pnpmMissing": {
+  "en": "pnpm was not found (tried pnpm / corepack / npx). Install pnpm and restart the app (Windows: npm install -g pnpm or corepack enable; macOS: brew install pnpm or corepack enable).",
+  "zh": "未找到 pnpm，已尝试 pnpm / corepack / npx 仍不可用。请安装 pnpm 后重启应用（Windows: npm install -g pnpm 或 corepack enable；macOS: brew install pnpm 或 corepack enable）。"
+ },
+ "update.error.timeout": {
+  "en": "The update timed out and the install process was killed; try again.",
+  "zh": "更新超时，已终止安装进程，请重试。"
+ },
+ "update.error.notFound": {
+  "en": "The dsh-web aggregate package is not installed; nothing to update.",
+  "zh": "未找到 dsh-web 聚合包安装，无法更新。"
+ },
+ "update.error.link": {
+  "en": "dsh-web or one of its components uses a local link. Sync the checkout, or remove a standalone link duplicated by the aggregate.",
+  "zh": "dsh-web 或其组件使用本地链接，无法自动更新；请同步本地仓库，或移除与全家桶重复的独立链接。"
+ },
+ "update.error.pnpmFailed": {
+  "en": "The update failed (pnpm exited with code {code}); see the output below.",
+  "zh": "更新执行失败（pnpm 退出码 {code}），详见下方输出。"
+ },
+ "update.error.stale": {
+  "en": "The update command ran but the installed versions did not change. Likely cause: the pnpm 11 minimumReleaseAge gate silently skips releases published less than 24 hours ago. Add minimumReleaseAgeExclude (e.g. \"@linxin666/*\") or set minimumReleaseAge: 0 in pnpm-workspace.yaml under the profile directory (~/.dsh/profiles/<profile>), then run the update again.",
+  "zh": "更新命令已执行，但安装版本未变化。常见原因：pnpm 11 的 minimumReleaseAge 门禁会静默跳过发布不足 24 小时的新版本。请在 profile 目录（~/.dsh/profiles/<profile>）的 pnpm-workspace.yaml 中配置 minimumReleaseAgeExclude（例如 \"@linxin666/*\"）或 minimumReleaseAge: 0 后重新点击更新。"
+ },
+ "update.error.verifyFailed": {
+  "en": "The update command ran but the installed versions could not be verified afterwards (registry probe failed or the install path changed). Inspect the output below, or retry later.",
+  "zh": "更新命令已执行，但无法核对安装后的版本（可能是 registry 探测失败或安装路径变化）。请查看下方输出，或稍后重试。"
+ },
+ "update.error.unknown": {
+  "en": "Update failed; try again.",
+  "zh": "更新失败，请重试。"
+ }
+}

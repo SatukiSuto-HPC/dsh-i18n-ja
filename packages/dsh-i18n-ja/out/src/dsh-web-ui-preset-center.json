@@ -1,0 +1,186 @@
+{
+ "state.notInstalled": {
+  "en": "Not installed",
+  "zh": "未安装"
+ },
+ "state.installed": {
+  "en": "Installed - disabled",
+  "zh": "已安装 · 未启用"
+ },
+ "state.enabled": {
+  "en": "Enabled",
+  "zh": "已启用"
+ },
+ "state.modified": {
+  "en": "Modified locally",
+  "zh": "本地已修改"
+ },
+ "state.conflict": {
+  "en": "Directory state conflict",
+  "zh": "目录状态异常"
+ },
+ "state.local": {
+  "en": "Local preset with this id",
+  "zh": "本地自建同名预设"
+ },
+ "state.shadowed": {
+  "en": "Id taken by a preset another plugin declares",
+  "zh": "id 已被其它插件声明的预设占用"
+ },
+ "state.newVersion": {
+  "en": "Update {version} available",
+  "zh": "有新版本 {version}"
+ },
+ "state.broken": {
+  "en": "Cannot load",
+  "zh": "无法加载"
+ },
+ "action.install": {
+  "en": "Install",
+  "zh": "安装"
+ },
+ "action.update": {
+  "en": "Update",
+  "zh": "更新"
+ },
+ "action.enable": {
+  "en": "Enable",
+  "zh": "启用"
+ },
+ "action.disable": {
+  "en": "Disable",
+  "zh": "停用"
+ },
+ "action.uninstall": {
+  "en": "Uninstall",
+  "zh": "卸载"
+ },
+ "action.view": {
+  "en": "View composition",
+  "zh": "查看组合"
+ },
+ "action.cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "action.refresh": {
+  "en": "Refresh",
+  "zh": "刷新"
+ },
+ "code.local": {
+  "en": "Ships local code",
+  "zh": "含本地代码"
+ },
+ "code.inline": {
+  "en": "Has inline expressions",
+  "zh": "含内联表达式"
+ },
+ "code.none": {
+  "en": "Composes installed plugins only",
+  "zh": "仅组合已安装插件"
+ },
+ "code.detail": {
+  "en": "{files} code files - {expressions} !!js expressions - {plugins} plugins",
+  "zh": "{files} 个代码文件 · {expressions} 个 !!js 表达式 · {plugins} 个插件"
+ },
+ "confirm.title": {
+  "en": "Install an executable preset",
+  "zh": "安装可执行预设"
+ },
+ "confirm.text": {
+  "en": "Installing \"{name}\" loads its composition inside the DSH host process, which carries the same trust as shell access. {detail} Continue?",
+  "zh": "「{name}」安装后会在 DSH 主进程内加载其组合内容，权限等同 shell 访问。{detail} 确认继续？"
+ },
+ "uninstall.title": {
+  "en": "Uninstall preset",
+  "zh": "卸载预设"
+ },
+ "uninstall.text": {
+  "en": "Unregisters \"{name}\" and deletes its local files (the copy under $DSH_HOME/agent-presets). Sessions already using it keep running.",
+  "zh": "将注销「{name}」并删除其本地文件（$DSH_HOME/agent-presets 中的副本）。已使用该预设的会话不受影响。"
+ },
+ "viewer.title": {
+  "en": "{name} - agent.cordis.yml",
+  "zh": "{name} · agent.cordis.yml"
+ },
+ "viewer.empty": {
+  "en": "(composition file is empty or unreadable)",
+  "zh": "（组合文件为空或不可读）"
+ },
+ "note.installFailed": {
+  "en": "Install failed: {reason}",
+  "zh": "安装失败：{reason}"
+ },
+ "note.conflict": {
+  "en": "A directory with this id already exists locally; nothing was overwritten",
+  "zh": "本地已存在同名目录，未覆盖任何文件"
+ },
+ "note.actionFailed": {
+  "en": "Action failed: {reason}",
+  "zh": "操作失败：{reason}"
+ },
+ "note.enabled": {
+  "en": "Installed and enabled; refresh the page to see it under Settings - Agent presets",
+  "zh": "已安装并启用；刷新页面后在「设置 → Agent 预设」中可见"
+ },
+ "note.disabled": {
+  "en": "Disabled; the files stay in the preset library and can be enabled again",
+  "zh": "已停用；文件仍保留在预设库中，可随时重新启用"
+ },
+ "note.uninstalled": {
+  "en": "Uninstalled",
+  "zh": "已卸载"
+ },
+ "note.updated": {
+  "en": "Updated to the newest version",
+  "zh": "已更新到最新版本"
+ },
+ "note.broken": {
+  "en": "Cannot load: {reason}",
+  "zh": "无法加载：{reason}"
+ },
+ "note.shadowed": {
+  "en": "A preset another plugin declares already owns this id, so it cannot be declared",
+  "zh": "该 id 已被另一插件声明的预设占用，无法声明"
+ },
+ "note.defaultPreset": {
+  "en": "This is the current default preset; change the default under Settings - Agent presets first",
+  "zh": "这是当前默认预设，请先在「设置 → Agent 预设」切换默认值"
+ },
+ "note.rosterUnavailable": {
+  "en": "The host exposes no agent-preset registry service, so presets cannot be declared",
+  "zh": "宿主未提供 agent-preset 注册表服务，无法声明预设"
+ },
+ "note.gatewayUnavailable": {
+  "en": "Local gateway unavailable: remote browser or host routes not mounted; install and enable are disabled",
+  "zh": "本机网关不可用：远程浏览器或 host 路由未挂载，无法安装或启用"
+ },
+ "note.loadFailed": {
+  "en": "Reading preset state failed: {reason}",
+  "zh": "读取预设状态失败：{reason}"
+ },
+ "note.emptyCatalog": {
+  "en": "The community preset catalog is empty",
+  "zh": "社区预设目录为空"
+ },
+ "note.noMatch": {
+  "en": "No matching preset",
+  "zh": "没有匹配的预设"
+ },
+ "note.remoteInstall": {
+  "en": "Run this in a browser on the machine hosting DSH",
+  "zh": "请在运行 DSH 的本机浏览器中操作"
+ },
+ "search.placeholder": {
+  "en": "Search presets",
+  "zh": "搜索预设"
+ },
+ "count.installs": {
+  "en": "{count} installs",
+  "zh": "安装 {count}"
+ },
+ "installing": {
+  "en": "Working...",
+  "zh": "处理中…"
+ }
+}

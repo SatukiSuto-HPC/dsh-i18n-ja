@@ -1,0 +1,326 @@
+{
+ "pet.feed": {
+  "en": "Feed",
+  "zh": "喂食"
+ },
+ "pet.hide": {
+  "en": "Hide",
+  "zh": "隐藏"
+ },
+ "pet.rename": {
+  "en": "Rename",
+  "zh": "改名"
+ },
+ "pet.confirm": {
+  "en": "OK",
+  "zh": "确定"
+ },
+ "pet.namePlaceholder": {
+  "en": "Enter a new name",
+  "zh": "输入新名字"
+ },
+ "pet.summon": {
+  "en": "Summon {name}",
+  "zh": "召唤{name}"
+ },
+ "pet.rank": {
+  "en": "Affinity {rank}",
+  "zh": "亲密度 {rank}"
+ },
+ "pet.rank.name.幼鲸": {
+  "en": "Baby Whale",
+  "zh": "幼鲸"
+ },
+ "pet.rank.name.伙伴": {
+  "en": "Companion",
+  "zh": "伙伴"
+ },
+ "pet.rank.name.挚友": {
+  "en": "Close Friend",
+  "zh": "挚友"
+ },
+ "pet.rank.name.深海羁绊": {
+  "en": "Deep Sea Bond",
+  "zh": "深海羁绊"
+ },
+ "pet.rank.name.心有灵犀": {
+  "en": "Kindred Spirit",
+  "zh": "心有灵犀"
+ },
+ "pet.rank.name.传说羁绊": {
+  "en": "Legendary Bond",
+  "zh": "传说羁绊"
+ },
+ "pet.rank.name.神话羁绊": {
+  "en": "Mythic Bond",
+  "zh": "神话羁绊"
+ },
+ "pet.rank.name.永恒之契": {
+  "en": "Eternal Covenant",
+  "zh": "永恒之契"
+ },
+ "pet.rank.name.鲸生共渡": {
+  "en": "Lifelong Companion",
+  "zh": "鲸生共渡"
+ },
+ "pet.points": {
+  "en": "{points} pts",
+  "zh": "{points} 点"
+ },
+ "pet.treats": {
+  "en": "Treats ×{n}",
+  "zh": "小鱼干 ×{n}"
+ },
+ "pet.state.loading": {
+  "en": "The pet is on its way…",
+  "zh": "宠物正在赶来…"
+ },
+ "pet.state.error": {
+  "en": "The pet is lost (connection failed)",
+  "zh": "宠物迷路了（连接失败）"
+ },
+ "pet.renderer.unavailable": {
+  "en": "This pet needs a renderer ({renderer}) that is not available in this build.",
+  "zh": "这只宠物需要的渲染器（{renderer}）在当前版本不可用。"
+ },
+ "pet.live2d.core-missing": {
+  "en": "Live2D Cubism Core is not installed: place the official live2dcubismcore.min.js under $DSH_HOME/pets/.runtime/ and refresh (see the pet plugin README).",
+  "zh": "Live2D 核心未安装：请把官方 live2dcubismcore.min.js 放入 $DSH_HOME/pets/.runtime/ 后刷新（步骤见宠物插件 README）。"
+ },
+ "pet.live2d.vendor-missing": {
+  "en": "The Live2D component is missing; please update the pet plugin.",
+  "zh": "Live2D 组件缺失，请升级宠物插件。"
+ },
+ "pet.live2d.load-failed": {
+  "en": "The Live2D model failed to load; check the pet directory is complete.",
+  "zh": "Live2D 模型加载失败，请检查该宠物目录的完整性。"
+ },
+ "pet.openSessionHint": {
+  "en": "Click to jump to this session",
+  "zh": "点击跳转到对应会话"
+ },
+ "pet.gameplay.menu": {
+  "en": "Play",
+  "zh": "玩法"
+ },
+ "pet.gameplay.work": {
+  "en": "Work",
+  "zh": "打工"
+ },
+ "pet.gameplay.stopWork": {
+  "en": "Stop work",
+  "zh": "收工"
+ },
+ "pet.gameplay.sleep": {
+  "en": "Sleep",
+  "zh": "休息"
+ },
+ "pet.gameplay.wake": {
+  "en": "Wake up",
+  "zh": "起床"
+ },
+ "pet.gameplay.shop": {
+  "en": "Shop",
+  "zh": "商店"
+ },
+ "pet.gameplay.skin": {
+  "en": "Skin",
+  "zh": "皮肤"
+ },
+ "pet.gameplay.skinDefault": {
+  "en": "Default",
+  "zh": "默认"
+ },
+ "pet.gameplay.back": {
+  "en": "Back",
+  "zh": "返回"
+ },
+ "pet.gameplay.buy": {
+  "en": "Buy",
+  "zh": "购买"
+ },
+ "pet.gameplay.insufficient": {
+  "en": "Not enough {currency}",
+  "zh": "{currency}不足"
+ },
+ "pet.gameplay.prize": {
+  "en": "Prize +{amount} {currency}",
+  "zh": "中奖 +{amount} {currency}"
+ },
+ "pet.gameplay.working": {
+  "en": "Working",
+  "zh": "打工中"
+ },
+ "pet.gameplay.sleeping": {
+  "en": "Sleeping",
+  "zh": "睡觉中"
+ },
+ "pet.gameplay.stat.hunger": {
+  "en": "Hunger",
+  "zh": "饱食"
+ },
+ "pet.gameplay.stat.mood": {
+  "en": "Mood",
+  "zh": "心情"
+ },
+ "pet.gameplay.stat.energy": {
+  "en": "Energy",
+  "zh": "精力"
+ },
+ "pet.gameplay.stat.affection": {
+  "en": "Affection",
+  "zh": "好感"
+ },
+ "pet.gameplay.currency.treats": {
+  "en": "Treats",
+  "zh": "小鱼干"
+ },
+ "pet.moreSessions": {
+  "en": "Expand {n} more session bubbles",
+  "zh": "展开其余 {n} 个会话的气泡"
+ },
+ "pet.collapseSessions": {
+  "en": "Collapse session bubbles",
+  "zh": "收起会话气泡"
+ },
+ "settings.title": {
+  "en": "Pet",
+  "zh": "宠物"
+ },
+ "settings.description": {
+  "en": "Pick a pet and tune its display layout.",
+  "zh": "选择宠物并调整它的显示布局。"
+ },
+ "settings.pet": {
+  "en": "Pet",
+  "zh": "宠物"
+ },
+ "settings.petHint": {
+  "en": "Choose which pet shows. Names are stored per pet; rename from the pet hover panel.",
+  "zh": "选择显示哪只宠物；每只宠物独立命名，可在宠物悬浮面板改名。"
+ },
+ "settings.enabled": {
+  "en": "Enable the pet",
+  "zh": "启用宠物"
+ },
+ "settings.enabledHint": {
+  "en": "When off, the pet hides and polling stops; re-enable it here.",
+  "zh": "关闭后隐藏宠物并停止轮询，可在设置里重新启用。"
+ },
+ "settings.decoration": {
+  "en": "Status decoration",
+  "zh": "状态装饰"
+ },
+ "settings.decorationHint": {
+  "en": "Show ornaments like the spouting whale inside the pet status bubbles; when off, bubbles stay text-only.",
+  "zh": "在宠物状态气泡里显示喷水鲸鱼等状态装饰；关闭后气泡只剩文字。"
+ },
+ "settings.statusBubbles": {
+  "en": "Status bubbles",
+  "zh": "状态气泡"
+ },
+ "settings.statusBubblesHint": {
+  "en": "The pet's own session/status bubbles (thinking, using ...). Turning them off leaves only bubbles a third-party plugin pushes through the announcement contract, plus the interaction feedback bubble; on by default.",
+  "zh": "宠物自带的会话／状态气泡（正在思考、正在使用 xxx）。关掉后只剩第三方插件通过公告契约推送的气泡与互动反馈气泡；默认开启。"
+ },
+ "settings.visible": {
+  "en": "Show the pet",
+  "zh": "显示宠物"
+ },
+ "settings.visibleHint": {
+  "en": "When off, the pet hides; summon it again from the input row.",
+  "zh": "关闭后宠物隐藏，可从聊天输入区重新召唤。"
+ },
+ "settings.size": {
+  "en": "Size (px)",
+  "zh": "大小（px）"
+ },
+ "settings.sizeHint": {
+  "en": "Sprite cell height, 32–1024.",
+  "zh": "精灵单元高度，范围 32–1024。"
+ },
+ "settings.bubbleScale": {
+  "en": "Bubble text multiplier",
+  "zh": "气泡字号倍率"
+ },
+ "settings.bubbleScaleHint": {
+  "en": "Status, whisper, and usage bubbles scale with the pet automatically; this multiplies that result (0.5–2, default 1). The rendered text stays between 10px and 24px.",
+  "zh": "状态、碎碎念与用量气泡的字号会随宠物大小自动缩放；这一项是在此基础上再乘一个倍率（0.5–2，默认 1）。字号本身不小于 10px、不大于 24px。"
+ },
+ "settings.right": {
+  "en": "Right inset (px)",
+  "zh": "距右侧（px）"
+ },
+ "settings.rightHint": {
+  "en": "Horizontal inset from the viewport right edge.",
+  "zh": "距视口右边缘的水平内缩距离。"
+ },
+ "settings.bottom": {
+  "en": "Bottom inset (px)",
+  "zh": "距底部（px）"
+ },
+ "settings.bottomHint": {
+  "en": "Vertical inset from the viewport bottom edge.",
+  "zh": "距视口底边的垂直内缩距离。"
+ },
+ "settings.inherit": {
+  "en": "Inherit",
+  "zh": "继承"
+ },
+ "settings.on": {
+  "en": "On",
+  "zh": "开"
+ },
+ "settings.off": {
+  "en": "Off",
+  "zh": "关"
+ },
+ "settings.overridden": {
+  "en": "Overridden",
+  "zh": "已覆盖"
+ },
+ "settings.reset": {
+  "en": "Reset to default",
+  "zh": "恢复默认"
+ },
+ "settings.notExposed": {
+  "en": "This DSH version does not expose this plugin's settings namespace to the configuration page, so the form is unavailable. Edit $DSH_HOME/settings.yaml directly, or confirm that the plugin owning the namespace is mounted with its settings domain and restart.",
+  "zh": "当前 DSH 版本未向设置页暴露本插件的配置命名空间，表单不可用。可编辑 $DSH_HOME/settings.yaml 直接配置，或确认提供该命名空间的插件已挂载其设置域并重启。"
+ },
+ "settings.readOnly": {
+  "en": "This deployment stores settings read-only.",
+  "zh": "当前部署的设置只读。"
+ },
+ "settings.expand": {
+  "en": "Show settings",
+  "zh": "展开设置"
+ },
+ "settings.collapse": {
+  "en": "Hide settings",
+  "zh": "收起设置"
+ },
+ "settings.save": {
+  "en": "Save",
+  "zh": "保存"
+ },
+ "settings.saving": {
+  "en": "Saving…",
+  "zh": "保存中…"
+ },
+ "settings.discard": {
+  "en": "Discard",
+  "zh": "放弃"
+ },
+ "settings.unsaved": {
+  "en": "Unsaved",
+  "zh": "未保存"
+ },
+ "settings.saveFailed": {
+  "en": "The deployment did not accept these values; they were left for you to correct.",
+  "zh": "部署未接受这些值，已保留供你修改。"
+ },
+ "settings.invalidNumber": {
+  "en": "Enter a number, or leave blank to use the default.",
+  "zh": "请输入数字，留空则使用默认值。"
+ }
+}

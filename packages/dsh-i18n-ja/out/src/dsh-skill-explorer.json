@@ -1,0 +1,302 @@
+{
+ "entry.label": {
+  "en": "Skill Center",
+  "zh": "技能中心"
+ },
+ "entry.tooltip": {
+  "en": "Skill center: browse and manage loaded skills",
+  "zh": "技能中心：浏览与管理已加载的 skill"
+ },
+ "panel.title": {
+  "en": "Skill Center",
+  "zh": "技能中心"
+ },
+ "tab.list": {
+  "en": "Skills",
+  "zh": "技能"
+ },
+ "tab.create": {
+  "en": "Create",
+  "zh": "创建"
+ },
+ "tab.edit": {
+  "en": "Edit skill",
+  "zh": "编辑技能"
+ },
+ "group.bundled": {
+  "en": "System bundled",
+  "zh": "系统内置"
+ },
+ "group.project-dsh": {
+  "en": "Project skills (.dsh/skills)",
+  "zh": "项目技能（.dsh/skills）"
+ },
+ "group.project-agents": {
+  "en": "Project skills (.agents/skills)",
+  "zh": "项目技能（.agents/skills）"
+ },
+ "group.custom": {
+  "en": "Custom directories",
+  "zh": "自定义目录"
+ },
+ "group.user-dsh": {
+  "en": "User skills (~/.dsh/skills)",
+  "zh": "用户技能（~/.dsh/skills）"
+ },
+ "group.user-agents": {
+  "en": "User skills (~/.agents/skills)",
+  "zh": "用户技能（~/.agents/skills）"
+ },
+ "group.runtime": {
+  "en": "Runtime registered",
+  "zh": "运行时注册"
+ },
+ "groupHint.bundled": {
+  "en": "Global skills shipped with DSH and its plugins",
+  "zh": "DSH 内置与插件随附的全局技能"
+ },
+ "groupHint.project-dsh": {
+  "en": "Located in the project directory, scoped to its workspace",
+  "zh": "存放于项目目录，作用于所在项目"
+ },
+ "groupHint.project-agents": {
+  "en": "Located in the project directory, scoped to its workspace",
+  "zh": "存放于项目目录，作用于对应项目"
+ },
+ "groupHint.custom": {
+  "en": "customSkillDirs config",
+  "zh": "customSkillDirs 自定义配置目录"
+ },
+ "groupHint.user-dsh": {
+  "en": "Global skills (~/.dsh/skills), shared across all projects",
+  "zh": "全局技能（~/.dsh/skills），本机所有项目共享"
+ },
+ "groupHint.user-agents": {
+  "en": "Global skills (~/.agents/skills), shared across all projects",
+  "zh": "全局技能（~/.agents/skills），本机所有项目共享"
+ },
+ "groupHint.runtime": {
+  "en": "Skills registered at runtime by plugins",
+  "zh": "插件运行时代码内嵌注册"
+ },
+ "list.loading": {
+  "en": "Loading…",
+  "zh": "加载中…"
+ },
+ "list.loadFailed": {
+  "en": "Failed to load: {error}",
+  "zh": "加载失败：{error}"
+ },
+ "list.empty": {
+  "en": "No skills loaded yet.",
+  "zh": "当前没有已加载的 skill。"
+ },
+ "list.count": {
+  "en": "{count}",
+  "zh": "{count} 个"
+ },
+ "list.when": {
+  "en": "When: {when}",
+  "zh": "适用：{when}"
+ },
+ "list.invokable": {
+  "en": "Invokable: {marks}",
+  "zh": "可调用：{marks}"
+ },
+ "list.invokableTooltip": {
+  "en": "The model can invoke this skill automatically; manual /skill commands remain available",
+  "zh": "模型可自动调用该技能；手动 /skill 指令不受影响"
+ },
+ "list.linked": {
+  "en": "symlinked",
+  "zh": "软链接"
+ },
+ "list.noFile": {
+  "en": "No local file",
+  "zh": "无本地文件"
+ },
+ "list.noFileTooltip": {
+  "en": "This skill is registered at runtime or shipped by a plugin, so it has no SKILL.md file",
+  "zh": "该技能由插件在运行时注册或随包提供，没有 SKILL.md 文件"
+ },
+ "list.noFileHint": {
+  "en": "This skill has no local SKILL.md file, so it cannot be enabled/disabled, edited, or deleted here.",
+  "zh": "该技能没有本地 SKILL.md 文件，无法在此启用/禁用、编辑或删除。"
+ },
+ "list.providerFile": {
+  "en": "Provided by plugin",
+  "zh": "由插件提供"
+ },
+ "list.providerFileTooltip": {
+  "en": "This skill has a file supplied by its plugin provider, outside the skill roots this panel scans",
+  "zh": "该技能的文件由插件 provider 提供，未落在本面板扫描的技能根目录下"
+ },
+ "list.providerFileHint": {
+  "en": "This skill is supplied by a plugin and does have a SKILL.md file, but it sits outside the skill roots this panel scans, so it cannot be enabled/disabled, edited, or deleted here.",
+  "zh": "该技能由插件提供、确有 SKILL.md 文件，但不在本面板扫描的技能根目录下，因此无法在此启用/禁用、编辑或删除。"
+ },
+ "list.mark.model": {
+  "en": "model",
+  "zh": "模型"
+ },
+ "list.mark.user": {
+  "en": "user",
+  "zh": "用户"
+ },
+ "provider.filesystem": {
+  "en": "Filesystem",
+  "zh": "文件系统"
+ },
+ "provider.tooltip": {
+  "en": "Skill source: {provider}",
+  "zh": "技能来源：{provider}"
+ },
+ "list.enabled": {
+  "en": "Enabled: invokable by the model (click to disable)",
+  "zh": "已启用：模型可调用（点击禁用）"
+ },
+ "list.disabled": {
+  "en": "Disabled: not invokable by the model (click to enable)",
+  "zh": "已禁用：模型不可调用（点击启用）"
+ },
+ "list.toggleFailed": {
+  "en": "Operation failed: {error}",
+  "zh": "操作失败：{error}"
+ },
+ "list.delete": {
+  "en": "Delete",
+  "zh": "删除"
+ },
+ "list.deleteConfirm": {
+  "en": "Delete skill \"{name}\"? It moves into .trash.",
+  "zh": "删除技能「{name}」？将移入 .trash。"
+ },
+ "list.deleteFailed": {
+  "en": "Delete failed: {error}",
+  "zh": "删除失败：{error}"
+ },
+ "list.edit": {
+  "en": "Edit",
+  "zh": "编辑"
+ },
+ "create.root": {
+  "en": "Location",
+  "zh": "创建位置"
+ },
+ "create.root.user": {
+  "en": "User skills (~/.dsh/skills, available to all projects)",
+  "zh": "用户技能（~/.dsh/skills，所有项目可用）"
+ },
+ "create.root.project": {
+  "en": "Project skills (current project .dsh/skills)",
+  "zh": "项目技能（当前项目 .dsh/skills）"
+ },
+ "create.name": {
+  "en": "Skill name (kebab-case, same as the directory name)",
+  "zh": "技能名（kebab-case，与文件目录同名）"
+ },
+ "create.namePlaceholder": {
+  "en": "e.g. my-workflow",
+  "zh": "如 my-workflow"
+ },
+ "create.description": {
+  "en": "Description (how the model decides when to trigger)",
+  "zh": "描述（模型判断触发条件的依据）"
+ },
+ "create.whenToUse": {
+  "en": "When to use (optional)",
+  "zh": "适用场景（可选）"
+ },
+ "create.content": {
+  "en": "Instructions (SKILL.md body, Markdown)",
+  "zh": "指令内容（SKILL.md 正文，Markdown）"
+ },
+ "create.submit": {
+  "en": "Create skill",
+  "zh": "创建技能"
+ },
+ "create.empty": {
+  "en": "Skill name/description/content must not be empty",
+  "zh": "技能名/描述/内容不能为空"
+ },
+ "create.created": {
+  "en": "Created: {path}",
+  "zh": "已创建：{path}"
+ },
+ "create.failed": {
+  "en": "Create failed: {error}",
+  "zh": "创建失败：{error}"
+ },
+ "create.note": {
+  "en": "The skill takes effect immediately (skill-filesystem hot-scans). Its content is injected into the model context as instructions — do not put sensitive information in it.",
+  "zh": "创建后立即生效（skill-filesystem 会热扫描）。内容会作为指令注入模型上下文——不要写入敏感信息。"
+ },
+ "edit.name": {
+  "en": "Skill name (fixed)",
+  "zh": "技能名（不可修改）"
+ },
+ "edit.loading": {
+  "en": "Loading the skill…",
+  "zh": "正在读取技能内容…"
+ },
+ "edit.loadFailed": {
+  "en": "Failed to load: {error}",
+  "zh": "读取失败：{error}"
+ },
+ "edit.submit": {
+  "en": "Save changes",
+  "zh": "保存修改"
+ },
+ "edit.back": {
+  "en": "Back to list",
+  "zh": "返回列表"
+ },
+ "edit.failed": {
+  "en": "Save failed: {error}",
+  "zh": "保存失败：{error}"
+ },
+ "edit.note": {
+  "en": "Only the description, when-to-use, and body change: the name, location, and enabled state stay as they are. The edit takes effect immediately (skill-filesystem hot-scans).",
+  "zh": "只改描述、适用场景与正文：技能名、位置和启用状态保持不变。保存后立即生效（skill-filesystem 会热扫描）。"
+ },
+ "filter.workspaceLabel": {
+  "en": "Workspace",
+  "zh": "工作区"
+ },
+ "filter.workspaceAll": {
+  "en": "All workspaces",
+  "zh": "全部工作区"
+ },
+ "filter.workspaceCurrent": {
+  "en": "Current workspace ({name})",
+  "zh": "当前工作区 ({name})"
+ },
+ "filter.searchLabel": {
+  "en": "Search",
+  "zh": "搜索"
+ },
+ "filter.searchPlaceholder": {
+  "en": "Filter by name or description",
+  "zh": "按名称或描述筛选"
+ },
+ "filter.empty": {
+  "en": "No skills match \"{query}\"",
+  "zh": "没有匹配「{query}」的技能"
+ },
+ "filter.emptyWorkspace": {
+  "en": "No skills under the current filter.",
+  "zh": "当前筛选下没有技能。"
+ },
+ "workspace.isolated": {
+  "en": "Workspace isolated",
+  "zh": "工作区隔离"
+ },
+ "workspace.isolatedHint": {
+  "en": "This skill belongs to workspace \"{workspace}\" and is isolated from the current session context",
+  "zh": "该技能属于工作区「{workspace}」，在当前会话上下文隔离不生效"
+ },
+ "refresh": {
+  "en": "Refresh",
+  "zh": "刷新"
+ }
+}

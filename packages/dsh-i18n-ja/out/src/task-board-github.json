@@ -1,0 +1,454 @@
+{
+ "settings.title": {
+  "en": "GitHub Issues sync",
+  "zh": "GitHub Issues 同步"
+ },
+ "settings.description": {
+  "en": "Synchronize GitHub Issues into board cards and write column changes back to the issue labels.",
+  "zh": "把 GitHub Issues 同步成看板卡片，并把列变化写回 issue 标签。"
+ },
+ "settings.integrationOff": {
+  "en": "This extension is currently off: the repository and credential setup is not loaded, and its blocks disappear from the board cards and the task detail. Turn the switch above on to configure the integration.",
+  "zh": "本扩展当前关闭：仓库与凭据设置暂不加载，看板卡片与详情区也不会出现它的区块。把上面的开关打开即可继续配置。"
+ },
+ "settings.enabled": {
+  "en": "Enable GitHub Issues sync",
+  "zh": "启用 GitHub Issues 同步"
+ },
+ "settings.enabledHint": {
+  "en": "When off, this extension registers nothing with the board: polling stops, write-back stops, the agent tools unregister and the sync status clears, and its detail section and card decoration disappear. This settings card stays reachable and reports that the extension is not running, so the switch can be turned back on. The board and the cards already synchronized are unaffected.",
+  "zh": "关闭后本扩展不向任务看板注册任何东西：停止轮询、停止写回、注销 agent 工具、清空同步状态，详情区与卡片徽章随之消失；本设置卡保留并显示为未运行，随时可以重新开启。看板与已同步的卡片数据都不受影响。"
+ },
+ "settings.announce": {
+  "en": "Announce this extension to agents",
+  "zh": "向 agent 播报本扩展"
+ },
+ "settings.announceHint": {
+  "en": "On: every agent system prompt carries a note about this extension and its trigger words. Off: agents learn about it only when you mention it. Off by default, so prompts stay clean.",
+  "zh": "开启后每条 agent 系统提示都会包含本扩展的说明与触发词；关闭则只在用户主动提及时生效。默认关闭，保持系统提示干净。"
+ },
+ "settings.on": {
+  "en": "On",
+  "zh": "开"
+ },
+ "settings.off": {
+  "en": "Off",
+  "zh": "关"
+ },
+ "settings.inherit": {
+  "en": "Inherit (deployment default)",
+  "zh": "继承（跟随部署默认）"
+ },
+ "settings.overridden": {
+  "en": "Overridden",
+  "zh": "已覆盖"
+ },
+ "settings.reset": {
+  "en": "Reset",
+  "zh": "重置"
+ },
+ "settings.invalidValue": {
+  "en": "The value is not accepted",
+  "zh": "该取值不被接受"
+ },
+ "settings.notExposed": {
+  "en": "This DSH version does not expose this plugin's settings namespace to the configuration page, so the form is unavailable. Edit ~/.dsh/settings.yaml directly, or add the namespace to the Host settings allowlist and restart.",
+  "zh": "当前 DSH 版本未向设置页暴露本插件的配置命名空间，表单不可用。可编辑 ~/.dsh/settings.yaml 直接配置，或将本命名空间加入 Host 设置白名单后重启。"
+ },
+ "settings.readOnly": {
+  "en": "This deployment serves settings read-only.",
+  "zh": "当前部署的设置只读。"
+ },
+ "settings.expand": {
+  "en": "Show settings",
+  "zh": "展开设置"
+ },
+ "settings.collapse": {
+  "en": "Hide settings",
+  "zh": "收起设置"
+ },
+ "settings.save": {
+  "en": "Save",
+  "zh": "保存"
+ },
+ "settings.saving": {
+  "en": "Saving…",
+  "zh": "保存中…"
+ },
+ "settings.discard": {
+  "en": "Discard",
+  "zh": "放弃"
+ },
+ "settings.unsaved": {
+  "en": "Unsaved",
+  "zh": "未保存"
+ },
+ "settings.saveFailed": {
+  "en": "The deployment did not accept these values; they were left for you to correct.",
+  "zh": "部署未接受这些值，已保留供你修改。"
+ },
+ "setup.apiUnavailable": {
+  "en": "Cannot reach the host configuration API: {error}",
+  "zh": "无法访问本机 Host 配置接口：{error}"
+ },
+ "setup.healthOk": {
+  "en": "Background sync: last reached GitHub at {at}.",
+  "zh": "后台同步：最近一次成功同步于 {at}。"
+ },
+ "setup.healthStale": {
+  "en": "Background sync: no successful sync for {minutes} minutes (the configuration looks right, but synchronization has stopped).",
+  "zh": "后台同步：已 {minutes} 分钟没有成功同步（配置看起来正常，但同步实际已停）。"
+ },
+ "setup.healthNever": {
+  "en": "Background sync: nothing has synced successfully since this host started.",
+  "zh": "后台同步：本次启动以来还没有成功同步过一次。"
+ },
+ "setup.healthErrors": {
+  "en": "The last sync reported {count} error(s); see the host log (dsh-task-board-github).",
+  "zh": "最近一次同步报告了 {count} 条错误，详情见宿主日志（dsh-task-board-github）。"
+ },
+ "setup.credentialConfigured": {
+  "en": "Host credential: configured ({name}, source {source})",
+  "zh": "Host 凭据：已配置（{name}，来源 {source}）"
+ },
+ "setup.credentialMissing": {
+  "en": "Host credential: not configured (paste a GitHub token below; it is stored in the local credential store as {name})",
+  "zh": "Host 凭据：未配置（可直接在下方粘贴 GitHub Token，存到本机凭据库 {name}）"
+ },
+ "setup.credentialSourceUnknown": {
+  "en": "unknown",
+  "zh": "未知"
+ },
+ "setup.assignee": {
+  "en": "Inclusion assignee",
+  "zh": "指派账号"
+ },
+ "setup.assigneeChip": {
+  "en": "assigned to {login}",
+  "zh": "指派 {login}"
+ },
+ "setup.assigneePlaceholder": {
+  "en": "@me or a login",
+  "zh": "@me 或登录名"
+ },
+ "setup.unassignedChip": {
+  "en": "includes unassigned",
+  "zh": "含无指派"
+ },
+ "setup.unassignedOn": {
+  "en": "Taking unassigned",
+  "zh": "已含无指派"
+ },
+ "setup.unassignedOff": {
+  "en": "Take unassigned",
+  "zh": "收无指派"
+ },
+ "setup.inclusionLabel": {
+  "en": "Inclusion label",
+  "zh": "纳入标签"
+ },
+ "setup.inclusionLabelPlaceholder": {
+  "en": "Label (default dsh)",
+  "zh": "标签（默认 dsh）"
+ },
+ "setup.repositoriesCount": {
+  "en": "{count} repositories configured:",
+  "zh": "已配置 {count} 个仓库："
+ },
+ "setup.repositoriesEmpty": {
+  "en": "No repository is synchronized yet.",
+  "zh": "还没有同步任何仓库。"
+ },
+ "setup.repositoriesExpand": {
+  "en": "Expand the repository list",
+  "zh": "展开仓库列表"
+ },
+ "setup.repositoriesCollapse": {
+  "en": "Collapse the repository list",
+  "zh": "收起仓库列表"
+ },
+ "setup.repositoriesHint": {
+  "en": "Issues carrying the inclusion label, assigned to the configured login (@me means this host account), or — for a repository taking unassigned issues — assigned to nobody at all, become board cards. Changes here apply immediately, with no restart. Advanced knobs (state-label mapping, draft-PR policy, polling interval, ...) stay declarable in the profile patch.",
+  "zh": "带纳入标签、指派给指定账号（@me 表示本机账号），或开启「收无指派」后完全没人指派的 issue 会同步成看板卡片；这里的修改立即生效，无需重启。状态标签映射、PR 草稿策略、轮询间隔等高级项仍可在 profile patch 里声明。"
+ },
+ "setup.repositoryAdd": {
+  "en": "Add",
+  "zh": "添加"
+ },
+ "setup.repositoryLabel": {
+  "en": "Repository",
+  "zh": "仓库"
+ },
+ "setup.repositoryPlaceholder": {
+  "en": "owner/repo, or paste a GitHub link",
+  "zh": "owner/repo，或粘贴 GitHub 链接"
+ },
+ "setup.repositoryRemove": {
+  "en": "Remove",
+  "zh": "移除"
+ },
+ "setup.test": {
+  "en": "Test connection",
+  "zh": "测试连接"
+ },
+ "setup.testFailed": {
+  "en": "Test failed: {error}",
+  "zh": "测试失败：{error}"
+ },
+ "setup.testLogin": {
+  "en": "Authenticated as {login}",
+  "zh": "已认证账号：{login}"
+ },
+ "setup.testNoCredential": {
+  "en": "No credential is available, so GitHub is unauthenticated; save a token first.",
+  "zh": "没有可用凭据，GitHub 未认证；先保存一个 Token 再测试。"
+ },
+ "setup.testing": {
+  "en": "Testing…",
+  "zh": "测试中…"
+ },
+ "setup.tokenClear": {
+  "en": "Clear credential",
+  "zh": "清除凭据"
+ },
+ "setup.tokenEmpty": {
+  "en": "Paste a token first",
+  "zh": "请先粘贴 Token"
+ },
+ "setup.tokenHint": {
+  "en": "The token is sent to the local host once and stored in the DSH credential store (the same store the Models page writes API keys into); the browser never reads it back. A fine-grained token with repo access only is enough.",
+  "zh": "Token 只发送给本机 Host 一次，存进 DSH 凭据库（与 Models 页存 API Key 是同一处），浏览器不会读回明文；只勾选 repo 权限的 fine-grained token 就够用。"
+ },
+ "setup.tokenLabel": {
+  "en": "GitHub token",
+  "zh": "GitHub Token"
+ },
+ "setup.tokenPlaceholder": {
+  "en": "Paste a GitHub token (ghp_… or github_pat_…)",
+  "zh": "粘贴 GitHub Token（ghp_… 或 github_pat_…）"
+ },
+ "setup.tokenSave": {
+  "en": "Save credential",
+  "zh": "保存凭据"
+ },
+ "setup.tokenSaved": {
+  "en": "Saved. The next sync uses the new credential immediately.",
+  "zh": "已保存，下一次同步即刻使用新凭据。"
+ },
+ "setup.tokenSaving": {
+  "en": "Saving…",
+  "zh": "保存中…"
+ },
+ "summary.title": {
+  "en": "GitHub Integration",
+  "zh": "GitHub 集成"
+ },
+ "summary.repositories": {
+  "en": "Configured Repositories ({count})",
+  "zh": "已配置仓库 ({count})"
+ },
+ "summary.label": {
+  "en": "label",
+  "zh": "标签"
+ },
+ "summary.autoPr": {
+  "en": "auto PR",
+  "zh": "自动创建 PR"
+ },
+ "summary.noRepositories": {
+  "en": "No GitHub repositories configured (declare repositories in this extension row of the profile patch)",
+  "zh": "未配置 GitHub 仓库（在本扩展行的 profile patch 里声明 repositories）"
+ },
+ "summary.credentialReady": {
+  "en": "Host credential: Valid",
+  "zh": "Host 凭据：有效"
+ },
+ "summary.credentialMissing": {
+  "en": "Host credential: None detected (set the GITHUB_TOKEN environment variable, or name another one with tokenEnv)",
+  "zh": "Host 凭据：未检测到（请设置 GITHUB_TOKEN 环境变量，或用 tokenEnv 指定变量名）"
+ },
+ "summary.notRunning": {
+  "en": "The extension is not running: its sync status appears once the switch is on.",
+  "zh": "扩展当前未运行：打开开关后才会显示同步状态。"
+ },
+ "card.openIssue": {
+  "en": "Open {reference} on GitHub",
+  "zh": "在 GitHub 打开 {reference}"
+ },
+ "detail.title": {
+  "en": "GitHub Issue",
+  "zh": "GitHub Issue"
+ },
+ "detail.state.open": {
+  "en": "Open",
+  "zh": "开启"
+ },
+ "detail.state.closed": {
+  "en": "Closed",
+  "zh": "已关闭"
+ },
+ "detail.syncedAt": {
+  "en": "Synced at {time}",
+  "zh": "同步于 {time}"
+ },
+ "detail.syncError": {
+  "en": "Sync error: {error}",
+  "zh": "同步异常：{error}"
+ },
+ "detail.refresh": {
+  "en": "Sync Issue",
+  "zh": "同步 Issue"
+ },
+ "detail.refreshing": {
+  "en": "Syncing…",
+  "zh": "正在同步…"
+ },
+ "detail.pr": {
+  "en": "Pull Request",
+  "zh": "Pull Request"
+ },
+ "detail.prNumber": {
+  "en": "PR #{number}",
+  "zh": "PR #{number}"
+ },
+ "detail.prState.open": {
+  "en": "Open",
+  "zh": "开启"
+ },
+ "detail.prState.closed": {
+  "en": "Closed",
+  "zh": "已关闭"
+ },
+ "detail.prState.merged": {
+  "en": "Merged",
+  "zh": "已合并"
+ },
+ "detail.prDraft": {
+  "en": "Draft",
+  "zh": "草稿"
+ },
+ "detail.createPr": {
+  "en": "Create PR",
+  "zh": "创建 PR"
+ },
+ "detail.createPrTitle": {
+  "en": "Create Pull Request",
+  "zh": "创建 Pull Request"
+ },
+ "detail.headBranch": {
+  "en": "Remote Head Branch",
+  "zh": "远程来源分支 (Head)"
+ },
+ "detail.headBranchPlaceholder": {
+  "en": "e.g. feature-branch",
+  "zh": "例如 feature-branch"
+ },
+ "detail.baseBranch": {
+  "en": "Target Base Branch",
+  "zh": "目标基线分支 (Base)"
+ },
+ "detail.linkPr": {
+  "en": "Link PR",
+  "zh": "关联 PR"
+ },
+ "detail.linkPrTitle": {
+  "en": "Link Existing Pull Request",
+  "zh": "关联已有 Pull Request"
+ },
+ "detail.prNumberInput": {
+  "en": "PR Number",
+  "zh": "PR 编号"
+ },
+ "detail.deactivated": {
+  "en": "Inclusion label was removed on GitHub; item is deactivated on the board.",
+  "zh": "该 Issue 在 GitHub 上已移除包含标签，已在看板停用。"
+ },
+ "prompt.title": {
+  "en": "Execution prompt",
+  "zh": "执行 Prompt"
+ },
+ "prompt.templateHint": {
+  "en": "The execution prompt is generated from a template: the issue header, the workflow and the write-back rules are fixed, and the issue body is appended verbatim inside a provenance wrap. The AI analysis is an optional section that only adds the goal, steps and completion criteria.",
+  "zh": "执行 Prompt 由模板生成：issue 头信息、执行要求与回写规则固定，issue 原文原样附在来源声明里。AI 分析是可选的一段，只补充目标、步骤与完成标准。"
+ },
+ "prompt.edited": {
+  "en": "The execution prompt was edited by hand: synchronization no longer overwrites it, and regenerating needs a confirmation.",
+  "zh": "执行 Prompt 已被手动修改：同步不再覆盖它；重新生成需要确认覆盖。"
+ },
+ "prompt.frozen": {
+  "en": "The card has started executing; its execution prompt is frozen.",
+  "zh": "卡片已开始执行，执行 Prompt 已冻结。"
+ },
+ "prompt.analysisNone": {
+  "en": "No AI analysis yet.",
+  "zh": "尚未生成 AI 分析。"
+ },
+ "prompt.analysisFresh": {
+  "en": "AI analysis written by {model} at {time} is part of the execution prompt.",
+  "zh": "AI 分析由 {model} 生成于 {time}，已写入执行 Prompt。"
+ },
+ "prompt.analysisStale": {
+  "en": "The issue changed after the AI analysis: the old analysis was left out of the execution prompt. Generate it again to refresh it.",
+  "zh": "issue 已在 AI 分析之后更新：旧分析已从执行 Prompt 中移除，可重新生成。"
+ },
+ "prompt.analysisPending": {
+  "en": "Generating the AI analysis…",
+  "zh": "正在生成 AI 分析…"
+ },
+ "prompt.analysisError": {
+  "en": "AI analysis failed: {error}",
+  "zh": "AI 分析失败：{error}"
+ },
+ "prompt.noCodeChange": {
+  "en": "The model judged that this issue needs no code change (a notice or a discussion). Consider moving it to the backlog so a run does not invent changes to finish a goal.",
+  "zh": "模型判断该 issue 不需要改代码（通知或讨论类），可考虑移到待规划，避免执行时为推进目标制造改动。"
+ },
+ "prompt.moveBacklog": {
+  "en": "Move to backlog",
+  "zh": "移到待规划"
+ },
+ "prompt.modelLabel": {
+  "en": "Analysis model",
+  "zh": "分析模型"
+ },
+ "prompt.modelPlaceholder": {
+  "en": "provider/model; empty uses the repository setting, the card model or the host default",
+  "zh": "provider/model，留空则用仓库设置、卡片模型或宿主默认"
+ },
+ "prompt.generate": {
+  "en": "Generate AI analysis",
+  "zh": "AI 生成分析"
+ },
+ "prompt.regenerate": {
+  "en": "Regenerate",
+  "zh": "重新生成"
+ },
+ "prompt.overwrite": {
+  "en": "Overwrite and regenerate",
+  "zh": "覆盖并重新生成"
+ },
+ "prompt.clear": {
+  "en": "Remove AI analysis",
+  "zh": "移除 AI 分析"
+ },
+ "prompt.goal": {
+  "en": "Goal",
+  "zh": "目标"
+ },
+ "prompt.steps": {
+  "en": "Suggested steps",
+  "zh": "建议步骤"
+ },
+ "prompt.acceptance": {
+  "en": "Completion criteria",
+  "zh": "完成标准"
+ },
+ "prompt.notes": {
+  "en": "Notes",
+  "zh": "备注"
+ },
+ "common.cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ }
+}

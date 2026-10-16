@@ -1,0 +1,18 @@
+{
+ "viewer.label": {
+  "en": "Markdown",
+  "zh": "Markdown"
+ },
+ "code.copy": {
+  "en": "Copy",
+  "zh": "复制"
+ },
+ "code.copied": {
+  "en": "Copied",
+  "zh": "已复制"
+ },
+ "footnotes": {
+  "en": "Footnotes",
+  "zh": "脚注"
+ }
+}

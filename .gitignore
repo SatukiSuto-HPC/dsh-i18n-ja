@@ -1,0 +1,5 @@
+node_modules/
+packages/dsh-i18n-ja/out-core/
+*.tgz
+.DS_Store
+npm-debug.log*

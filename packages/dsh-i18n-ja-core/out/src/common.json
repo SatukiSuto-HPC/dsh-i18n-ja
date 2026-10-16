@@ -1,0 +1,166 @@
+{
+ "ok": {
+  "en": "OK",
+  "zh": "确定"
+ },
+ "cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "close": {
+  "en": "Close",
+  "zh": "关闭"
+ },
+ "copy": {
+  "en": "Copy",
+  "zh": "复制"
+ },
+ "copied": {
+  "en": "Copied",
+  "zh": "复制成功"
+ },
+ "codeBlock.title": {
+  "en": "Code block",
+  "zh": "代码块"
+ },
+ "codeBlock.wrap": {
+  "en": "Wrap lines",
+  "zh": "自动换行"
+ },
+ "codeBlock.unwrap": {
+  "en": "Do not wrap lines",
+  "zh": "取消自动换行"
+ },
+ "copy.failed": {
+  "en": "Copy failed",
+  "zh": "复制失败"
+ },
+ "copy.value": {
+  "en": "Copy value",
+  "zh": "复制值"
+ },
+ "copy.json": {
+  "en": "Copy JSON",
+  "zh": "复制 JSON"
+ },
+ "copy.path": {
+  "en": "Copy property path",
+  "zh": "复制属性路径"
+ },
+ "copy.prettyJson": {
+  "en": "Copy pretty JSON",
+  "zh": "复制格式化 JSON"
+ },
+ "copy.compactJson": {
+  "en": "Copy compact JSON",
+  "zh": "复制紧凑 JSON"
+ },
+ "copy.optionsHint": {
+  "en": "{action}; right-click for copy options",
+  "zh": "{action}；右键点击可选择复制方式"
+ },
+ "retry": {
+  "en": "Retry",
+  "zh": "重试"
+ },
+ "loading": {
+  "en": "Loading…",
+  "zh": "加载中…"
+ },
+ "load.failed": {
+  "en": "Failed to load",
+  "zh": "加载失败"
+ },
+ "submit": {
+  "en": "Submit",
+  "zh": "提交"
+ },
+ "submitting": {
+  "en": "Submitting…",
+  "zh": "正在提交…"
+ },
+ "next": {
+  "en": "Next",
+  "zh": "下一步"
+ },
+ "previous": {
+  "en": "Previous",
+  "zh": "上一步"
+ },
+ "skip": {
+  "en": "Skip",
+  "zh": "跳过"
+ },
+ "delete": {
+  "en": "Delete",
+  "zh": "删除"
+ },
+ "edit": {
+  "en": "Edit",
+  "zh": "编辑"
+ },
+ "save": {
+  "en": "Save",
+  "zh": "保存"
+ },
+ "search": {
+  "en": "Search",
+  "zh": "搜索"
+ },
+ "more": {
+  "en": "More",
+  "zh": "更多"
+ },
+ "collapse": {
+  "en": "Collapse",
+  "zh": "收起"
+ },
+ "expand": {
+  "en": "Expand",
+  "zh": "展开"
+ },
+ "back": {
+  "en": "Back",
+  "zh": "返回"
+ },
+ "brand.localBuild": {
+  "en": "DSH Local Build",
+  "zh": "DSH 本地构建"
+ },
+ "workspace.defaultName": {
+  "en": "Default workspace",
+  "zh": "默认工作区"
+ },
+ "unknown": {
+  "en": "Unknown",
+  "zh": "未知"
+ },
+ "none": {
+  "en": "None",
+  "zh": "无"
+ },
+ "truncated": {
+  "en": "Truncated",
+  "zh": "已截断"
+ },
+ "json.label": {
+  "en": "JSON",
+  "zh": "JSON"
+ },
+ "markdown.footnotes": {
+  "en": "Footnotes",
+  "zh": "脚注"
+ },
+ "markdown.truncatedCharacters": {
+  "en": "… truncated at {total} characters",
+  "zh": "… 已截断，共 {total} 字符"
+ },
+ "number.thousand": {
+  "en": "{value}K",
+  "zh": "{value}K"
+ },
+ "number.million": {
+  "en": "{value}M",
+  "zh": "{value}M"
+ }
+}

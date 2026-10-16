@@ -1,0 +1,146 @@
+{
+ "updateSection": {
+  "en": "Update",
+  "zh": "更新"
+ },
+ "checkUpdates": {
+  "en": "Check for updates",
+  "zh": "检查更新"
+ },
+ "checking": {
+  "en": "Checking…",
+  "zh": "检查中…"
+ },
+ "noUpdates": {
+  "en": "The installed version is the latest.",
+  "zh": "已是最新版本。"
+ },
+ "update": {
+  "en": "Update",
+  "zh": "更新"
+ },
+ "updating": {
+  "en": "Updating…",
+  "zh": "更新中…"
+ },
+ "latest": {
+  "en": "Latest {version}",
+  "zh": "最新 {version}"
+ },
+ "updateRequiresDsh": {
+  "en": "Requires DSH >= {min}",
+  "zh": "需要 DSH ≥ {min}"
+ },
+ "updateBlockedDsh": {
+  "en": "Requires DSH >= {min}; upgrade DSH before updating",
+  "zh": "需要 DSH ≥ {min}，请先升级 DSH 再更新"
+ },
+ "updateUnverifiedDsh": {
+  "en": "Cannot confirm the local DSH version (this update needs DSH >= {min}); update paused",
+  "zh": "无法确认本机 DSH 版本（需要 DSH ≥ {min}），已暂停更新"
+ },
+ "restartHint": {
+  "en": "Plugin changes take effect after restarting the application.",
+  "zh": "插件变更将在重启应用后生效。"
+ },
+ "updatesAvailable": {
+  "en": "{count} updates available",
+  "zh": "{count} 个可更新"
+ },
+ "updateAll": {
+  "en": "Update all ({count})",
+  "zh": "全部更新（{count}）"
+ },
+ "updatingAll": {
+  "en": "Updating {name} ({index}/{total})",
+  "zh": "更新 {name}（{index}/{total}）"
+ },
+ "updateAllDone": {
+  "en": "Updated; restart to take effect.",
+  "zh": "更新完成，重启后生效。"
+ },
+ "updatesPanelTitle": {
+  "en": "Plugin updates",
+  "zh": "插件更新"
+ },
+ "thirdPartyOnly": {
+  "en": "Third-party plugins only; @deepseek-ai/ packages upgrade with DSH itself.",
+  "zh": "只检查第三方插件；官方 @deepseek-ai/ 包随 DSH 本体升级。"
+ },
+ "restartNow": {
+  "en": "Restart now",
+  "zh": "立即重启"
+ },
+ "restarting": {
+  "en": "Restarting…",
+  "zh": "正在重启…"
+ },
+ "restartConfirm": {
+  "en": "Restart",
+  "zh": "确认重启"
+ },
+ "restartPlanRelaunch": {
+  "en": "The DSH service restarts; running tasks are interrupted.",
+  "zh": "会重启 DSH 服务，正在运行的任务会中断。"
+ },
+ "restartPlanShell": {
+  "en": "The desktop app restarts through its system dialog: confirming shows the official \"DeepSeek Harness is unavailable\" dialog; click Restart in it.",
+  "zh": "桌面版通过系统对话框重启：确认后会弹出官方的「应用无法启动或已意外停止」对话框，请在对话框中点「重启」。"
+ },
+ "restartPlanManual": {
+  "en": "This process cannot restart itself; restart DSH yourself.",
+  "zh": "当前进程无法自动重启，请手动重启 DSH。"
+ },
+ "restartShellWarning": {
+  "en": "It also writes a crash report. You can instead restart manually: quit DeepSeek Harness (Cmd+Q) and open it again.",
+  "zh": "它同时会写一份崩溃报告；也可以手动重启：退出 DeepSeek Harness（⌘Q）后重新打开。"
+ },
+ "restartDesktopHint": {
+  "en": "Choose Restart in the system dialog that follows.",
+  "zh": "请在随后出现的系统对话框中选择「重启」。"
+ },
+ "restartRelaunchHint": {
+  "en": "Restart requested; reload the page once the server is back.",
+  "zh": "已请求重启；服务恢复后刷新页面即可。"
+ },
+ "restartManualHint": {
+  "en": "This process cannot restart itself; restart DSH yourself.",
+  "zh": "当前进程无法自动重启，请手动重启 DSH。"
+ },
+ "cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "failed": {
+  "en": "Operation failed: {reason}",
+  "zh": "操作失败：{reason}"
+ },
+ "fetching": {
+  "en": "Fetching plugin metadata…",
+  "zh": "正在获取插件信息…"
+ },
+ "downloading": {
+  "en": "Downloading…",
+  "zh": "正在下载…"
+ },
+ "downloadingPercent": {
+  "en": "Downloading {percent}%",
+  "zh": "正在下载 {percent}%"
+ },
+ "extracting": {
+  "en": "Extracting…",
+  "zh": "正在解压…"
+ },
+ "writing": {
+  "en": "Writing configuration…",
+  "zh": "正在写入配置…"
+ },
+ "localOnlyTitle": {
+  "en": "Available on this computer only",
+  "zh": "仅限本机操作"
+ },
+ "localOnlyBody": {
+  "en": "To protect host configuration, plugin management is only available from a local browser.",
+  "zh": "为了保护主机配置，插件管理只能从本机打开。"
+ }
+}

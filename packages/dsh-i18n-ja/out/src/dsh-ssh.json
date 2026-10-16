@@ -1,0 +1,618 @@
+{
+ "entry.label": {
+  "en": "SSH",
+  "zh": "SSH"
+ },
+ "entry.tooltip": {
+  "en": "Remote SSH operations panel",
+  "zh": "远程 SSH 运维面板"
+ },
+ "panel.title": {
+  "en": "Remote SSH",
+  "zh": "远程 SSH"
+ },
+ "panel.backToConversation": {
+  "en": "Back to chat",
+  "zh": "返回会话"
+ },
+ "tab.hosts": {
+  "en": "Hosts",
+  "zh": "主机"
+ },
+ "tab.terminal": {
+  "en": "Terminal",
+  "zh": "终端"
+ },
+ "tab.transfer": {
+  "en": "Transfer",
+  "zh": "传输"
+ },
+ "tab.tunnels": {
+  "en": "Tunnels",
+  "zh": "隧道"
+ },
+ "tab.cluster": {
+  "en": "Cluster",
+  "zh": "集群"
+ },
+ "hosts.empty": {
+  "en": "No hosts configured. Click \"Add host\" or import from ~/.ssh/config.",
+  "zh": "尚未配置主机。点击「新增主机」添加，或从 ~/.ssh/config 导入。"
+ },
+ "hosts.add": {
+  "en": "Add host",
+  "zh": "新增主机"
+ },
+ "hosts.import": {
+  "en": "Import ~/.ssh/config",
+  "zh": "导入 ~/.ssh/config"
+ },
+ "hosts.search": {
+  "en": "Search alias / description / tags…",
+  "zh": "搜索别名 / 描述 / 标签…"
+ },
+ "hosts.groupBy.label": {
+  "en": "Group by",
+  "zh": "分组方式"
+ },
+ "hosts.groupBy.none": {
+  "en": "No grouping",
+  "zh": "不分组"
+ },
+ "hosts.groupBy.environment": {
+  "en": "Group by environment",
+  "zh": "按环境分组"
+ },
+ "hosts.groupBy.tags": {
+  "en": "Group by tags",
+  "zh": "按标签分组"
+ },
+ "hosts.group.ungrouped": {
+  "en": "No environment",
+  "zh": "未设置环境"
+ },
+ "hosts.group.noTags": {
+  "en": "No tags",
+  "zh": "无标签"
+ },
+ "hosts.group.count": {
+  "en": "{count} hosts",
+  "zh": "{count} 台"
+ },
+ "hosts.group.testAll": {
+  "en": "Test all",
+  "zh": "测试全部"
+ },
+ "hosts.col.alias": {
+  "en": "Alias",
+  "zh": "别名"
+ },
+ "hosts.col.host": {
+  "en": "Host",
+  "zh": "主机"
+ },
+ "hosts.col.user": {
+  "en": "User",
+  "zh": "用户"
+ },
+ "hosts.col.auth": {
+  "en": "Auth",
+  "zh": "认证"
+ },
+ "hosts.col.environment": {
+  "en": "Environment",
+  "zh": "环境"
+ },
+ "hosts.col.tags": {
+  "en": "Tags",
+  "zh": "标签"
+ },
+ "hosts.col.description": {
+  "en": "Description",
+  "zh": "备注"
+ },
+ "hosts.col.actions": {
+  "en": "Actions",
+  "zh": "操作"
+ },
+ "hosts.test": {
+  "en": "Test",
+  "zh": "测试"
+ },
+ "hosts.edit": {
+  "en": "Edit",
+  "zh": "编辑"
+ },
+ "hosts.delete": {
+  "en": "Delete",
+  "zh": "删除"
+ },
+ "hosts.deleteConfirm": {
+  "en": "Delete host \"{alias}\"? Its tunnels will be stopped.",
+  "zh": "确定删除主机「{alias}」？将同时停止其隧道。"
+ },
+ "hosts.imported": {
+  "en": "Parsed {parsed} blocks, added {added} hosts, skipped {skipped}.",
+  "zh": "解析 {parsed} 个配置块，新增 {added} 台主机，跳过 {skipped} 个。"
+ },
+ "hosts.proxyBadge": {
+  "en": "proxy",
+  "zh": "代理"
+ },
+ "import.reason.wildcard": {
+  "en": "wildcard pattern — configure it by hand",
+  "zh": "通配符 pattern，需手动配置"
+ },
+ "import.reason.existing": {
+  "en": "alias already configured",
+  "zh": "别名已存在"
+ },
+ "import.reason.match": {
+  "en": "Match block — not supported",
+  "zh": "Match 条件块，不支持"
+ },
+ "import.reason.invalid": {
+  "en": "invalid fields — not imported",
+  "zh": "字段不合法，无法导入"
+ },
+ "import.more": {
+  "en": "{count} more not shown",
+  "zh": "其余 {count} 个未显示"
+ },
+ "hosts.testing": {
+  "en": "Testing connection…",
+  "zh": "连接测试中…"
+ },
+ "hosts.testOk": {
+  "en": "Connected ({latency} ms)",
+  "zh": "连接成功（{latency} ms）"
+ },
+ "hosts.testFail": {
+  "en": "Connection failed: {error}",
+  "zh": "连接失败：{error}"
+ },
+ "hosts.connected": {
+  "en": "Connect",
+  "zh": "连接"
+ },
+ "hosts.notConnected": {
+  "en": "Not connected",
+  "zh": "未连接"
+ },
+ "form.title.create": {
+  "en": "Add host",
+  "zh": "新增主机"
+ },
+ "form.title.edit": {
+  "en": "Edit host {alias}",
+  "zh": "编辑主机 {alias}"
+ },
+ "form.alias": {
+  "en": "Alias",
+  "zh": "别名"
+ },
+ "form.aliasHint": {
+  "en": "Lowercase letters, digits and single hyphens; used in every operation",
+  "zh": "小写字母、数字与单连字符，操作时使用"
+ },
+ "form.host": {
+  "en": "Host",
+  "zh": "主机地址"
+ },
+ "form.port": {
+  "en": "Port",
+  "zh": "端口"
+ },
+ "form.user": {
+  "en": "User",
+  "zh": "用户名"
+ },
+ "form.auth": {
+  "en": "Authentication",
+  "zh": "认证方式"
+ },
+ "form.auth.key": {
+  "en": "Key",
+  "zh": "密钥"
+ },
+ "form.auth.password": {
+  "en": "Password",
+  "zh": "密码"
+ },
+ "form.auth.agent": {
+  "en": "SSH Agent",
+  "zh": "SSH Agent"
+ },
+ "form.agentPath": {
+  "en": "Agent path",
+  "zh": "Agent 路径"
+ },
+ "form.agentPathHint": {
+  "en": "Leave empty to auto-detect (SSH_AUTH_SOCK / Pageant on Windows), or set a socket path or \"pageant\"",
+  "zh": "留空自动检测（SSH_AUTH_SOCK / Windows Pageant）；也可填 socket 路径或 pageant"
+ },
+ "form.authKeepHint": {
+  "en": "While editing, empty secret fields keep the stored authentication and credentials; enter new values to switch methods.",
+  "zh": "编辑时密钥/密码/Agent 留空将保留原认证方式与已存凭据；如需更换认证方式请填写新凭据。"
+ },
+ "form.keyPath": {
+  "en": "Private key path",
+  "zh": "私钥路径"
+ },
+ "form.keyPathHint": {
+  "en": "e.g. ~/.ssh/id_ed25519",
+  "zh": "如 ~/.ssh/id_ed25519"
+ },
+ "form.passphrase": {
+  "en": "Key passphrase",
+  "zh": "密钥口令"
+ },
+ "form.password": {
+  "en": "Password",
+  "zh": "密码"
+ },
+ "form.passwordHint": {
+  "en": "Stored in plaintext in $DSH_HOME/dsh-ssh.json (private local file)",
+  "zh": "明文保存在 $DSH_HOME/dsh-ssh.json（本机私有文件）"
+ },
+ "form.passwordRequired": {
+  "en": "Password auth requires a password.",
+  "zh": "密码认证需要填写密码。"
+ },
+ "form.proxyJump": {
+  "en": "Jump host aliases",
+  "zh": "跳板机别名"
+ },
+ "form.proxyJumpHint": {
+  "en": "Comma-separated local aliases or [user@]host[:port] addresses, chained in order",
+  "zh": "逗号分隔的本地主机别名，或 [user@]host[:port] 地址，按顺序连接"
+ },
+ "form.proxyCommand": {
+  "en": "ProxyCommand",
+  "zh": "ProxyCommand"
+ },
+ "form.proxyCommandHint": {
+  "en": "OpenSSH ProxyCommand: %h host, %p port, %r user, %n alias; empty or none disables it. Mutually exclusive with the jump chain.",
+  "zh": "OpenSSH ProxyCommand：%h 主机、%p 端口、%r 用户、%n 别名；留空或填 none 表示不使用。与跳板机别名互斥。"
+ },
+ "form.description": {
+  "en": "Description",
+  "zh": "备注"
+ },
+ "form.environment": {
+  "en": "Environment",
+  "zh": "环境"
+ },
+ "form.environmentHint": {
+  "en": "e.g. development / production",
+  "zh": "如 development / production"
+ },
+ "form.tags": {
+  "en": "Tags",
+  "zh": "标签"
+ },
+ "form.tagsHint": {
+  "en": "Comma-separated",
+  "zh": "逗号分隔"
+ },
+ "form.location": {
+  "en": "Location",
+  "zh": "位置"
+ },
+ "form.save": {
+  "en": "Save",
+  "zh": "保存"
+ },
+ "form.cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "form.required": {
+  "en": "Required fields missing: alias, host, user.",
+  "zh": "请填写必填字段：别名、主机地址、用户名。"
+ },
+ "form.portInvalid": {
+  "en": "Port must be an integer between 1 and 65535.",
+  "zh": "端口必须是 1-65535 之间的整数。"
+ },
+ "terminal.selectHost": {
+  "en": "Select host",
+  "zh": "选择主机"
+ },
+ "terminal.connect": {
+  "en": "Connect",
+  "zh": "连接"
+ },
+ "terminal.disconnect": {
+  "en": "Disconnect",
+  "zh": "断开"
+ },
+ "terminal.placeholder": {
+  "en": "Select a host and click \"Connect\" to open the remote terminal.",
+  "zh": "选择主机后点击「连接」打开远程终端。"
+ },
+ "terminal.connecting": {
+  "en": "Connecting…",
+  "zh": "正在连接…"
+ },
+ "terminal.ready": {
+  "en": "Terminal connected ({alias})",
+  "zh": "终端已连接（{alias}）"
+ },
+ "terminal.exited": {
+  "en": "Terminal exited ({alias})",
+  "zh": "终端已退出（{alias}）"
+ },
+ "terminal.error": {
+  "en": "Terminal error: {error}",
+  "zh": "终端错误：{error}"
+ },
+ "terminal.noWebSocket": {
+  "en": "This page cannot carry a WebSocket (the application shell published no local host address to reach). Open the Web UI in a browser to use the terminal.",
+  "zh": "当前页面不支持 WebSocket（应用外壳没有可连接的本地主机地址），请改用浏览器打开的 Web 界面使用终端。"
+ },
+ "terminal.auth.title": {
+  "en": "Two-Factor Authentication (2FA)",
+  "zh": "二次身份验证 (2FA / 交互式认证)"
+ },
+ "terminal.auth.submit": {
+  "en": "Submit Code",
+  "zh": "提交验证码"
+ },
+ "terminal.auth.cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "terminal.auth.placeholder": {
+  "en": "Enter code or passphrase",
+  "zh": "请输入验证码或口令"
+ },
+ "terminal.auth.hint": {
+  "en": "The server requested interactive 2FA (session only, never saved):",
+  "zh": "服务器请求进行交互式二次验证（输入仅本次生效，不落盘）："
+ },
+ "transfer.selectHost": {
+  "en": "Select host",
+  "zh": "选择主机"
+ },
+ "transfer.remotePath": {
+  "en": "Remote path",
+  "zh": "远程路径"
+ },
+ "transfer.remotePathHint": {
+  "en": "e.g. /tmp/ or /home/user/app.tar.gz",
+  "zh": "如 /tmp/ 或 /home/user/app.tar.gz"
+ },
+ "transfer.upload": {
+  "en": "Upload",
+  "zh": "上传"
+ },
+ "transfer.uploading": {
+  "en": "Uploading {file}…",
+  "zh": "正在上传 {file}…"
+ },
+ "transfer.download": {
+  "en": "Download",
+  "zh": "下载"
+ },
+ "transfer.downloading": {
+  "en": "Downloading…",
+  "zh": "正在下载…"
+ },
+ "transfer.done": {
+  "en": "Done: {bytes} bytes",
+  "zh": "完成：{bytes} 字节"
+ },
+ "transfer.failed": {
+  "en": "Transfer failed: {error}",
+  "zh": "传输失败：{error}"
+ },
+ "transfer.browseRemote": {
+  "en": "Browse remote",
+  "zh": "浏览远程目录"
+ },
+ "transfer.refresh": {
+  "en": "Refresh",
+  "zh": "刷新"
+ },
+ "transfer.name": {
+  "en": "Name",
+  "zh": "名称"
+ },
+ "transfer.upLevel": {
+  "en": "Parent directory",
+  "zh": "上级目录"
+ },
+ "transfer.size": {
+  "en": "Size",
+  "zh": "大小"
+ },
+ "transfer.modified": {
+  "en": "Modified",
+  "zh": "修改时间"
+ },
+ "transfer.bytes": {
+  "en": "{value} B",
+  "zh": "{value} B"
+ },
+ "transfer.kib": {
+  "en": "{value} KB",
+  "zh": "{value} KB"
+ },
+ "transfer.mib": {
+  "en": "{value} MB",
+  "zh": "{value} MB"
+ },
+ "transfer.gib": {
+  "en": "{value} GB",
+  "zh": "{value} GB"
+ },
+ "transfer.percent": {
+  "en": "{value}%",
+  "zh": "{value}%"
+ },
+ "transfer.speed": {
+  "en": "{value}/s",
+  "zh": "{value}/s"
+ },
+ "transfer.dir": {
+  "en": "Directory",
+  "zh": "目录"
+ },
+ "transfer.file": {
+  "en": "File",
+  "zh": "文件"
+ },
+ "tunnel.empty": {
+  "en": "No active tunnels.",
+  "zh": "没有活跃的隧道。"
+ },
+ "tunnel.start": {
+  "en": "New tunnel",
+  "zh": "新建隧道"
+ },
+ "tunnel.alias": {
+  "en": "Host alias",
+  "zh": "主机别名"
+ },
+ "tunnel.remotePort": {
+  "en": "Remote port",
+  "zh": "远程端口"
+ },
+ "tunnel.remoteHost": {
+  "en": "Remote host",
+  "zh": "远程主机"
+ },
+ "tunnel.remoteHostHint": {
+  "en": "Default 127.0.0.1 (the server itself)",
+  "zh": "默认 127.0.0.1（服务器自身）"
+ },
+ "tunnel.localPort": {
+  "en": "Local port",
+  "zh": "本地端口"
+ },
+ "tunnel.localPortHint": {
+  "en": "Leave empty for auto-assign",
+  "zh": "留空自动分配"
+ },
+ "tunnel.stop": {
+  "en": "Stop",
+  "zh": "停止"
+ },
+ "tunnel.stopAll": {
+  "en": "Stop all",
+  "zh": "全部停止"
+ },
+ "tunnel.stopAllConfirm": {
+  "en": "Stop all tunnels?",
+  "zh": "确定停止全部隧道吗？"
+ },
+ "tunnel.row": {
+  "en": "{alias}: 127.0.0.1:{localPort} -> {remoteHost}:{remotePort}",
+  "zh": "{alias}: 127.0.0.1:{localPort} -> {remoteHost}:{remotePort}"
+ },
+ "tunnel.started": {
+  "en": "Tunnel up: 127.0.0.1:{localPort}",
+  "zh": "隧道已建立：127.0.0.1:{localPort}"
+ },
+ "tunnel.failed": {
+  "en": "Tunnel failed: {error}",
+  "zh": "隧道启动失败：{error}"
+ },
+ "cluster.command": {
+  "en": "Command",
+  "zh": "命令"
+ },
+ "cluster.run": {
+  "en": "Run",
+  "zh": "执行"
+ },
+ "cluster.confirm": {
+  "en": "Run this command on the matching hosts? It executes for real on the remote servers.",
+  "zh": "确定在匹配的主机上执行该命令吗？该操作会真实运行在远程服务器上。"
+ },
+ "cluster.aliases": {
+  "en": "Host aliases (comma-separated; require at least one filter)",
+  "zh": "主机别名（逗号分隔，与环境、标签至少填一项）"
+ },
+ "cluster.environment": {
+  "en": "Environment filter",
+  "zh": "环境过滤"
+ },
+ "cluster.tags": {
+  "en": "Tag filter (comma-separated)",
+  "zh": "标签过滤（逗号分隔）"
+ },
+ "cluster.results": {
+  "en": "Results",
+  "zh": "执行结果"
+ },
+ "cluster.empty": {
+  "en": "Type a command and click \"Run\".",
+  "zh": "输入命令后点击「执行」。"
+ },
+ "cluster.noMatch": {
+  "en": "No hosts matched.",
+  "zh": "没有匹配的主机。"
+ },
+ "cluster.ok": {
+  "en": "OK",
+  "zh": "成功"
+ },
+ "cluster.fail": {
+  "en": "Failed",
+  "zh": "失败"
+ },
+ "cluster.timeout": {
+  "en": "Timed out",
+  "zh": "超时"
+ },
+ "cluster.col.alias": {
+  "en": "Host",
+  "zh": "主机"
+ },
+ "cluster.col.status": {
+  "en": "Status",
+  "zh": "状态"
+ },
+ "cluster.col.exit": {
+  "en": "Exit",
+  "zh": "退出码"
+ },
+ "cluster.col.stdout": {
+  "en": "Stdout",
+  "zh": "标准输出"
+ },
+ "cluster.col.stderr": {
+  "en": "Stderr",
+  "zh": "标准错误"
+ },
+ "cluster.col.error": {
+  "en": "Error",
+  "zh": "错误"
+ },
+ "cluster.col.duration": {
+  "en": "Duration",
+  "zh": "耗时"
+ },
+ "common.loading": {
+  "en": "Loading…",
+  "zh": "加载中…"
+ },
+ "common.error": {
+  "en": "Error: {error}",
+  "zh": "出错：{error}"
+ },
+ "common.refresh": {
+  "en": "Refresh",
+  "zh": "刷新"
+ },
+ "common.confirm": {
+  "en": "Confirm",
+  "zh": "确定"
+ },
+ "error.disabled": {
+  "en": "The SSH plugin is disabled on the host. Please enable it in Settings → Web Plugins → SSH.",
+  "zh": "SSH 插件在宿主端未启用。请前往「设置 → Web 插件 → SSH」打开 enabled 开关。"
+ }
+}

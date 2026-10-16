@@ -1,0 +1,182 @@
+{
+ "open.title": {
+  "en": "Open in {app}",
+  "zh": "用 {app} 打开"
+ },
+ "path.appDefault": {
+  "en": "{app} (default)",
+  "zh": "{app}（默认）"
+ },
+ "path.appsError": {
+  "en": "Could not load applications",
+  "zh": "无法获取应用列表"
+ },
+ "shortcut.busy": {
+  "en": "Opening workspace",
+  "zh": "正在打开工作区"
+ },
+ "shortcut.unavailable": {
+  "en": "Current workspace or local application unavailable",
+  "zh": "当前工作区或本地应用不可用"
+ },
+ "open.tooltip": {
+  "en": "Open locally",
+  "zh": "在本地打开"
+ },
+ "path.open": {
+  "en": "Open",
+  "zh": "打开"
+ },
+ "path.more": {
+  "en": "More ways to open",
+  "zh": "更多打开方式"
+ },
+ "path.reveal": {
+  "en": "Show file location",
+  "zh": "显示文件位置"
+ },
+ "path.openError": {
+  "en": "Could not open. Try again.",
+  "zh": "打开失败，请重试"
+ },
+ "path.revealError": {
+  "en": "Could not show the file location. Try again.",
+  "zh": "无法显示文件位置，请重试"
+ },
+ "app.cursor": {
+  "en": "Cursor",
+  "zh": "Cursor"
+ },
+ "app.vscode": {
+  "en": "VS Code",
+  "zh": "VS Code"
+ },
+ "app.vscodeinsiders": {
+  "en": "VS Code Insiders",
+  "zh": "VS Code Insiders"
+ },
+ "app.windsurf": {
+  "en": "Windsurf",
+  "zh": "Windsurf"
+ },
+ "app.zed": {
+  "en": "Zed",
+  "zh": "Zed"
+ },
+ "app.sublimetext": {
+  "en": "Sublime Text",
+  "zh": "Sublime Text"
+ },
+ "app.xcode": {
+  "en": "Xcode",
+  "zh": "Xcode"
+ },
+ "app.androidstudio": {
+  "en": "Android Studio",
+  "zh": "Android Studio"
+ },
+ "app.intellij": {
+  "en": "IntelliJ IDEA",
+  "zh": "IntelliJ IDEA"
+ },
+ "app.pycharm": {
+  "en": "PyCharm",
+  "zh": "PyCharm"
+ },
+ "app.webstorm": {
+  "en": "WebStorm",
+  "zh": "WebStorm"
+ },
+ "app.phpstorm": {
+  "en": "PhpStorm",
+  "zh": "PhpStorm"
+ },
+ "app.goland": {
+  "en": "GoLand",
+  "zh": "GoLand"
+ },
+ "app.rider": {
+  "en": "Rider",
+  "zh": "Rider"
+ },
+ "app.rustrover": {
+  "en": "RustRover",
+  "zh": "RustRover"
+ },
+ "app.fork": {
+  "en": "Fork",
+  "zh": "Fork"
+ },
+ "app.sourcetree": {
+  "en": "Sourcetree",
+  "zh": "Sourcetree"
+ },
+ "app.github": {
+  "en": "GitHub Desktop",
+  "zh": "GitHub Desktop"
+ },
+ "app.tower": {
+  "en": "Tower",
+  "zh": "Tower"
+ },
+ "app.gitkraken": {
+  "en": "GitKraken",
+  "zh": "GitKraken"
+ },
+ "app.smartgit": {
+  "en": "SmartGit",
+  "zh": "SmartGit"
+ },
+ "app.sublimemerge": {
+  "en": "Sublime Merge",
+  "zh": "Sublime Merge"
+ },
+ "app.ghostty": {
+  "en": "Ghostty",
+  "zh": "Ghostty"
+ },
+ "app.warp": {
+  "en": "Warp",
+  "zh": "Warp"
+ },
+ "app.iterm": {
+  "en": "iTerm2",
+  "zh": "iTerm2"
+ },
+ "app.kitty": {
+  "en": "kitty",
+  "zh": "kitty"
+ },
+ "app.windowsterminal": {
+  "en": "Windows Terminal",
+  "zh": "Windows Terminal"
+ },
+ "app.gitbash": {
+  "en": "Git Bash",
+  "zh": "Git Bash"
+ },
+ "app.gnometerminal": {
+  "en": "GNOME Terminal",
+  "zh": "GNOME Terminal"
+ },
+ "app.konsole": {
+  "en": "Konsole",
+  "zh": "Konsole"
+ },
+ "app.finder": {
+  "en": "Finder",
+  "zh": "访达"
+ },
+ "app.explorer": {
+  "en": "File Explorer",
+  "zh": "文件资源管理器"
+ },
+ "app.filemanager": {
+  "en": "Files",
+  "zh": "文件管理器"
+ },
+ "app.terminal": {
+  "en": "Terminal",
+  "zh": "终端"
+ }
+}

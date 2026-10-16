@@ -1,0 +1,22 @@
+{
+ "action.like": "良い回答",
+ "action.likeActive": "評価を取り消す",
+ "action.dislike": "悪い回答",
+ "action.dislikeActive": "評価を取り消す",
+ "dialog.title": "フィードバックを送信",
+ "dialog.categories": "フィードバックのカテゴリ",
+ "dialog.detail": "フィードバックの詳細",
+ "dialog.hint": "詳細を入力していただくと改善の助けになります。送信内容には現在の会話のログが含まれます。",
+ "category.task-result": "タスクの結果",
+ "category.instruction-following": "指示の理解と遵循",
+ "category.product-interaction": "製品機能と操作性",
+ "category.service-stability": "安定性と速度",
+ "category.resource-cost": "リソース使用量とコスト",
+ "category.security-privacy-permission": "セキュリティ・プライバシー・権限",
+ "category.other": "その他",
+ "toast.recorded": "フィードバックありがとうございます",
+ "error.conflict": "このフィードバックは他の場所で行われた変更により、最新の状態を表示しています。",
+ "error.load": "フィードバックの読み込みに失敗しました。",
+ "error.generic": "フィードバックの保存に失敗しました。",
+ "error.noteTooLarge": "説明が長すぎます。短くして再送信してください。"
+}

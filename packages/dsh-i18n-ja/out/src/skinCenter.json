@@ -1,0 +1,642 @@
+{
+ "title": {
+  "en": "Skin Center",
+  "zh": "皮肤"
+ },
+ "cardDescription": {
+  "en": "Try on any installed skin live in the GUI — exit restores instantly, applying persists in one click.",
+  "zh": "在 GUI 内即时试穿任意皮肤，退出即完全还原；应用一键完成并自动刷新。"
+ },
+ "externalWallpaperReadyTitle": {
+  "en": "Wallpapers are handled by another plugin",
+  "zh": "壁纸已由独立插件接管"
+ },
+ "externalWallpaperReadyBody": {
+  "en": "Wallpaper Engine support comes from the {package} plugin, which owns the wallpaper library, rendering and settings. While it renders a wallpaper it takes over the backdrop, and this card keeps the skin on top of it: the skin's own background art steps aside and the composer frost yields to the plugin's glass.",
+  "zh": "Wallpaper Engine 壁纸来自 {package} 插件，壁纸库、渲染与设置都归它管。它渲染壁纸时会接管背景，本卡片让皮肤叠在其之上：皮肤自身的背景图让路，输入卡磨砂也让给该插件的玻璃。"
+ },
+ "externalWallpaperMissingTitle": {
+  "en": "Wallpaper Engine support moved to its own plugin",
+  "zh": "Wallpaper Engine 支持已独立成插件"
+ },
+ "externalWallpaperMissingBody": {
+  "en": "This card no longer bundles a Wallpaper Engine bridge. To use Wallpaper Engine wallpapers, install {package} with the command below and restart dsh; it adds its own settings page for the wallpaper library, rendering and glass.",
+  "zh": "本卡片不再自带 Wallpaper Engine 桥。要使用 Wallpaper Engine 壁纸，请用下面的命令安装 {package} 并重启 dsh；它自带壁纸库、渲染与玻璃的设置页。"
+ },
+ "externalWallpaperLink": {
+  "en": "Open the wallpaper plugin docs",
+  "zh": "打开壁纸插件文档"
+ },
+ "externalWallpaperRecommended": {
+  "en": "Recommended",
+  "zh": "推荐"
+ },
+ "externalWallpaperInstall": {
+  "en": "Install",
+  "zh": "一键安装"
+ },
+ "externalWallpaperInstalling": {
+  "en": "Installing...",
+  "zh": "安装中…"
+ },
+ "externalWallpaperCopyCommand": {
+  "en": "Copy command",
+  "zh": "复制命令"
+ },
+ "externalWallpaperCopied": {
+  "en": "Copied",
+  "zh": "已复制"
+ },
+ "externalWallpaperInstallFailed": {
+  "en": "Install failed: {reason}",
+  "zh": "安装失败：{reason}"
+ },
+ "delegatedSkinBadge": {
+  "en": "Plugin theme",
+  "zh": "插件皮肤"
+ },
+ "delegatedSkinDescriptionClaudeStyle": {
+  "en": "The whole GUI as Claude Code Desktop: warm ivory canvas, serif body text, the ember accent, a pixel mascot on the composer and the chat-area behaviours Claude Code is known for. Its own settings page stays reachable while another skin is on screen.",
+  "zh": "整副界面就是 Claude Code Desktop：暖米色画布、衬线正文、余烬橙强调色、输入框上沿的像素吉祥物，以及 Claude Code 那些对话区交互。它自带的设置页在别的皮肤在屏时照常可用。"
+ },
+ "delegatedSkinNotRunning": {
+  "en": "The plugin is installed but not running here. Enable it in Plugins, then reopen this page.",
+  "zh": "插件已安装但当前页面没有运行。请在「插件」中启用它，然后刷新本页。"
+ },
+ "delegatedSkinNoHandoff": {
+  "en": "The running plugin build cannot hand the page back to a skin, so it cannot be selected from here. Update dsh-claude-style.",
+  "zh": "当前运行的插件版本无法在皮肤之间让出页面，因此这里不能选用它。请更新 dsh-claude-style。"
+ },
+ "delegatedSkinInstall": {
+  "en": "Install now",
+  "zh": "一键安装"
+ },
+ "delegatedSkinManage": {
+  "en": "Manage in Plugins",
+  "zh": "在插件页管理"
+ },
+ "delegatedSkinInstalling": {
+  "en": "Installing...",
+  "zh": "安装中…"
+ },
+ "delegatedSkinInstallFailed": {
+  "en": "Install failed: {reason}",
+  "zh": "安装失败：{reason}"
+ },
+ "delegatedSkinDescriptorMismatch": {
+  "en": "The installed plugin declares a different skin id or attribute than this card knows. Update the plugin.",
+  "zh": "已安装的插件声明的皮肤 id 或属性与本卡片记录的不一致，请更新插件。"
+ },
+ "delegatedSkinLink": {
+  "en": "Open the plugin docs",
+  "zh": "打开插件文档"
+ },
+ "stoodDownTitle": {
+  "en": "Skin paused while the wallpaper is active",
+  "zh": "壁纸启用期间皮肤已暂停"
+ },
+ "stoodDownBody": {
+  "en": "Your skin is still selected, but it is not painted while the wallpaper plugin renders a wallpaper: the two cannot share the backdrop. Stop the wallpaper there and the skin comes back on its own.",
+  "zh": "你选择的皮肤仍然保留，但在壁纸插件渲染壁纸期间不会绘制：两者的背景无法共存。在该插件里停止壁纸，皮肤会自动恢复。"
+ },
+ "enabled": {
+  "en": "Enable skin center",
+  "zh": "启用皮肤中心"
+ },
+ "enabledHint": {
+  "en": "When off, try-on, apply and background controls are disabled; turn it back on to resume.",
+  "zh": "关闭后停用试穿、应用与背景控件，重新打开即恢复。"
+ },
+ "offNote": {
+  "en": "The skin center is turned off.",
+  "zh": "皮肤中心已关闭。"
+ },
+ "intro": {
+  "en": "Try on any skin live — it takes effect instantly, exit restores the current look. Apply persists it across restarts.",
+  "zh": "任意皮肤可即时试穿，退出即完全还原；「应用」一键持久化，页面自动刷新生效。"
+ },
+ "official": {
+  "en": "Official default",
+  "zh": "官方默认"
+ },
+ "officialTagline": {
+  "en": "The stock DSH look with no skin applied.",
+  "zh": "还原 DSH 官方默认外观，不应用任何皮肤。"
+ },
+ "active": {
+  "en": "Active",
+  "zh": "当前激活"
+ },
+ "tryingOn": {
+  "en": "Trying on",
+  "zh": "试穿中"
+ },
+ "tryOn": {
+  "en": "Try on",
+  "zh": "试穿"
+ },
+ "loading": {
+  "en": "Loading…",
+  "zh": "加载中…"
+ },
+ "exitTryOn": {
+  "en": "Exit try-on",
+  "zh": "退出试穿"
+ },
+ "apply": {
+  "en": "Apply",
+  "zh": "应用"
+ },
+ "applying": {
+  "en": "Applying…",
+  "zh": "应用中…"
+ },
+ "restore": {
+  "en": "Restore",
+  "zh": "恢复默认"
+ },
+ "applyFailed": {
+  "en": "Apply failed",
+  "zh": "应用失败"
+ },
+ "appliedUnconfirmed": {
+  "en": "Applied, but the change has not been confirmed — refresh the page in dev mode; packaged installs (DSH Desktop) need an app restart",
+  "zh": "已写入配置但尚未确认生效——开发模式请刷新页面；打包版（DSH Desktop）需重启应用后生效"
+ },
+ "appliedNeedRestart": {
+  "en": "Applied and confirmed, but the host did not hot-reload — restart dsh to take effect",
+  "zh": "已写入配置并确认生效，但宿主未热重载——请重启 dsh 后生效"
+ },
+ "theme": {
+  "en": "Theme preview",
+  "zh": "主题预览"
+ },
+ "themeLight": {
+  "en": "Light",
+  "zh": "亮色"
+ },
+ "themeDark": {
+  "en": "Dark",
+  "zh": "暗色"
+ },
+ "tryOnError": {
+  "en": "Try-on failed — see console",
+  "zh": "试穿失败，详见控制台"
+ },
+ "backgroundOpacity": {
+  "en": "Background occlusion",
+  "zh": "背景遮挡"
+ },
+ "backgroundBlurEmpty": {
+  "en": "Blur when empty",
+  "zh": "空对话背景模糊"
+ },
+ "backgroundBlurContent": {
+  "en": "Blur with content",
+  "zh": "有对话背景模糊"
+ },
+ "inputCardBlur": {
+  "en": "Input card blur",
+  "zh": "输入卡模糊"
+ },
+ "inputCardBlurHint": {
+  "en": "Blurs only the area behind the input card while backdrop art is visible; it does not blur the entire wallpaper.",
+  "zh": "仅模糊输入卡背后的区域，不会让整张壁纸变糊。"
+ },
+ "bubbleOpacity": {
+  "en": "Bubble opacity",
+  "zh": "气泡不透明度"
+ },
+ "bubbleOpacityHint": {
+  "en": "Controls translucent message bubbles for skins that expose bubble alpha, such as Whale Mom.",
+  "zh": "调节支持气泡 alpha 的皮肤消息气泡，例如鲸鱼妈妈。"
+ },
+ "bubbleBlur": {
+  "en": "Bubble blur",
+  "zh": "气泡模糊程度"
+ },
+ "bubbleBlurHint": {
+  "en": "Blurs the backdrop behind translucent message bubbles; independent of bubble opacity, 0 disables.",
+  "zh": "模糊半透明消息气泡背后的区域，与「气泡不透明度」相互独立，0 为关闭。"
+ },
+ "backgroundBlurHint": {
+  "en": "Applies a separate Gaussian blur to the backdrop for the empty conversation and the conversation with content; 0 disables.",
+  "zh": "对话为空与有内容时分别应用不同的背景高斯模糊强度，0 为关闭。"
+ },
+ "backgroundBlurInert": {
+  "en": "Visible only with skins that paint a backdrop; the official default has none.",
+  "zh": "仅对带背景图插画的皮肤可见；官方默认无背景图。"
+ },
+ "backgroundHint": {
+  "en": "Instantly veils the backdrop behind the panels — higher values obscure the art to help you focus.",
+  "zh": "即时为面板背后的背景加遮罩——数值越高越能弱化插画，帮你集中注意力。"
+ },
+ "backgroundHintInert": {
+  "en": "Only applies to skins that paint a backdrop (Blue Fantasy / Whale Song). Applies to the official default automatically once such a skin is active.",
+  "zh": "仅对带背景图插画的皮肤（蓝色幻想 / 鲸吟）生效；官方默认无背景图，该滑块对这些皮肤自动生效。"
+ },
+ "wallpaperTitle": {
+  "en": "Wallpaper Engine",
+  "zh": "Wallpaper Engine"
+ },
+ "wallpaperEnable": {
+  "en": "Enable wallpapers",
+  "zh": "启用动态壁纸"
+ },
+ "wallpaperHint": {
+  "en": "Use your local Wallpaper Engine library as the GUI backdrop: video, web, and scene wallpapers render live (scene wallpapers need WebGL). On macOS there is no Wallpaper Engine library, so the feature starts off — turn it on, then add a folder of videos.",
+  "zh": "把本机 Wallpaper Engine 壁纸库用作 GUI 背景：视频、网页与场景壁纸均动态渲染（场景壁纸需要 WebGL）。macOS 没有 Wallpaper Engine 壁纸库，该功能默认关闭；开启后添加一个存放视频的目录即可。"
+ },
+ "wallpaperLoadError": {
+  "en": "Wallpaper library failed to load",
+  "zh": "壁纸库加载失败"
+ },
+ "wallpaperLibraryFound": {
+  "en": "Wallpaper Engine library detected",
+  "zh": "已检测到 Wallpaper Engine 壁纸库"
+ },
+ "wallpaperLibraryManual": {
+  "en": "Folders you added",
+  "zh": "来自你添加的目录"
+ },
+ "wallpaperRefresh": {
+  "en": "Refresh",
+  "zh": "刷新"
+ },
+ "wallpaperMode": {
+  "en": "Render mode",
+  "zh": "渲染模式"
+ },
+ "wallpaperModeLive": {
+  "en": "Live",
+  "zh": "动态"
+ },
+ "wallpaperModeFrame": {
+  "en": "Static frame",
+  "zh": "静态帧"
+ },
+ "wallpaperFit": {
+  "en": "Sizing mode",
+  "zh": "适应方式"
+ },
+ "wallpaperFitCover": {
+  "en": "Cover (fill)",
+  "zh": "铺满裁剪"
+ },
+ "wallpaperFitContain": {
+  "en": "Fit (entire image)",
+  "zh": "完整缩放"
+ },
+ "wallpaperFitFill": {
+  "en": "Stretch",
+  "zh": "拉伸铺满"
+ },
+ "wallpaperClear": {
+  "en": "Turn off wallpaper",
+  "zh": "关闭壁纸"
+ },
+ "wallpaperDim": {
+  "en": "Wallpaper dimming",
+  "zh": "壁纸暗化"
+ },
+ "wallpaperOpacity": {
+  "en": "Wallpaper opacity",
+  "zh": "壁纸不透明度"
+ },
+ "wallpaperBlur": {
+  "en": "Wallpaper blur",
+  "zh": "壁纸模糊"
+ },
+ "wallpaperPauseHidden": {
+  "en": "Pause when window hidden",
+  "zh": "窗口隐藏时暂停"
+ },
+ "wallpaperSound": {
+  "en": "Wallpaper sound",
+  "zh": "壁纸声音"
+ },
+ "wallpaperSoundHint": {
+  "en": "Play video wallpaper audio. The browser may keep it silent until you click or press a key once.",
+  "zh": "播放视频壁纸的声音。浏览器可能在首次点击或按键前保持静音。"
+ },
+ "wallpaperVolume": {
+  "en": "Wallpaper volume",
+  "zh": "壁纸音量"
+ },
+ "wallpaperImport": {
+  "en": "Import",
+  "zh": "导入"
+ },
+ "wallpaperImportHint": {
+  "en": "Copy this wallpaper into local storage, so it keeps working even if the Steam library moves or changes",
+  "zh": "把该壁纸复制到本地存储，Steam 库迁移或变动后仍可继续使用"
+ },
+ "wallpaperReimport": {
+  "en": "Update",
+  "zh": "更新"
+ },
+ "wallpaperRemove": {
+  "en": "Remove",
+  "zh": "移除"
+ },
+ "wallpaperUpdateAvailable": {
+  "en": "The workshop original changed since import — update the local copy",
+  "zh": "工坊原件在导入后有更新——同步更新本地副本"
+ },
+ "wallpaperEmpty": {
+  "en": "No wallpapers found. Add a folder of videos below, or subscribe in the Wallpaper Engine workshop on Windows.",
+  "zh": "未发现壁纸。请在下方添加一个存放视频的目录；Windows 上也可先在 Wallpaper Engine 创意工坊订阅。"
+ },
+ "wallpaperTypeVideo": {
+  "en": "Video",
+  "zh": "视频"
+ },
+ "wallpaperTypeWeb": {
+  "en": "Web",
+  "zh": "网页"
+ },
+ "wallpaperTypeScene": {
+  "en": "Scene (static)",
+  "zh": "场景(静态)"
+ },
+ "wallpaperTypeApp": {
+  "en": "Unsupported",
+  "zh": "不支持"
+ },
+ "wallpaperLoadMore": {
+  "en": "Load more",
+  "zh": "加载更多"
+ },
+ "wallpaperDirs": {
+  "en": "Manual folders",
+  "zh": "手动目录"
+ },
+ "wallpaperDirsEmpty": {
+  "en": "No folders yet — add one to load its videos.",
+  "zh": "还没有目录——添加一个以加载其中的视频。"
+ },
+ "wallpaperDirsHint": {
+  "en": "On macOS: pick a folder of .mp4/.webm videos (or a wallpaper project folder). On Windows, folders extend the auto-detected Wallpaper Engine library.",
+  "zh": "macOS：选择一个存放 .mp4/.webm 视频的目录（或单个壁纸项目文件夹）。Windows：这里添加的目录会扩展自动检测到的 Wallpaper Engine 壁纸库。"
+ },
+ "wallpaperDirPlaceholder": {
+  "en": "/path/to/wallpapers or ~/Movies/wallpapers",
+  "zh": "/path/to/wallpapers 或 ~/Movies/wallpapers"
+ },
+ "wallpaperDirAdd": {
+  "en": "Add",
+  "zh": "添加"
+ },
+ "wallpaperDirBrowse": {
+  "en": "Browse…",
+  "zh": "浏览…"
+ },
+ "wallpaperDirBrowseHint": {
+  "en": "Pick a folder with the system file manager (Finder / Explorer)",
+  "zh": "通过系统文件管理器（访达 / 资源管理器）选择文件夹"
+ },
+ "wallpaperDirBrowseFailed": {
+  "en": "Could not open the system folder picker — type the path manually instead",
+  "zh": "无法打开系统目录选择框——请手动输入路径"
+ },
+ "wallpaperDirBrowseTitle": {
+  "en": "Select a folder",
+  "zh": "选择文件夹"
+ },
+ "wallpaperDirBrowseChoose": {
+  "en": "Use this folder",
+  "zh": "使用此目录"
+ },
+ "wallpaperDirBrowseEmpty": {
+  "en": "No subfolders",
+  "zh": "没有子目录"
+ },
+ "wallpaperDirBrowseHidden": {
+  "en": "Show hidden folders",
+  "zh": "显示隐藏目录"
+ },
+ "wallpaperDirBrowseTruncated": {
+  "en": "Too many folders to list; only the beginning is shown.",
+  "zh": "目录过多，仅显示开头部分。"
+ },
+ "wallpaperSaveFailed": {
+  "en": "Could not save wallpaper settings.",
+  "zh": "壁纸设置保存失败。"
+ },
+ "wallpaperRatingAll": {
+  "en": "All",
+  "zh": "全部"
+ },
+ "wallpaperRatingG": {
+  "en": "G",
+  "zh": "G"
+ },
+ "wallpaperRatingPg13": {
+  "en": "PG-13",
+  "zh": "PG-13"
+ },
+ "wallpaperRatingR18": {
+  "en": "R18",
+  "zh": "R18"
+ },
+ "wallpaperPagePrev": {
+  "en": "Previous",
+  "zh": "上一页"
+ },
+ "wallpaperPageNext": {
+  "en": "Next",
+  "zh": "下一页"
+ },
+ "wallpaperPageJump": {
+  "en": "Go",
+  "zh": "跳转"
+ },
+ "wallpaperPageTotal": {
+  "en": "Page {page} / {total}",
+  "zh": "第 {page} / {total} 页"
+ },
+ "customThemeTitle": {
+  "en": "Custom theme",
+  "zh": "自定义主题"
+ },
+ "customThemeTagline": {
+  "en": "A separately saved palette derived from the official default theme.",
+  "zh": "基于官方默认主题生成并独立保存的配色方案。"
+ },
+ "customThemeEdit": {
+  "en": "Edit",
+  "zh": "编辑"
+ },
+ "customThemeCloseEdit": {
+  "en": "Collapse",
+  "zh": "收起"
+ },
+ "customThemeMode": {
+  "en": "Editing mode",
+  "zh": "编辑模式"
+ },
+ "customThemeLight": {
+  "en": "Light",
+  "zh": "浅色"
+ },
+ "customThemeDark": {
+  "en": "Dark",
+  "zh": "深色"
+ },
+ "customThemeAccent": {
+  "en": "Accent",
+  "zh": "强调色"
+ },
+ "customThemeBackground": {
+  "en": "Background",
+  "zh": "背景色"
+ },
+ "customThemeForeground": {
+  "en": "Foreground",
+  "zh": "前景色"
+ },
+ "customThemeContrast": {
+  "en": "Contrast",
+  "zh": "对比度"
+ },
+ "customThemeReset": {
+  "en": "Restore current mode default",
+  "zh": "恢复当前模式默认"
+ },
+ "customThemeResetHint": {
+  "en": "Only resets the selected light or dark profile.",
+  "zh": "只重置当前选择的浅色或深色配置。"
+ },
+ "customThemeSaveFailed": {
+  "en": "Could not save custom theme changes.",
+  "zh": "自定义主题修改保存失败。"
+ },
+ "uninstall": {
+  "en": "Uninstall",
+  "zh": "卸载"
+ },
+ "uninstalling": {
+  "en": "Uninstalling…",
+  "zh": "卸载中…"
+ },
+ "uninstallConfirm": {
+  "en": "Are you sure you want to uninstall \"{name}\"? Local files will be deleted.",
+  "zh": "确定要卸载皮肤「{name}」吗？本地文件将被永久删除。"
+ },
+ "uninstallFailed": {
+  "en": "Uninstall failed",
+  "zh": "卸载失败"
+ },
+ "verifyIntegrity": {
+  "en": "Verify integrity",
+  "zh": "验证完整性"
+ },
+ "verifyingIntegrity": {
+  "en": "Verifying…",
+  "zh": "正在验证…"
+ },
+ "verifyAllPassed": {
+  "en": "All {count} installed skin(s) passed integrity verification",
+  "zh": "所有 {count} 款已安装皮肤完整性正常"
+ },
+ "verifyFoundIssues": {
+  "en": "Found {count} skin(s) with integrity issues",
+  "zh": "发现 {count} 款皮肤存在完整性异常"
+ },
+ "integrityValid": {
+  "en": "Verified",
+  "zh": "完整"
+ },
+ "integrityTampered": {
+  "en": "Modified",
+  "zh": "文件已修改"
+ },
+ "integrityMissing": {
+  "en": "Missing files",
+  "zh": "缺少文件"
+ },
+ "integrityHooksRefused": {
+  "en": "Hooks refused",
+  "zh": "Hooks 已拒绝"
+ },
+ "cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "confirm": {
+  "en": "Confirm",
+  "zh": "确定"
+ },
+ "verifyRepaired": {
+  "en": "Successfully repaired {count} skin(s) with integrity issues",
+  "zh": "已自动修复 {count} 款皮肤的完整性异常"
+ },
+ "verifyRepairFailed": {
+  "en": "Failed to repair {count} skin(s)",
+  "zh": "{count} 款皮肤自动修复失败"
+ },
+ "updateAll": {
+  "en": "Update all",
+  "zh": "全部更新"
+ },
+ "updateAllChecking": {
+  "en": "Checking versions…",
+  "zh": "正在检查版本…"
+ },
+ "updateAllRunning": {
+  "en": "Updating {done}/{total}…",
+  "zh": "正在更新 {done}/{total}…"
+ },
+ "updateAllNone": {
+  "en": "All installed skins are up to date",
+  "zh": "所有已安装皮肤均为最新版本"
+ },
+ "updateAllDone": {
+  "en": "Updated {count} skin(s)",
+  "zh": "已更新 {count} 款皮肤"
+ },
+ "updateAllFailed": {
+  "en": "{count} skin(s) failed to update",
+  "zh": "{count} 款皮肤更新失败"
+ },
+ "uninstallAll": {
+  "en": "Uninstall all",
+  "zh": "全部卸载"
+ },
+ "uninstallAllConfirm": {
+  "en": "Uninstall all {count} market-installed skin(s)? Their local files are deleted permanently and the GUI returns to the default look.",
+  "zh": "确定要卸载全部 {count} 款市场安装的皮肤吗？本地文件将被永久删除，界面回到默认外观。"
+ },
+ "uninstallAllRunning": {
+  "en": "Uninstalling {done}/{total}…",
+  "zh": "正在卸载 {done}/{total}…"
+ },
+ "uninstallAllDone": {
+  "en": "Uninstalled {count} skin(s)",
+  "zh": "已卸载 {count} 款皮肤"
+ },
+ "uninstallAllFailed": {
+  "en": "{count} skin(s) failed to uninstall",
+  "zh": "{count} 款皮肤卸载失败"
+ },
+ "marketUnreachable": {
+  "en": "Could not reach the skin market to read versions",
+  "zh": "无法连接皮肤市场以读取版本"
+ },
+ "bulkNoUserSkins": {
+  "en": "No market-installed skins to act on",
+  "zh": "没有可操作的市场安装皮肤"
+ },
+ "repair": {
+  "en": "Repair",
+  "zh": "修复"
+ },
+ "repairing": {
+  "en": "Repairing…",
+  "zh": "修复中…"
+ },
+ "repaired": {
+  "en": "Repaired",
+  "zh": "已修复"
+ }
+}

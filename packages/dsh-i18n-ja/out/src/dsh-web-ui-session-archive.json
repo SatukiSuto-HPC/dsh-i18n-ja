@@ -1,0 +1,498 @@
+{
+ "arch.nav": {
+  "en": "Archived sessions",
+  "zh": "已归档会话"
+ },
+ "arch.title": {
+  "en": "Session Archive Manager",
+  "zh": "会话归档管理"
+ },
+ "arch.refresh": {
+  "en": "Refresh",
+  "zh": "刷新"
+ },
+ "arch.refreshing": {
+  "en": "Refreshing…",
+  "zh": "刷新中…"
+ },
+ "arch.loading": {
+  "en": "Loading sessions…",
+  "zh": "正在加载会话列表…"
+ },
+ "arch.error": {
+  "en": "Load failed: {error}",
+  "zh": "加载失败：{error}"
+ },
+ "arch.retry": {
+  "en": "Retry",
+  "zh": "重试"
+ },
+ "arch.close": {
+  "en": "Close",
+  "zh": "关闭"
+ },
+ "arch.empty": {
+  "en": "No sessions match the current conditions",
+  "zh": "当前条件下没有会话"
+ },
+ "arch.page.prev": {
+  "en": "Previous page",
+  "zh": "上一页"
+ },
+ "arch.page.next": {
+  "en": "Next page",
+  "zh": "下一页"
+ },
+ "arch.page.info": {
+  "en": "Page {page} / {pages} · {n} in total",
+  "zh": "第 {page} / {pages} 页 · 共 {n} 条"
+ },
+ "arch.results.count": {
+  "en": "{n} sessions in total",
+  "zh": "共 {n} 条会话"
+ },
+ "arch.filter.all": {
+  "en": "All",
+  "zh": "全部"
+ },
+ "arch.filter.active": {
+  "en": "Unarchived",
+  "zh": "未归档"
+ },
+ "arch.filter.archived": {
+  "en": "Archived",
+  "zh": "已归档"
+ },
+ "arch.filter.workspace": {
+  "en": "Workspace",
+  "zh": "工作区"
+ },
+ "arch.filter.workspace.any": {
+  "en": "All workspaces",
+  "zh": "全部工作区"
+ },
+ "arch.filter.workspace.none": {
+  "en": "No workspace",
+  "zh": "不属于任何工作区"
+ },
+ "arch.filter.search": {
+  "en": "Search title or session ID",
+  "zh": "搜索标题或会话 ID"
+ },
+ "arch.filter.issues": {
+  "en": "Only sessions with issues",
+  "zh": "仅看异常会话"
+ },
+ "arch.sort": {
+  "en": "Sort",
+  "zh": "排序"
+ },
+ "arch.sort.lastActivity": {
+  "en": "Last activity",
+  "zh": "最后活动时间"
+ },
+ "arch.sort.archivedAt": {
+  "en": "Archive time",
+  "zh": "归档时间"
+ },
+ "arch.sort.createdAt": {
+  "en": "Created at",
+  "zh": "创建时间"
+ },
+ "arch.sort.title": {
+  "en": "Title",
+  "zh": "标题"
+ },
+ "arch.sort.size": {
+  "en": "Size",
+  "zh": "占用空间"
+ },
+ "arch.sort.asc": {
+  "en": "Oldest first",
+  "zh": "最早优先"
+ },
+ "arch.sort.desc": {
+  "en": "Newest first",
+  "zh": "最新优先"
+ },
+ "arch.row.noTitle": {
+  "en": "(untitled)",
+  "zh": "（无标题）"
+ },
+ "arch.row.lastActivity": {
+  "en": "Last activity: {time}",
+  "zh": "最后活动：{time}"
+ },
+ "arch.row.lastActivity.unknown": {
+  "en": "Last activity: unknown",
+  "zh": "最后活动：未知"
+ },
+ "arch.row.archivedAt": {
+  "en": "Archived: {time}",
+  "zh": "归档时间：{time}"
+ },
+ "arch.row.archivedAt.unknown": {
+  "en": "Archived: unknown",
+  "zh": "归档时间：未知"
+ },
+ "arch.row.size": {
+  "en": "Size: {size}",
+  "zh": "大小：{size}"
+ },
+ "arch.row.children": {
+  "en": "{n} sub-sessions",
+  "zh": "{n} 个子会话"
+ },
+ "arch.row.created": {
+  "en": "Created {time}",
+  "zh": "创建于 {time}"
+ },
+ "arch.status.running": {
+  "en": "Running",
+  "zh": "运行中"
+ },
+ "arch.status.blank": {
+  "en": "Blank",
+  "zh": "空白"
+ },
+ "arch.status.archived": {
+  "en": "Archived",
+  "zh": "已归档"
+ },
+ "arch.status.active": {
+  "en": "Normal",
+  "zh": "普通"
+ },
+ "arch.status.subagent": {
+  "en": "Sub-session",
+  "zh": "子会话"
+ },
+ "arch.issue.no-title": {
+  "en": "Missing title",
+  "zh": "缺少标题"
+ },
+ "arch.issue.no-archive-time": {
+  "en": "Archive time unknown",
+  "zh": "归档时间未知"
+ },
+ "arch.issue.unreadable": {
+  "en": "Incomplete metadata",
+  "zh": "元数据不完整"
+ },
+ "arch.issue.no-data": {
+  "en": "No session data",
+  "zh": "无会话数据"
+ },
+ "arch.op.archive": {
+  "en": "Archive",
+  "zh": "归档"
+ },
+ "arch.op.unarchive": {
+  "en": "Unarchive",
+  "zh": "取消归档"
+ },
+ "arch.op.delete": {
+  "en": "Delete",
+  "zh": "删除"
+ },
+ "arch.op.preview": {
+  "en": "Preview",
+  "zh": "预览"
+ },
+ "arch.select.all": {
+  "en": "Select all results",
+  "zh": "全选当前结果"
+ },
+ "arch.select.clear": {
+  "en": "Clear selection",
+  "zh": "清空选择"
+ },
+ "arch.select.selected": {
+  "en": "{n} selected",
+  "zh": "已选 {n} 项"
+ },
+ "arch.select.holdNote": {
+  "en": "{selected} selected; {outside} are outside the current filter and will still be included",
+  "zh": "已选 {selected} 项，其中 {outside} 项不在当前筛选结果中，操作时仍会包含它们"
+ },
+ "arch.batch.archive": {
+  "en": "Archive selected",
+  "zh": "批量归档"
+ },
+ "arch.batch.unarchive": {
+  "en": "Unarchive selected",
+  "zh": "批量取消归档"
+ },
+ "arch.batch.delete": {
+  "en": "Delete selected",
+  "zh": "批量删除"
+ },
+ "arch.confirm.deleteTitle": {
+  "en": "Delete sessions",
+  "zh": "删除会话"
+ },
+ "arch.confirm.direct": {
+  "en": "Directly selected: {n} sessions",
+  "zh": "直接选中：{n} 个会话"
+ },
+ "arch.confirm.descendants": {
+  "en": "Also deleted via parent-child relation: {n} sessions",
+  "zh": "因父子关系一并删除：{n} 个会话"
+ },
+ "arch.confirm.total": {
+  "en": "Total sessions to delete: {n}",
+  "zh": "最终删除总数：{n} 个会话"
+ },
+ "arch.confirm.skipped": {
+  "en": "Protected sessions to skip: {n}",
+  "zh": "将被跳过的受保护会话：{n} 个"
+ },
+ "arch.confirm.freed": {
+  "en": "Estimated space freed: {size}",
+  "zh": "预计释放空间：{size}"
+ },
+ "arch.confirm.irrecoverable": {
+  "en": "Physical deletion is not recoverable. Session content will be permanently lost.",
+  "zh": "物理删除不可恢复，会话内容将永久丢失，且无法从回收站找回。"
+ },
+ "arch.confirm.strongCheck": {
+  "en": "I understand this action cannot be undone",
+  "zh": "我已知晓此操作不可恢复"
+ },
+ "arch.confirm.confirm": {
+  "en": "Delete permanently",
+  "zh": "确认删除"
+ },
+ "arch.confirm.cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "arch.batch.title.archive": {
+  "en": "Batch archive",
+  "zh": "批量归档"
+ },
+ "arch.batch.title.unarchive": {
+  "en": "Batch unarchive",
+  "zh": "批量取消归档"
+ },
+ "arch.batch.title.delete": {
+  "en": "Batch delete",
+  "zh": "批量删除"
+ },
+ "arch.batch.progress": {
+  "en": "Progress: {processed} / {total}",
+  "zh": "进度：{processed} / {total}"
+ },
+ "arch.batch.ok": {
+  "en": "Succeeded: {n}",
+  "zh": "成功：{n}"
+ },
+ "arch.batch.skipped": {
+  "en": "Skipped: {n}",
+  "zh": "跳过：{n}"
+ },
+ "arch.batch.failed": {
+  "en": "Failed: {n}",
+  "zh": "失败：{n}"
+ },
+ "arch.batch.freed": {
+  "en": "Space freed: {size}",
+  "zh": "已释放空间：{size}"
+ },
+ "arch.batch.running": {
+  "en": "Processing…",
+  "zh": "正在处理…"
+ },
+ "arch.batch.finished": {
+  "en": "Finished",
+  "zh": "已完成"
+ },
+ "arch.batch.skipSummary": {
+  "en": "Skipped detail: {summary}",
+  "zh": "跳过明细：{summary}"
+ },
+ "arch.batch.withError": {
+  "en": "Finished (some requests failed)",
+  "zh": "已完成（部分请求失败）"
+ },
+ "arch.batch.retryFailed": {
+  "en": "Retry failed only",
+  "zh": "仅重试失败项"
+ },
+ "arch.batch.reason": {
+  "en": "Reason",
+  "zh": "原因"
+ },
+ "arch.reason.running": {
+  "en": "Session is running",
+  "zh": "会话正在运行"
+ },
+ "arch.reason.attached": {
+  "en": "Session is still held open by the DSH process; restart the service or close the session before deleting",
+  "zh": "会话仍被 DSH 进程占用，重启服务或关闭该会话后可删除"
+ },
+ "arch.reason.current": {
+  "en": "Session is currently open",
+  "zh": "会话当前正在查看"
+ },
+ "arch.reason.in-flight": {
+  "en": "Session is being processed by another operation",
+  "zh": "会话正被其他操作处理"
+ },
+ "arch.reason.not-found": {
+  "en": "Session not found",
+  "zh": "会话不存在"
+ },
+ "arch.reason.already-archived": {
+  "en": "Session already archived",
+  "zh": "会话已归档"
+ },
+ "arch.reason.not-archived": {
+  "en": "Session is not archived",
+  "zh": "会话未归档"
+ },
+ "arch.reason.family-protected": {
+  "en": "Family contains a protected member; the whole family was skipped",
+  "zh": "会话族中存在受保护成员，已整族跳过"
+ },
+ "arch.reason.unreadable": {
+  "en": "Session data unreadable",
+  "zh": "无法读取会话数据"
+ },
+ "arch.reason.missing-seam": {
+  "en": "Not supported by the current SDK environment",
+  "zh": "当前 SDK 环境不支持该操作"
+ },
+ "arch.reason.busy": {
+  "en": "Another operation is in progress",
+  "zh": "其他操作正在进行"
+ },
+ "arch.reason.error": {
+  "en": "Operation failed",
+  "zh": "操作失败"
+ },
+ "arch.preview.title": {
+  "en": "Session preview",
+  "zh": "会话预览"
+ },
+ "arch.preview.messages": {
+  "en": "{n} messages in total",
+  "zh": "共 {n} 条对话消息"
+ },
+ "arch.preview.empty": {
+  "en": "No conversation content to show",
+  "zh": "该会话没有可展示的对话内容"
+ },
+ "arch.preview.loadError": {
+  "en": "Preview failed: {error}",
+  "zh": "预览加载失败：{error}"
+ },
+ "arch.preview.basic": {
+  "en": "Basic info",
+  "zh": "基本信息"
+ },
+ "arch.preview.excerpt": {
+  "en": "Conversation excerpt (first messages)",
+  "zh": "对话摘要（前几条）"
+ },
+ "arch.auto.title": {
+  "en": "Automatic maintenance",
+  "zh": "自动维护"
+ },
+ "arch.auto.defaultOff": {
+  "en": "Auto-archive and auto-delete are off by default; nothing changes until you enable them.",
+  "zh": "自动归档与自动删除默认关闭；未启用时不会修改任何会话状态。"
+ },
+ "arch.auto.archiveToggle": {
+  "en": "Auto-archive sessions inactive beyond the threshold",
+  "zh": "自动归档超过阈值未活动的会话"
+ },
+ "arch.auto.archiveDays": {
+  "en": "Inactivity threshold (days)",
+  "zh": "未活动天数阈值"
+ },
+ "arch.auto.deleteToggle": {
+  "en": "Auto-delete archived sessions past their retention",
+  "zh": "自动物理删除超过保留期的归档会话"
+ },
+ "arch.auto.deleteDays": {
+  "en": "Archive retention (days)",
+  "zh": "归档保留天数"
+ },
+ "arch.auto.days.unit": {
+  "en": "days",
+  "zh": "天"
+ },
+ "arch.auto.invalidDays": {
+  "en": "Days must be an integer between {min} and {max}",
+  "zh": "天数必须是 {min} 到 {max} 之间的整数"
+ },
+ "arch.auto.preview": {
+  "en": "Preview with current settings",
+  "zh": "按当前配置预览"
+ },
+ "arch.auto.preview.loading": {
+  "en": "Counting…",
+  "zh": "正在统计…"
+ },
+ "arch.auto.preview.archive": {
+  "en": "Would auto-archive: {n} sessions",
+  "zh": "预计自动归档：{n} 个会话"
+ },
+ "arch.auto.preview.delete": {
+  "en": "Would auto-delete: {n} sessions, freeing {size}",
+  "zh": "预计自动删除：{n} 个会话，释放 {size}"
+ },
+ "arch.auto.preview.none": {
+  "en": "Nothing to process with the current settings",
+  "zh": "按当前配置没有会话需要处理"
+ },
+ "arch.auto.runArchive": {
+  "en": "Run an archive check now",
+  "zh": "立即执行一次自动归档"
+ },
+ "arch.auto.runDelete": {
+  "en": "Run a cleanup check now",
+  "zh": "立即执行一次自动清理"
+ },
+ "arch.auto.lastArchive": {
+  "en": "Last auto-archive: {time}, total {total} (ok {ok} / skipped {skipped} / failed {failed})",
+  "zh": "上次自动归档：{time}，共 {total}（成功 {ok} / 跳过 {skipped} / 失败 {failed}）"
+ },
+ "arch.auto.lastDelete": {
+  "en": "Last auto-cleanup: {time}, total {total} (ok {ok} / skipped {skipped} / failed {failed})",
+  "zh": "上次自动清理：{time}，共 {total}（成功 {ok} / 跳过 {skipped} / 失败 {failed}）"
+ },
+ "arch.auto.nextRun": {
+  "en": "Next scheduled check: {time}",
+  "zh": "下次预计检查：{time}"
+ },
+ "arch.auto.neverRun": {
+  "en": "Never run",
+  "zh": "尚未运行"
+ },
+ "arch.auto.basis": {
+  "en": "How it counts: auto-archive uses the session last-activity time (not creation time); auto-delete uses the recorded archive time (not file times). Historical archives with unknown archive time are never auto-deleted; restoring and re-archiving restarts the retention clock. Running sessions, the session you are viewing, and sessions with running children are always protected.",
+  "zh": "口径说明：自动归档按会话最后活动时间判断（不是创建时间）；自动删除按归档时间判断（不是文件时间）。归档时间未知的历史归档会话不会被自动删除，恢复后再次归档将重新计算保留期。运行中、当前正在查看以及有运行中子会话的会话始终受保护。"
+ },
+ "arch.auto.cycleRunning": {
+  "en": "An automatic check is running…",
+  "zh": "自动检查正在运行…"
+ },
+ "arch.auto.saveFailed": {
+  "en": "Save failed: the Host did not accept the setting; please retry",
+  "zh": "保存失败：宿主未接受该设置，请重试"
+ },
+ "arch.auto.runError": {
+  "en": "Run failed: {error}",
+  "zh": "执行失败：{error}"
+ },
+ "arch.time.unknown": {
+  "en": "unknown",
+  "zh": "未知"
+ },
+ "arch.current.badge": {
+  "en": "current",
+  "zh": "当前"
+ }
+}

@@ -1,0 +1,9 @@
+# bundle patch for the dsh-i18n-ja language pack plugin: inserts its plugin
+# row into the profile roster. Applied as a profile bundle layer (the
+# `dsh.bundle.patch` manifest field). The single row mounts BOTH halves: the
+# host half is a no-op (pure browser plugin) and the browser half registers
+# the 日本語 language + the ja dictionaries for the dsh-web-all family
+# namespaces.
+- insert:
+    - id: i18n-ja
+      name: 'dsh-i18n-ja'

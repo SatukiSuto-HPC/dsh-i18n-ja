@@ -1,0 +1,1686 @@
+{
+ "entry.label": {
+  "en": "Task Board",
+  "zh": "任务看板"
+ },
+ "board.title": {
+  "en": "Task Board",
+  "zh": "任务看板"
+ },
+ "board.close": {
+  "en": "Back to chat",
+  "zh": "返回会话"
+ },
+ "board.new": {
+  "en": "New Task",
+  "zh": "新建任务"
+ },
+ "board.search": {
+  "en": "Filter tasks…",
+  "zh": "筛选任务…"
+ },
+ "board.empty": {
+  "en": "No tasks in this column",
+  "zh": "这个状态还没有任务"
+ },
+ "board.filterAll": {
+  "en": "All",
+  "zh": "全部"
+ },
+ "board.archive": {
+  "en": "Archive",
+  "zh": "归档"
+ },
+ "board.archiveView": {
+  "en": "Archived ({count})",
+  "zh": "归档 ({count})"
+ },
+ "board.backToBoard": {
+  "en": "Back to board",
+  "zh": "返回看板"
+ },
+ "archive.empty": {
+  "en": "No archived tasks",
+  "zh": "没有已归档的任务"
+ },
+ "board.status": {
+  "en": "Status",
+  "zh": "状态"
+ },
+ "board.status.backlog": {
+  "en": "Backlog",
+  "zh": "待规划"
+ },
+ "board.status.todo": {
+  "en": "To Do",
+  "zh": "待办"
+ },
+ "board.status.running": {
+  "en": "In Progress",
+  "zh": "进行中"
+ },
+ "board.status.done": {
+  "en": "Done",
+  "zh": "已完成"
+ },
+ "board.status.failed": {
+  "en": "Failed",
+  "zh": "已失败"
+ },
+ "board.runs": {
+  "en": "runs",
+  "zh": "次执行"
+ },
+ "board.pending": {
+  "en": "Submitting",
+  "zh": "正在提交"
+ },
+ "board.created": {
+  "en": "Created",
+  "zh": "创建于"
+ },
+ "board.hostError": {
+  "en": "Host action failed: {error}",
+  "zh": "Host 操作失败：{error}"
+ },
+ "board.hostError.notMounted": {
+  "en": "The task board Host API is not mounted: the Host did not load this plugin (not installed, disabled, or its row failed to start). Restart the DSH service and try again",
+  "zh": "任务看板的后台接口没有挂载：宿主没有加载这个插件（可能未安装、未启用，或该行启动失败）。重启 DSH 服务后再试"
+ },
+ "board.hostError.ledgerLocked": {
+  "en": "Another DSH process (pid {pid}) holds the task board ledger, so this instance registered no Host API: close that DSH instance, or wait for it to exit and retry. Restarting this instance cannot help (reason: {detail})",
+  "zh": "任务看板的账本已被另一个 DSH 进程占用（占用者 pid {pid}），本实例没有注册后台接口：关闭那个 DSH 实例，或等它退出后再点重试——反复重启本实例无效（宿主原因：{detail}）"
+ },
+ "board.hostError.degraded": {
+  "en": "The task board row degraded during start, so its Host API was not registered: {detail}",
+  "zh": "任务看板这一行在启动时降级，后台接口没有注册（宿主原因：{detail}）"
+ },
+ "board.hostError.unauthorized": {
+  "en": "This session is no longer signed in; reload the page and try again",
+  "zh": "登录状态已失效，请刷新页面后重试"
+ },
+ "board.hostError.forbidden": {
+  "en": "The request did not pass the same-origin fence: the desktop shell or reverse proxy may not have forwarded browser credentials",
+  "zh": "当前环境未通过同源校验：桌面外壳或反向代理可能未传递浏览器标记，也没有携带宿主认证凭据"
+ },
+ "board.hostError.locked": {
+  "en": "The task board ledger is locked: {detail}",
+  "zh": "任务看板的后台数据被占用：{detail}"
+ },
+ "board.hostError.timeout": {
+  "en": "The Host did not answer within {seconds}s; try again shortly",
+  "zh": "后台 {seconds} 秒内没有响应，请稍后重试"
+ },
+ "board.hostError.unreachable": {
+  "en": "Cannot reach the local DSH service; make sure it is still running",
+  "zh": "连接不上本机 DSH 服务，请确认它仍在运行"
+ },
+ "board.hostError.unexpected": {
+  "en": "The Host returned an unrecognized response (HTTP {status})",
+  "zh": "后台返回了无法识别的响应（HTTP {status}）"
+ },
+ "board.project": {
+  "en": "Project",
+  "zh": "项目"
+ },
+ "board.projectAll": {
+  "en": "All projects",
+  "zh": "全部项目"
+ },
+ "board.projectNew": {
+  "en": "New project…",
+  "zh": "新建项目…"
+ },
+ "board.projectNewPath": {
+  "en": "Project directory (absolute path on the Host)",
+  "zh": "项目目录（宿主上的绝对路径）"
+ },
+ "board.projectNewPathPlaceholder": {
+  "en": "e.g. C:\\work\\my-project or /home/me/project",
+  "zh": "例如 C:\\work\\my-project 或 /home/me/project"
+ },
+ "board.projectCreate": {
+  "en": "Create project",
+  "zh": "创建项目"
+ },
+ "board.projectCreateFailed": {
+  "en": "Could not create the project: {error}",
+  "zh": "创建项目失败：{error}"
+ },
+ "new.aiParse": {
+  "en": "Parse with AI",
+  "zh": "AI 解析"
+ },
+ "new.aiParseHint": {
+  "en": "Paste text copied from somewhere else and let a model turn it into a title, description, and run prompt; the result only fills the form below, so you can edit it before creating the task.",
+  "zh": "把从别处复制的一段话粘进来，让模型整理成标题、描述和执行 Prompt；解析结果只填进下面的表单，你可以先改再创建。"
+ },
+ "new.aiParsePlaceholder": {
+  "en": "Paste the content to turn into a task…",
+  "zh": "粘贴要变成任务的内容…"
+ },
+ "new.aiParseModel": {
+  "en": "Model used for parsing",
+  "zh": "解析用模型"
+ },
+ "new.aiParseRun": {
+  "en": "Parse and fill",
+  "zh": "解析并填入"
+ },
+ "new.aiParseCancel": {
+  "en": "Cancel parsing",
+  "zh": "取消解析"
+ },
+ "new.aiParseEmpty": {
+  "en": "Paste something to parse first",
+  "zh": "先粘贴一段内容再解析"
+ },
+ "new.aiParseNoModel": {
+  "en": "This deployment has no model available; configure a model provider in DSH or pick another model",
+  "zh": "这个部署还没有可用的模型，请先在 DSH 里配置模型提供商，或换一个模型再试"
+ },
+ "new.aiParseUnavailable": {
+  "en": "The Host has no parse endpoint; restart the DSH service and try again",
+  "zh": "后台没有解析接口可用，重启 DSH 服务后再试"
+ },
+ "new.aiParseTimeout": {
+  "en": "The model did not answer within {seconds}s; try again or pick a faster model",
+  "zh": "模型 {seconds} 秒内没有返回结果，请重试或换一个更快的模型"
+ },
+ "new.aiParseFailed": {
+  "en": "Parsing failed: {error}",
+  "zh": "解析失败：{error}"
+ },
+ "board.retryHost": {
+  "en": "Retry Host connection",
+  "zh": "重试连接 Host"
+ },
+ "board.hostMeta": {
+  "en": "Host time zone {timeZone} · revision {revision}",
+  "zh": "Host 时区 {timeZone} · revision {revision}"
+ },
+ "new.section.parse": {
+  "en": "AI Parse",
+  "zh": "AI 解析"
+ },
+ "new.section.content": {
+  "en": "Task Content",
+  "zh": "任务内容"
+ },
+ "new.section.labels": {
+  "en": "Tags",
+  "zh": "标签"
+ },
+ "new.section.execution": {
+  "en": "Execution Settings",
+  "zh": "执行设置"
+ },
+ "new.section.run": {
+  "en": "Run Mode",
+  "zh": "运行方式"
+ },
+ "new.section.handover": {
+  "en": "Handover",
+  "zh": "交接与续跑"
+ },
+ "new.section.schedule": {
+  "en": "Scheduled Runs",
+  "zh": "定时运行"
+ },
+ "new.summary.none": {
+  "en": "Not set",
+  "zh": "未设置"
+ },
+ "new.summary.labelCount": {
+  "en": "{count} tags",
+  "zh": "{count} 个标签"
+ },
+ "new.summary.filled": {
+  "en": "Filled",
+  "zh": "已填写"
+ },
+ "new.summary.scheduleOff": {
+  "en": "Off",
+  "zh": "未启用"
+ },
+ "new.summary.multiRound": {
+  "en": "multi-round /goal",
+  "zh": "多轮 /goal"
+ },
+ "new.summary.singleRound": {
+  "en": "single round",
+  "zh": "单轮"
+ },
+ "new.title": {
+  "en": "Title",
+  "zh": "标题"
+ },
+ "new.titlePlaceholder": {
+  "en": "What should be done, in one line",
+  "zh": "一句话描述要做什么"
+ },
+ "new.description": {
+  "en": "Description",
+  "zh": "描述"
+ },
+ "new.descriptionPlaceholder": {
+  "en": "Background, scope, acceptance criteria (optional)",
+  "zh": "补充背景、范围与验收（可选）"
+ },
+ "new.prompt": {
+  "en": "Run Prompt",
+  "zh": "执行 Prompt"
+ },
+ "new.promptPlaceholder": {
+  "en": "The full instruction sent to the agent (title is used when blank)",
+  "zh": "发给 agent 的完整指令（留空则使用标题）"
+ },
+ "new.submit": {
+  "en": "Create",
+  "zh": "创建"
+ },
+ "new.createAndRun": {
+  "en": "Create and run",
+  "zh": "创建并执行"
+ },
+ "new.cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "new.required": {
+  "en": "Title is required",
+  "zh": "标题不能为空"
+ },
+ "new.freeze": {
+  "en": "Frozen snapshot (optional)",
+  "zh": "冻结快照（可选）"
+ },
+ "new.freezePlaceholder": {
+  "en": "Paste a <<<FREEZE ... >>>FREEZE block from a session; it parses into goal/progress/next (optional)",
+  "zh": "粘贴会话输出的 <<<FREEZE … >>>FREEZE 冻结块，解析为目标/进度/下一步（可选）"
+ },
+ "detail.freeze": {
+  "en": "Frozen snapshot",
+  "zh": "冻结快照"
+ },
+ "detail.freeze.goal": {
+  "en": "Goal",
+  "zh": "目标"
+ },
+ "detail.freeze.progress": {
+  "en": "Progress",
+  "zh": "进度"
+ },
+ "detail.freeze.next": {
+  "en": "Next",
+  "zh": "下一步"
+ },
+ "detail.freeze.frozenAt": {
+  "en": "Frozen at {time}",
+  "zh": "冻结于 {time}"
+ },
+ "detail.freeze.frozenBy": {
+  "en": "Source session {session}",
+  "zh": "来源会话 {session}"
+ },
+ "detail.freeze.redacted": {
+  "en": "Sensitive patterns were detected in the frozen text and replaced with [REDACTED]; review manually before resuming.",
+  "zh": "冻结文本命中敏感模式，已自动替换为 [REDACTED]；接手前请人工复核。"
+ },
+ "card.frozen": {
+  "en": "frozen",
+  "zh": "冻结"
+ },
+ "new.handover": {
+  "en": "Handover references (optional)",
+  "zh": "交接包引用（可选）"
+ },
+ "new.handoverPlaceholder": {
+  "en": "One doc/script reference per line; when filled, the pinned triplet picked above (workspace/mode/permission) is attached to the card as a handover bundle",
+  "zh": "每行一个文档/脚本引用；填写后，上面选择的钉住三元组（工作区/模式/权限）会作为交接包附加到卡片"
+ },
+ "detail.handover": {
+  "en": "Handover bundle",
+  "zh": "交接包"
+ },
+ "detail.handover.bundledAt": {
+  "en": "Bundled at {time}",
+  "zh": "打包于 {time}"
+ },
+ "detail.handover.references": {
+  "en": "References",
+  "zh": "引用"
+ },
+ "new.tags": {
+  "en": "Tags (optional)",
+  "zh": "标签（可选）"
+ },
+ "new.tagsHint": {
+  "en": "Tags drive the card badges and the board filter; a row with an execution hint is injected ahead of the prompt on every run, an empty one is display-only.",
+  "zh": "标签用于卡片徽章与顶栏筛选；填了「执行提示」的行会在每次执行前注入 Prompt，留空则只作展示。"
+ },
+ "new.tagName": {
+  "en": "Tag name",
+  "zh": "标签名"
+ },
+ "new.tagNamePlaceholder": {
+  "en": "e.g. Work",
+  "zh": "例如：工作"
+ },
+ "new.tagPrompt": {
+  "en": "Execution hint (optional)",
+  "zh": "执行提示（可选）"
+ },
+ "new.tagPromptPlaceholder": {
+  "en": "e.g. Archive artefacts under 02-work/",
+  "zh": "例如：产物归档到 02-工作/"
+ },
+ "new.tagAdd": {
+  "en": "Add tag",
+  "zh": "添加标签"
+ },
+ "new.tagRemove": {
+  "en": "Remove tag {name}",
+  "zh": "移除标签 {name}"
+ },
+ "board.tagFilter": {
+  "en": "Filter by tag",
+  "zh": "按标签筛选"
+ },
+ "board.tagFilterClear": {
+  "en": "Clear tag filter",
+  "zh": "清除标签筛选"
+ },
+ "board.tagEmpty": {
+  "en": "No task carries all of these tags",
+  "zh": "没有同时带这些标签的任务"
+ },
+ "board.tagManage": {
+  "en": "Manage labels",
+  "zh": "管理标签"
+ },
+ "tags.title": {
+  "en": "Label manager",
+  "zh": "标签管理"
+ },
+ "tags.hint": {
+  "en": "Labels feed the board filter and the card badges. Renaming writes to every card (merging into a label that already exists), and deleting removes the label from every task including archived ones; the tasks themselves are untouched.",
+  "zh": "标签是顶栏筛选与卡片徽章的来源。重命名会写到所有卡片上（与已有同名标签合并），删除会从全部任务（含已归档）上移除；任务本身不受影响。"
+ },
+ "tags.empty": {
+  "en": "No labels are in use.",
+  "zh": "当前没有任何标签在使用。"
+ },
+ "tags.usage": {
+  "en": "{count} tasks",
+  "zh": "{count} 个任务"
+ },
+ "tags.rename": {
+  "en": "Rename",
+  "zh": "重命名"
+ },
+ "tags.renameLabel": {
+  "en": "Rename the label {name}",
+  "zh": "重命名标签 {name}"
+ },
+ "tags.delete": {
+  "en": "Delete",
+  "zh": "删除"
+ },
+ "tags.deleteTitle": {
+  "en": "Delete label",
+  "zh": "删除标签"
+ },
+ "tags.deleteConfirm": {
+  "en": "Remove the label \"{name}\" from {count} task(s)? Its execution hint is removed with it; the tasks themselves are unaffected.",
+  "zh": "从 {count} 个任务上移除标签「{name}」？该标签的执行提示会一并移除，任务本身不受影响。"
+ },
+ "tags.deleteOk": {
+  "en": "Delete",
+  "zh": "删除"
+ },
+ "tags.save": {
+  "en": "Save",
+  "zh": "保存"
+ },
+ "tags.mergeHint": {
+  "en": "Merges into the existing label \"{name}\"",
+  "zh": "将合并进已有标签「{name}」"
+ },
+ "tags.renameFailed": {
+  "en": "The rename was not accepted.",
+  "zh": "重命名未被接受。"
+ },
+ "tags.deleteFailed": {
+  "en": "The deletion was not accepted.",
+  "zh": "删除未被接受。"
+ },
+ "tags.done": {
+  "en": "Done",
+  "zh": "完成"
+ },
+ "detail.permissionPending": {
+  "en": "Permission pending confirmation: this card's effective permission ({permission}) is above the session default; manual runs and cron are refused until a human confirms.",
+  "zh": "权限待确认：本卡有效权限（{permission}）高于会话默认，手动执行与定时调度都会被拒绝，需人工确认后才能运行。"
+ },
+ "detail.permissionConfirm": {
+  "en": "Confirm permission binding",
+  "zh": "确认权限绑定"
+ },
+ "detail.permissionConfirmed": {
+  "en": "Permission confirmed · {time}",
+  "zh": "已确认权限绑定 · {time}"
+ },
+ "detail.title": {
+  "en": "Task Detail",
+  "zh": "任务详情"
+ },
+ "detail.edit": {
+  "en": "Edit",
+  "zh": "编辑"
+ },
+ "detail.editTags": {
+  "en": "Edit tags",
+  "zh": "编辑标签"
+ },
+ "detail.duplicate": {
+  "en": "Duplicate Task",
+  "zh": "复制为新任务"
+ },
+ "detail.duplicateAndEdit": {
+  "en": "Edit as New Copy",
+  "zh": "修改并新建副本"
+ },
+ "detail.close": {
+  "en": "Close",
+  "zh": "关闭"
+ },
+ "edit.title": {
+  "en": "Edit Task",
+  "zh": "编辑任务"
+ },
+ "edit.save": {
+  "en": "Save",
+  "zh": "保存"
+ },
+ "new.duplicateTitle": {
+  "en": "New Task (Copy)",
+  "zh": "新建任务（副本）"
+ },
+ "new.archiveOriginal": {
+  "en": "Archive original task upon creation",
+  "zh": "创建后归档原任务"
+ },
+ "detail.prompt": {
+  "en": "Run Prompt",
+  "zh": "执行 Prompt"
+ },
+ "detail.description": {
+  "en": "Description",
+  "zh": "描述"
+ },
+ "detail.expand": {
+  "en": "Show more",
+  "zh": "展开全文"
+ },
+ "detail.collapse": {
+  "en": "Show less",
+  "zh": "收起"
+ },
+ "detail.execution": {
+  "en": "Execution History",
+  "zh": "执行记录"
+ },
+ "detail.noExecution": {
+  "en": "Not executed yet",
+  "zh": "尚未执行"
+ },
+ "detail.run": {
+  "en": "Run",
+  "zh": "执行"
+ },
+ "detail.rerun": {
+  "en": "Run Again",
+  "zh": "重新执行"
+ },
+ "detail.delete": {
+  "en": "Delete",
+  "zh": "删除"
+ },
+ "detail.archive": {
+  "en": "Archive",
+  "zh": "归档"
+ },
+ "detail.restore": {
+  "en": "Restore",
+  "zh": "恢复"
+ },
+ "detail.archivedAt": {
+  "en": "Archived · {time}",
+  "zh": "已归档 · {time}"
+ },
+ "detail.viewSession": {
+  "en": "View Session",
+  "zh": "查看会话"
+ },
+ "detail.noSession": {
+  "en": "No session",
+  "zh": "暂无会话"
+ },
+ "detail.executionStarted": {
+  "en": "Started",
+  "zh": "已启动"
+ },
+ "detail.execution.initiator": {
+  "en": "Initiated by session {session}",
+  "zh": "发起会话 {session}"
+ },
+ "detail.execution.external": {
+  "en": "Completed outside this Host by {agent}",
+  "zh": "Host 之外完成：{agent}"
+ },
+ "detail.executionEnded": {
+  "en": "Ended",
+  "zh": "已结束"
+ },
+ "detail.result.succeeded": {
+  "en": "Succeeded",
+  "zh": "成功"
+ },
+ "detail.result.failed": {
+  "en": "Failed",
+  "zh": "失败"
+ },
+ "detail.result.cancelled": {
+  "en": "Cancelled",
+  "zh": "已取消"
+ },
+ "detail.result.running": {
+  "en": "Running",
+  "zh": "进行中"
+ },
+ "delete.title": {
+  "en": "Delete Task",
+  "zh": "删除任务"
+ },
+ "delete.confirm": {
+  "en": "Delete \"{name}\"? This cannot be undone.",
+  "zh": "确定删除「{name}」吗？删除后不可恢复。"
+ },
+ "delete.ok": {
+  "en": "Delete",
+  "zh": "删除"
+ },
+ "delete.cancel": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "status.move.backlog": {
+  "en": "Move to Backlog",
+  "zh": "移到待规划"
+ },
+ "status.move.todo": {
+  "en": "Move to To Do",
+  "zh": "移到待办"
+ },
+ "status.move.running": {
+  "en": "Move to Running",
+  "zh": "移到进行中"
+ },
+ "status.move.done": {
+  "en": "Move to Done",
+  "zh": "移到已完成"
+ },
+ "status.move.failed": {
+  "en": "Move to Failed",
+  "zh": "移到已失败"
+ },
+ "exec.error.noWorkspace": {
+  "en": "No workspace is available to run the task",
+  "zh": "没有可用工作区，无法执行任务"
+ },
+ "exec.error.promptRejected": {
+  "en": "Prompt rejected",
+  "zh": "Prompt 被拒绝"
+ },
+ "run.failed": {
+  "en": "Run failed: {error}",
+  "zh": "执行失败：{error}"
+ },
+ "time.justNow": {
+  "en": "just now",
+  "zh": "刚刚"
+ },
+ "detail.schedule": {
+  "en": "Scheduled Runs",
+  "zh": "定时运行"
+ },
+ "detail.schedule.enable": {
+  "en": "Enable scheduled runs",
+  "zh": "启用定时执行"
+ },
+ "detail.schedule.cron": {
+  "en": "Cron expression",
+  "zh": "Cron 表达式"
+ },
+ "detail.schedule.presets": {
+  "en": "Presets",
+  "zh": "预设"
+ },
+ "detail.schedule.preset.daily9": {
+  "en": "Every day 09:00",
+  "zh": "每天 09:00"
+ },
+ "detail.schedule.preset.hourly": {
+  "en": "Every hour",
+  "zh": "每小时"
+ },
+ "detail.schedule.preset.tenMin": {
+  "en": "Every 10 minutes",
+  "zh": "每 10 分钟"
+ },
+ "detail.schedule.preset.weeklyMon9": {
+  "en": "Every Monday 09:00",
+  "zh": "每周一 09:00"
+ },
+ "detail.schedule.nextRun": {
+  "en": "Next run",
+  "zh": "下次运行"
+ },
+ "detail.schedule.lastTriggered": {
+  "en": "Last triggered",
+  "zh": "上次触发"
+ },
+ "detail.schedule.invalid": {
+  "en": "Invalid cron expression",
+  "zh": "Cron 表达式无效"
+ },
+ "detail.schedule.notScheduled": {
+  "en": "Not scheduled yet",
+  "zh": "尚未排程"
+ },
+ "detail.schedule.dueSoon": {
+  "en": "Due soon",
+  "zh": "即将运行"
+ },
+ "detail.schedule.timeZone": {
+  "en": "Time zone",
+  "zh": "时区"
+ },
+ "detail.schedule.timeZoneHost": {
+  "en": "Host time zone ({timeZone})",
+  "zh": "Host 时区（{timeZone}）"
+ },
+ "detail.schedule.timeZoneHostUnknown": {
+  "en": "Host time zone (unknown)",
+  "zh": "Host 时区（未知）"
+ },
+ "detail.schedule.timeZoneHint": {
+  "en": "The cron wall clock is read in this zone; daylight-saving gaps are skipped and a repeated time fires once.",
+  "zh": "Cron 的墙上时间按此时区解读；夏令时跳变会跳过不存在的时刻，重复的时刻只触发一次。"
+ },
+ "detail.schedule.timeZoneSearch": {
+  "en": "Search time zones…",
+  "zh": "搜索时区…"
+ },
+ "detail.schedule.timeZoneNone": {
+  "en": "No matching time zone",
+  "zh": "没有匹配的时区"
+ },
+ "detail.schedule.nextRunOverdue": {
+  "en": "Overdue by {duration}",
+  "zh": "已逾期 {duration}"
+ },
+ "detail.schedule.duration.days": {
+  "en": "{count}d",
+  "zh": "{count} 天"
+ },
+ "detail.schedule.duration.hours": {
+  "en": "{count}h",
+  "zh": "{count} 小时"
+ },
+ "detail.schedule.duration.minutes": {
+  "en": "{count}m",
+  "zh": "{count} 分钟"
+ },
+ "detail.schedule.duration.seconds": {
+  "en": "{count}s",
+  "zh": "{count} 秒"
+ },
+ "detail.schedule.mode": {
+  "en": "Mode",
+  "zh": "调度方式"
+ },
+ "detail.schedule.mode.cron": {
+  "en": "Recurring",
+  "zh": "循环"
+ },
+ "detail.schedule.mode.once": {
+  "en": "Once",
+  "zh": "单次"
+ },
+ "detail.schedule.at": {
+  "en": "Run at",
+  "zh": "执行时间"
+ },
+ "detail.schedule.atHint": {
+  "en": "Planned instant, read in the selected zone; it must be in the future.",
+  "zh": "按所选时区解读的计划时刻；必须是未来时间。"
+ },
+ "detail.schedule.atInvalid": {
+  "en": "Choose a valid future time",
+  "zh": "请选择未来的有效时间"
+ },
+ "detail.schedule.plannedAt": {
+  "en": "Planned time",
+  "zh": "计划时间"
+ },
+ "detail.schedule.zoneOnceHint": {
+  "en": "The chosen instant is read in this zone.",
+  "zh": "所选时刻按此时区解读。"
+ },
+ "detail.schedule.maxRuns": {
+  "en": "Run limit",
+  "zh": "次数上限"
+ },
+ "detail.schedule.maxRunsUnlimited": {
+  "en": "Unlimited",
+  "zh": "不限次数"
+ },
+ "detail.schedule.maxRunsValue": {
+  "en": "At most {count} runs",
+  "zh": "最多 {count} 次"
+ },
+ "detail.schedule.maxRunsCustom": {
+  "en": "Custom",
+  "zh": "自定义"
+ },
+ "detail.schedule.maxRunsInvalid": {
+  "en": "The run limit must be a positive whole number",
+  "zh": "次数上限必须是正整数"
+ },
+ "detail.schedule.runs": {
+  "en": "Ran {done}/{total}",
+  "zh": "已执行 {done}/{total} 次"
+ },
+ "detail.schedule.runsUnlimited": {
+  "en": "Ran {done}",
+  "zh": "已执行 {done} 次"
+ },
+ "detail.schedule.remaining": {
+  "en": "{count} left",
+  "zh": "剩余 {count} 次"
+ },
+ "detail.schedule.cancel": {
+  "en": "Cancel schedule",
+  "zh": "关闭调度"
+ },
+ "detail.schedule.ended": {
+  "en": "Schedule ended: {reason}",
+  "zh": "调度已结束：{reason}"
+ },
+ "detail.schedule.skipped": {
+  "en": "Last skip: {reason}",
+  "zh": "上次跳过：{reason}"
+ },
+ "detail.schedule.stop.fired": {
+  "en": "the one-shot ran",
+  "zh": "单次计划已执行"
+ },
+ "detail.schedule.stop.limit": {
+  "en": "the run limit was reached",
+  "zh": "已达次数上限"
+ },
+ "detail.schedule.stop.no-target": {
+  "en": "the plan has no reachable occurrence",
+  "zh": "计划已无可执行时刻"
+ },
+ "detail.schedule.stop.missed": {
+  "en": "the instant was missed and skipped",
+  "zh": "错过执行时刻，已跳过"
+ },
+ "detail.schedule.stop.busy": {
+  "en": "the task was already running, so the occurrence was skipped",
+  "zh": "触发时任务正在运行，已跳过"
+ },
+ "detail.schedule.stop.permission": {
+  "en": "a permission awaited human confirmation, so the occurrence was skipped",
+  "zh": "权限待人工确认，已跳过"
+ },
+ "detail.schedule.stop.launch-failed": {
+  "en": "the launch failed before any execution existed, so the run was refunded",
+  "zh": "启动失败未创建执行，次数已退回"
+ },
+ "card.scheduled": {
+  "en": "scheduled",
+  "zh": "定时"
+ },
+ "card.scheduledOnce": {
+  "en": "once",
+  "zh": "单次"
+ },
+ "new.workspace": {
+  "en": "Workspace",
+  "zh": "工作区"
+ },
+ "new.agentPreset": {
+  "en": "Agent preset",
+  "zh": "Agent 预设"
+ },
+ "new.permission": {
+  "en": "Permission",
+  "zh": "权限"
+ },
+ "new.model": {
+  "en": "Model",
+  "zh": "模型"
+ },
+ "exec.workspace.recent": {
+  "en": "Most recent (default)",
+  "zh": "最近使用（默认）"
+ },
+ "exec.mode.inherit": {
+  "en": "Inherit (deployment default)",
+  "zh": "继承（部署默认）"
+ },
+ "exec.mode.inheritWith": {
+  "en": "Inherit (deployment default: {preset})",
+  "zh": "继承（部署默认：{preset}）"
+ },
+ "exec.mode.builtinGroup": {
+  "en": "Built-in presets",
+  "zh": "内置预设"
+ },
+ "exec.mode.customGroup": {
+  "en": "Custom presets",
+  "zh": "自定义预设"
+ },
+ "preset.builtin.standard": {
+  "en": "Standard",
+  "zh": "标准"
+ },
+ "preset.builtin.ptc": {
+  "en": "PTC (programmatic tool calling)",
+  "zh": "PTC（程序化工具调用）"
+ },
+ "preset.builtin.minimal": {
+  "en": "Minimal",
+  "zh": "极简"
+ },
+ "preset.builtin.cordis": {
+  "en": "Cordis",
+  "zh": "Cordis"
+ },
+ "exec.mode.defaultSuffix": {
+  "en": " (default)",
+  "zh": "（默认）"
+ },
+ "exec.mode.brokenSuffix": {
+  "en": " (unavailable)",
+  "zh": "（不可用）"
+ },
+ "exec.mode.removed": {
+  "en": " (removed)",
+  "zh": "（已移除）"
+ },
+ "exec.permission.default": {
+  "en": "Session default",
+  "zh": "会话默认"
+ },
+ "exec.permission.inheritParent": {
+  "en": "Inherit parent ({permission})",
+  "zh": "继承父任务（{permission}）"
+ },
+ "exec.permission.read-only": {
+  "en": "Read-only",
+  "zh": "只读"
+ },
+ "exec.permission.workspace-write": {
+  "en": "Workspace Write",
+  "zh": "工作区可写"
+ },
+ "exec.permission.danger-full-access": {
+  "en": "Full Access",
+  "zh": "完全访问"
+ },
+ "exec.model.default": {
+  "en": "Host default (agent-default-model)",
+  "zh": "宿主默认（agent-default-model）"
+ },
+ "exec.model.unknown": {
+  "en": " (unknown / fallback to default)",
+  "zh": "（未知模型/回退默认）"
+ },
+ "exec.reuseSession": {
+  "en": "Continue in the same conversation",
+  "zh": "在同一对话继续"
+ },
+ "exec.teamRun": {
+  "en": "Run with an Agent Team (Lead + teammates)",
+  "zh": "用 Agent Team 执行（Leader/teammate）"
+ },
+ "exec.teamRunHint": {
+  "en": "On: running this task starts one Lead session and spawns a teammate per subtask inside it, working in parallel (a subtask permission pin does not apply). Off: every member gets its own independent session.",
+  "zh": "开启后：执行本任务只启动一个 Leader 会话，每个子任务由它派生为 teammate 并在该会话内并行工作（子任务自身的权限钉住不适用）。关闭则每个成员各开独立会话。"
+ },
+ "exec.teamRunUnavailable": {
+  "en": "This deployment serves no Agent Teams service, so team runs cannot be enabled.",
+  "zh": "当前部署未提供 Agent Teams 服务，无法启用。"
+ },
+ "exec.reuseSessionHint": {
+  "en": "When on, later runs continue in the previous session (when that session is idle and still exists) instead of starting a new conversation each time; the pinned permission and model above are re-applied on every reuse.",
+  "zh": "开启后，本任务的后续执行在上一次会话里继续（该会话空闲且仍存在时），不再每次新建对话；每次复用时都会重新应用上面钉住的权限与模型。"
+ },
+ "exec.goalRun": {
+  "en": "Start the run with dsh's built-in /goal",
+  "zh": "以 dsh 内置的 /goal 开始执行任务"
+ },
+ "exec.goalRunHint": {
+  "en": "Off by default: when checked, the run arms dsh built-in /goal with the task objective, so the session keeps working automatic continuation rounds until the agent marks the goal complete, and the board settles the execution only when that goal really ends. Unchecked: one plain turn.",
+  "zh": "默认关闭：勾选后执行时把任务目标作为持久目标交给 dsh 内置的 /goal，会话会自动续跑多轮，直到 agent 标记目标完成；看板在该目标真正结束后才结算本次执行。不勾选则只执行一轮普通对话。"
+ },
+ "exec.skipVerification": {
+  "en": "Skip acceptance for this task",
+  "zh": "跳过本任务的验收"
+ },
+ "exec.skipVerificationHint": {
+  "en": "Off by default: when checked, a goal-form run of this task no longer gates update_goal on a passing acceptance, and the execution record is marked as skipped. It applies only to executions started afterwards, and means nothing while the board-wide acceptance switch is off.",
+  "zh": "默认关闭：勾选后本任务以 goal 形式执行时不再拦截 update_goal 标记完成，也不要求通过验收；执行记录会标注「该卡片跳过验收」。仅对之后新开的执行生效，验收总开关关闭时本项无意义。"
+ },
+ "detail.executionSettings": {
+  "en": "Execution Settings",
+  "zh": "执行设置"
+ },
+ "exec.hint": {
+  "en": "Applied when the task runs: the workspace decides where the execution session lands; the agent preset composes the session (tool face and prompt sections); the permission is applied through the /permission command. Blank inherits the deployment default.",
+  "zh": "执行时生效：工作区决定执行会话落在哪个工作区；Agent 预设决定会话的组合（工具面与提示词段）；权限经 /permission 命令应用到会话。留空则继承部署默认。"
+ },
+ "settings.title": {
+  "en": "Task Board",
+  "zh": "任务看板"
+ },
+ "settings.description": {
+  "en": "Task orchestration, agent announcement and goal acceptance.",
+  "zh": "任务编排、agent 播报与目标验收。"
+ },
+ "settings.enabled": {
+  "en": "Enable the task board",
+  "zh": "启用任务看板"
+ },
+ "settings.enabledCardHint": {
+  "en": "Master switch, announcement, sleep protection and subtask depth.",
+  "zh": "总开关、播报、睡眠保护与子任务层级。"
+ },
+ "settings.enabledHint": {
+  "en": "When off, the sidebar entry and board view are hidden and the task_board_* agent tools are unregistered; while on, any session can read and drive the board, its subtasks and its schedules through those tools.",
+  "zh": "关闭后隐藏侧边栏入口与看板视图，并注销 task_board_* agent 工具；开启时任何会话都可以通过这些工具读写看板、子任务与定时计划。"
+ },
+ "settings.announceToAgent": {
+  "en": "Announce the task board to agents",
+  "zh": "向 agent 播报任务看板"
+ },
+ "settings.announceToAgentHint": {
+  "en": "On: every agent system prompt includes a note about this board. Off: no announcement; agents learn about the board only when you mention it.",
+  "zh": "开启：每条 agent 系统提示都会包含本看板的说明；关闭：不播报，agent 仅在用户主动提及时了解看板。"
+ },
+ "settings.preventIdleSleep": {
+  "en": "Prevent idle system sleep",
+  "zh": "阻止系统空闲睡眠"
+ },
+ "settings.preventIdleSleepHint": {
+  "en": "Off by default. When enabled, the Host prevents idle system sleep while any DSH session runs, any schedule is enabled, or session state is not yet known. The display may still turn off.",
+  "zh": "默认关闭。开启后，只要存在运行中的 DSH 会话、已启用的定时任务或会话状态尚未确认，Host 就阻止整机因空闲睡眠；屏幕仍可自动关闭。"
+ },
+ "settings.powerStatus": {
+  "en": "Platform: {platform}; protection: {phase}; running sessions: {running}; enabled schedules: {schedules}",
+  "zh": "平台：{platform}；保护状态：{phase}；运行会话：{running}；已启用计划：{schedules}"
+ },
+ "settings.powerBoundary": {
+  "en": "This may use more battery. Lid close, manual sleep, hibernation, shutdown, low-battery actions, and enterprise policy are outside the guarantee; an already sleeping computer is not woken.",
+  "zh": "这可能增加电池消耗。合盖、手动睡眠、休眠、关机、低电量或企业策略不在保证范围内，也不会唤醒已经睡眠的机器。"
+ },
+ "settings.powerUnknown": {
+  "en": "unknown",
+  "zh": "未知"
+ },
+ "settings.powerError": {
+  "en": "Latest power-protection error: {error}",
+  "zh": "最近一次电源保护错误：{error}"
+ },
+ "settings.inherit": {
+  "en": "Inherit",
+  "zh": "继承"
+ },
+ "settings.on": {
+  "en": "On",
+  "zh": "开"
+ },
+ "settings.off": {
+  "en": "Off",
+  "zh": "关"
+ },
+ "settings.overridden": {
+  "en": "Overridden",
+  "zh": "已覆盖"
+ },
+ "settings.reset": {
+  "en": "Reset to default",
+  "zh": "恢复默认"
+ },
+ "settings.notExposed": {
+  "en": "This DSH version does not expose this plugin's settings namespace to the configuration page, so the form is unavailable. Edit ~/.dsh/settings.yaml directly, or add the namespace to the Host settings allowlist and restart.",
+  "zh": "当前 DSH 版本未向设置页暴露本插件的配置命名空间，表单不可用。可编辑 ~/.dsh/settings.yaml 直接配置，或将本命名空间加入 Host 设置白名单后重启。"
+ },
+ "settings.readOnly": {
+  "en": "This deployment stores settings read-only.",
+  "zh": "当前部署的设置只读。"
+ },
+ "settings.expand": {
+  "en": "Show settings",
+  "zh": "展开设置"
+ },
+ "settings.collapse": {
+  "en": "Hide settings",
+  "zh": "收起设置"
+ },
+ "settings.save": {
+  "en": "Save",
+  "zh": "保存"
+ },
+ "settings.saving": {
+  "en": "Saving…",
+  "zh": "保存中…"
+ },
+ "settings.discard": {
+  "en": "Discard",
+  "zh": "放弃"
+ },
+ "settings.unsaved": {
+  "en": "Unsaved",
+  "zh": "未保存"
+ },
+ "settings.saveFailed": {
+  "en": "The deployment did not accept these values; they were left for you to correct.",
+  "zh": "部署未接受这些值，已保留供你修改。"
+ },
+ "settings.invalidNumber": {
+  "en": "Enter a number, or leave blank to use the default.",
+  "zh": "请输入数字，留空则使用默认值。"
+ },
+ "settings.sessionPollSeconds": {
+  "en": "Session poll interval (seconds)",
+  "zh": "会话轮询间隔（秒）"
+ },
+ "settings.sessionPollSecondsHint": {
+  "en": "Default 5. The Host reads the DSH session roster only while the board has something to reconcile: a running card or an open execution. With neither it stops polling and never re-scans the persisted session directory. Range 1 to 300 seconds: a shorter interval settles runs sooner and costs the Host more.",
+  "zh": "默认 5 秒。仅在看板有需要核对的事情——运行中的卡片或未结算的执行——时才读取会话名册；两者都没有时不再轮询，Host 不会持续扫描持久化会话目录。取值 1–300 秒：间隔越短结算越快、Host 负载越高。"
+ },
+ "settings.maxSubtaskDepth": {
+  "en": "Subtask depth limit",
+  "zh": "子任务深度上限"
+ },
+ "settings.maxSubtaskDepthHint": {
+  "en": "Default 1: a task may carry one level of subtasks, and a subtask cannot create or link further subtasks. Maximum 3. Running a task also runs its whole subtask tree concurrently, and every extra level opens more sessions per run.",
+  "zh": "默认 1：一个任务只允许一层子任务，子任务不能再创建或关联子任务。最大 3。执行父任务会并发执行它的整棵子任务树，层级越深，一次执行开启的会话越多。"
+ },
+ "settings.maxSubtaskDepthOption": {
+  "en": "{depth} levels",
+  "zh": "{depth} 层"
+ },
+ "settings.runBehaviorTitle": {
+  "en": "Run behavior",
+  "zh": "运行行为"
+ },
+ "settings.runBehaviorCardHint": {
+  "en": "The global native /goal switch (master control, off by default).",
+  "zh": "全局原生 /goal 执行开关（总开关，默认关闭）。"
+ },
+ "settings.goalRunGlobal": {
+  "en": "Global: run tasks with dsh native /goal",
+  "zh": "全局启用 DSH 原生 /goal 执行"
+ },
+ "settings.goalRunGlobalHint": {
+  "en": "Off by default. While off, every task runs one plain turn and never calls dsh built-in /goal; a run uses native /goal only when this is on AND the task-level option is checked (see the task option below). The task-level checkbox always stays operable and this switch never rewrites it: the master switch only decides whether that choice takes effect. The switch is frozen when an execution starts, so it only affects runs opened afterwards.",
+  "zh": "默认关闭。关闭时所有任务都按普通单回合执行，不调用 dsh 内置的 /goal；只有这里开启、且任务级「以 /goal 开始执行」被勾选时，才执行原生 /goal。任务级勾选始终可操作、也不会被这里的开关改写，总开关只决定它是否生效。开关按执行启动时冻结，只影响之后新开的执行。"
+ },
+ "settings.goalRunGlobalDisabledTaskOption": {
+  "en": "The global native /goal switch is off: the task-level option can still be checked or cleared, but it has no effect right now and the preference you save is never rewritten; turning the global switch back on applies it. This execution runs one plain turn and performs no goal acceptance.",
+  "zh": "全局「原生 /goal 执行」总开关已关闭：任务级选项仍可随时勾选或取消，但暂不生效，你保存的偏好也不会被改写；开启总开关后即按该偏好执行。本次执行按普通单回合进行，未执行 goal 验收。"
+ },
+ "settings.goalVerificationTitle": {
+  "en": "Task acceptance",
+  "zh": "任务验收"
+ },
+ "settings.goalVerification": {
+  "en": "Enable task acceptance",
+  "zh": "启用任务验收"
+ },
+ "settings.goalVerificationCardHint": {
+  "en": "The switch, the judge model and the criteria threshold.",
+  "zh": "验收开关、裁判模型与判据阈值。"
+ },
+ "settings.goalVerificationHint": {
+  "en": "On by default: a task executed in goal form must pass one acceptance before update_goal may mark it complete (the three coding criteria, aimed at engineering tasks, a 0.65 threshold, two rounds per criterion with the A/B slots swapped, and the work must beat the empty-work baseline). A first failure returns the total, the per-criterion scores and the located findings to the fixing agent, and one execution may accept at most twice; a second failure fails that execution. It affects only this board goal-form executions, never plain chat and never a task pinned to goalRun: false. Every acceptance really calls the judge model and spends quota.",
+  "zh": "默认打开：以 goal 形式执行的任务在 update_goal 标记完成前必须先通过一次验收（三项 coding 判据（本分区面向工程任务）、阈值 0.65、每项两轮且交换 A/B 位置，实际工作须胜过空工作基线）。首次不通过会把总分、逐项分数与可定位问题反馈给 agent 修复，同一执行最多两次验收；第二次仍不通过则本次执行判失败。仅作用于本插件以 goal 形式执行的任务，不影响普通聊天，也不影响显式 goalRun:false 的单回合任务。每次验收都会真实调用裁判模型并消耗额度。"
+ },
+ "settings.goalVerificationModel": {
+  "en": "Judge model",
+  "zh": "验收模型"
+ },
+ "settings.goalVerificationModelHint": {
+  "en": "Blank inherits the host: the default route of the host model catalog, never the card pinned execution model.",
+  "zh": "留空即继承宿主：使用宿主模型目录的默认路由，而不是任务卡钉住的执行模型。"
+ },
+ "settings.goalVerificationModelInherit": {
+  "en": "Inherit host ({model})",
+  "zh": "继承宿主（{model}）"
+ },
+ "settings.goalVerificationModelInheritUnknown": {
+  "en": "Inherit host (no model catalog)",
+  "zh": "继承宿主（宿主未提供模型目录）"
+ },
+ "settings.goalVerificationEffort": {
+  "en": "Reasoning effort",
+  "zh": "推理强度"
+ },
+ "settings.goalVerificationEffortHint": {
+  "en": "Blank inherits the host default level. A level the target model does not declare is never sent blindly: the acceptance falls back to that model own default level, and the fallback is reported below.",
+  "zh": "留空即继承宿主默认档位。目标模型不支持所选档位时不会盲传：验收改用该模型自己的默认档位，并在下方标注回退。"
+ },
+ "settings.goalVerificationEffortInherit": {
+  "en": "Inherit host ({effort})",
+  "zh": "继承宿主（{effort}）"
+ },
+ "settings.goalVerificationEffortInheritUnknown": {
+  "en": "Inherit host (model default level)",
+  "zh": "继承宿主（模型默认档位）"
+ },
+ "settings.goalVerificationResolved": {
+  "en": "Resolved acceptance configuration",
+  "zh": "实际解析后的验收配置"
+ },
+ "settings.goalVerificationResolvedModel": {
+  "en": "Judge model: {model}",
+  "zh": "裁判模型：{model}"
+ },
+ "settings.goalVerificationResolvedEffort": {
+  "en": "Reasoning effort: {effort}",
+  "zh": "推理强度：{effort}"
+ },
+ "settings.goalVerificationResolvedNoEffort": {
+  "en": "Reasoning effort: not sent explicitly (the model default)",
+  "zh": "推理强度：不显式传参（用模型自身默认）"
+ },
+ "settings.goalVerificationResolvedSource": {
+  "en": "Source: {source}",
+  "zh": "来源：{source}"
+ },
+ "settings.goalVerificationSourceInherit": {
+  "en": "inherited from the host",
+  "zh": "继承宿主"
+ },
+ "settings.goalVerificationSourceExplicit": {
+  "en": "explicit configuration",
+  "zh": "显式配置"
+ },
+ "settings.goalVerificationResolvedPreset": {
+  "en": "Rubric: coding (Specification Adherence / Output Match / Error Signal Detection), threshold {threshold}",
+  "zh": "判据：coding（Specification Adherence / Output Match / Error Signal Detection），阈值 {threshold}"
+ },
+ "settings.goalVerificationRouteMissing": {
+  "en": "The host serves no model catalog, so no judge route resolves: with acceptance on, a goal completion claim is refused and recorded as an acceptance anomaly.",
+  "zh": "宿主未提供模型目录，无法解析验收模型：开启后 goal 任务的完成声明会被拒绝并记录为验收异常。"
+ },
+ "settings.goalVerificationEffortFallback": {
+  "en": "The selected reasoning effort {requested} is not supported by the target model; it falls back to {resolved}.",
+  "zh": "所选推理强度 {requested} 不被目标模型支持，已回退为 {resolved}。"
+ },
+ "settings.goalVerificationEffortFallbackNone": {
+  "en": "The selected reasoning effort {requested} is not supported by the target model; it falls back to that model default level (not sent explicitly).",
+  "zh": "所选推理强度 {requested} 不被目标模型支持，已回退为该模型默认档位（不显式传参）。"
+ },
+ "settings.goalVerificationModelInvalid": {
+  "en": "The configured judge model is not a provider/model route; the host default is used instead.",
+  "zh": "配置的验收模型不是 provider/model 形式，已回退宿主默认。"
+ },
+ "running.executing": {
+  "en": "Executing",
+  "zh": "执行中"
+ },
+ "running.verifying": {
+  "en": "Verifying",
+  "zh": "验收中"
+ },
+ "running.repairing": {
+  "en": "Fixing a failed acceptance",
+  "zh": "验收未通过修复中"
+ },
+ "running.verificationPassed": {
+  "en": "Acceptance passed",
+  "zh": "验收通过"
+ },
+ "running.verificationFailed": {
+  "en": "Acceptance failed",
+  "zh": "验收未通过"
+ },
+ "running.verificationInvalid": {
+  "en": "Invalid acceptance, waiting for a human",
+  "zh": "验收无效，等待处理"
+ },
+ "verify.title": {
+  "en": "Acceptance report",
+  "zh": "验收报告"
+ },
+ "verify.status.passed": {
+  "en": "Passed",
+  "zh": "通过"
+ },
+ "verify.status.failed": {
+  "en": "Failed",
+  "zh": "未通过"
+ },
+ "verify.status.exception": {
+  "en": "Anomaly",
+  "zh": "异常"
+ },
+ "verify.status.verifying": {
+  "en": "Verifying",
+  "zh": "验收中"
+ },
+ "verify.status.pending": {
+  "en": "Not yet verified",
+  "zh": "待验收"
+ },
+ "verify.status.off": {
+  "en": "Acceptance was off for this execution",
+  "zh": "本次执行未启用验收"
+ },
+ "verify.status.invalid": {
+  "en": "Invalid acceptance",
+  "zh": "验收无效"
+ },
+ "verify.status.invalidHeld": {
+  "en": "Invalid acceptance, waiting for a human",
+  "zh": "验收无效，等待人工处理"
+ },
+ "verify.attemptInvalid": {
+  "en": "Invalid acceptance {index}",
+  "zh": "第 {index} 次验收无效"
+ },
+ "verify.invalidReason.missing-finding": {
+  "en": "A failing criterion carries no structured finding of its own",
+  "zh": "未达标的判据没有对应的结构化问题反馈"
+ },
+ "verify.invalidReason.unlocatable-quote": {
+  "en": "A finding cites a passage that is not in the evidence the judge saw",
+  "zh": "问题反馈引用的位置不存在于本次裁判所见的证据中"
+ },
+ "verify.invalidReason.baseline-finding": {
+  "en": "A finding points at the empty-work baseline instead of this execution's work",
+  "zh": "问题反馈指向空工作基线，而不是本次执行的工作"
+ },
+ "verify.invalidReason.vacuous-finding": {
+  "en": "A finding is empty or a generic evaluation with no observation or difference",
+  "zh": "问题反馈为空或空泛评价，没有说明实际观测与差异"
+ },
+ "verify.invalidReason.insufficient-evidence": {
+  "en": "The judge saw too little evidence (for example a truncated trace) to support a veto",
+  "zh": "裁判看到的证据不足（例如轨迹被截断），无法支撑否决"
+ },
+ "verify.invalidReason.unknown": {
+  "en": "No usable quality verdict was produced",
+  "zh": "未产生可用的质量判定"
+ },
+ "verify.invalidCounts": {
+  "en": "Valid quality verdicts {quality}/{max} · invalid acceptances {invalid}/{maxInvalid} · anomalies {exceptions}/{max}",
+  "zh": "有效质量判定 {quality}/{max} · 无效验收 {invalid}/{maxInvalid} · 验收异常 {exceptions}/{max}"
+ },
+ "verify.invalidDetail": {
+  "en": "Invalid because: {reason}",
+  "zh": "无效原因：{reason}"
+ },
+ "verify.criterionFindings": {
+  "en": "Structured findings (criterion · cited location · verbatim citation)",
+  "zh": "结构化问题反馈（判据 · 引用位置 · 实际引用）"
+ },
+ "verify.criterionFinding": {
+  "en": "{criterion} · {location}: \"{quote}\"",
+  "zh": "{criterion} · {location}：“{quote}”"
+ },
+ "verify.criterionFindingFull": {
+  "en": "{criterion} · {location}: \"{quote}\" requirement: {requirement} observed: {observation} gap: {gap}",
+  "zh": "{criterion} · {location}：“{quote}” 要求：{requirement} 观测：{observation} 差异：{gap}"
+ },
+ "verify.location.task": {
+  "en": "task statement",
+  "zh": "任务要求"
+ },
+ "verify.location.trajectory": {
+  "en": "execution trajectory",
+  "zh": "执行轨迹"
+ },
+ "verify.location.workspace": {
+  "en": "host-recorded changes",
+  "zh": "宿主记录的变更"
+ },
+ "verify.location.baseline": {
+  "en": "empty-work baseline (not evidence against the work)",
+  "zh": "空工作基线（不构成否决证据）"
+ },
+ "verify.location.unknown": {
+  "en": "location not named",
+  "zh": "未标明位置"
+ },
+ "verify.detailRemoved": {
+  "en": "This attempt detail was cleaned up automatically after the execution passed and settled (the judge did report evidence).",
+  "zh": "本条验收的详细材料已在通过并成功结算后自动清理（不是裁判未举证）。"
+ },
+ "verify.cleanup.cleaned": {
+  "en": "The acceptance-only detail of this execution was cleaned up automatically after it passed and settled; what remains is the lightweight audit credential.",
+  "zh": "本次执行的验收专用详细材料已在通过并成功结算后自动清理；以下为保留的轻量审计凭据。"
+ },
+ "verify.cleanup.pending": {
+  "en": "The acceptance-only detail is pending cleanup (started once the execution passes and settles).",
+  "zh": "验收专用详细材料待清理（将通过并结算后启动）。"
+ },
+ "verify.cleanup.failed": {
+  "en": "Cleaning the acceptance detail failed after {attempts} attempts: {error}. The pass record is still valid and the host retries on its next start.",
+  "zh": "验收详细材料清理失败（已重试 {attempts} 次）：{error}；通过记录仍然有效，宿主重启后会补清。"
+ },
+ "verify.cleanup.audit": {
+  "en": "Kept credential: attempt {index} · {stage} · score {score} · evidence hash {hash}",
+  "zh": "保留凭据：第 {index} 次 · {stage} · 分数 {score} · 证据哈希 {hash}"
+ },
+ "verify.cleanup.stage.quality": {
+  "en": "quality verdict",
+  "zh": "质量判定"
+ },
+ "verify.cleanup.stage.invalid": {
+  "en": "invalid acceptance",
+  "zh": "无效验收"
+ },
+ "verify.cleanup.stage.exception": {
+  "en": "acceptance anomaly",
+  "zh": "验收异常"
+ },
+ "verify.cleanup.stage.budget": {
+  "en": "time budget exhausted",
+  "zh": "时间预算耗尽"
+ },
+ "verify.summary": {
+  "en": "Total {score} (threshold {threshold}) · empty-work baseline {baseline}",
+  "zh": "总分 {score}（阈值 {threshold}）· 空工作基线 {baseline}"
+ },
+ "verify.criteria": {
+  "en": "Per-criterion scores",
+  "zh": "逐项判据"
+ },
+ "verify.criterion": {
+  "en": "{name}: {score} (threshold {threshold})",
+  "zh": "{name}：{score}（阈值 {threshold}）"
+ },
+ "verify.rounds": {
+  "en": "{rounds} rounds per criterion, A/B slots swapped, averaged",
+  "zh": "每项 {rounds} 轮，交换 A/B 位置后取平均"
+ },
+ "verify.judge": {
+  "en": "Judge {model} (reasoning effort {effort})",
+  "zh": "裁判模型 {model}（推理强度 {effort}）"
+ },
+ "verify.judgeNoEffort": {
+  "en": "Judge {model} (reasoning effort: not sent explicitly)",
+  "zh": "裁判模型 {model}（推理强度：不显式传参）"
+ },
+ "verify.judgeInherited": {
+  "en": "Judge {model} (inherited from the host)",
+  "zh": "裁判模型 {model}（继承宿主）"
+ },
+ "verify.attempt": {
+  "en": "Acceptance {index}",
+  "zh": "第 {index} 次验收"
+ },
+ "verify.attemptException": {
+  "en": "Acceptance anomaly {index}",
+  "zh": "第 {index} 次验收异常"
+ },
+ "verify.counts": {
+  "en": "Quality verdicts {quality}/{max} · anomalies {exceptions}/{max}",
+  "zh": "质量验收 {quality}/{max} · 验收异常 {exceptions}/{max}"
+ },
+ "verify.findings": {
+  "en": "Findings",
+  "zh": "问题反馈"
+ },
+ "verify.noFindings": {
+  "en": "The judge reported no locatable finding",
+  "zh": "本次裁判没有报告可定位的问题"
+ },
+ "verify.evidence": {
+  "en": "Evidence: {chars} characters · {entries} trace entries · {omitted} characters truncated",
+  "zh": "证据范围：{chars} 字符 · {entries} 条轨迹 · 截断 {omitted} 字符"
+ },
+ "verify.workspaceEvidence": {
+  "en": "{files} changed file(s) observed by the host",
+  "zh": "其中 {files} 个文件变更取自宿主自身观察"
+ },
+ "verify.usage": {
+  "en": "Usage: {calls} requests · {input} input · {output} output · {reasoning} reasoning tokens",
+  "zh": "用量：请求 {calls} 次 · 输入 {input} · 输出 {output} · 推理 {reasoning} tokens"
+ },
+ "verify.usageIncomplete": {
+  "en": " (at least one request usage is unknown; these counts are a floor)",
+  "zh": "（至少一次请求的用量未知，以上为下限）"
+ },
+ "verify.finalFailure": {
+  "en": "Verdict basis: {reason}",
+  "zh": "判定依据：{reason}"
+ },
+ "verify.applicability.disabled": {
+  "en": "Acceptance was off when this execution started; it settles on the historical verdict.",
+  "zh": "本次执行启动时验收开关关闭，按原有回合判定结算。"
+ },
+ "verify.applicability.goalUnavailable": {
+  "en": "This execution never became a goal run (the card did not check Start with /goal, or /goal was refused or unavailable), so acceptance was not enforced.",
+  "zh": "本次执行未成为 goal 执行（卡片未勾选「以 /goal 开始执行任务」，或 /goal 被拒绝/不可用），验收未强制执行。"
+ },
+ "verify.applicability.skipped": {
+  "en": "This card checked Skip acceptance, so the execution was never judged.",
+  "zh": "该任务卡勾选了「跳过验收」，本次执行未经验收判定。"
+ },
+ "verify.applicability.teamMember": {
+  "en": "Team member: the Lead team-summary evidence is accepted as one execution.",
+  "zh": "团队执行成员：由 Lead 的团队汇总证据统一验收。"
+ },
+ "verify.applicability.goalDisabled": {
+  "en": "The global native /goal switch was off when this execution started, so it ran one plain turn: no goal acceptance was performed, which neither counts as a pass nor fails the run.",
+  "zh": "本次执行启动时全局「原生 /goal 执行」总开关关闭，按普通单回合执行：本次未执行 goal 验收，既不算已验收通过，也不因此判失败。"
+ },
+ "verify.effortFallback": {
+  "en": "Reasoning effort fallback: {requested} → {resolved}",
+  "zh": "推理强度回退：{requested} → {resolved}"
+ },
+ "verify.thresholdValue": {
+  "en": "{value}%",
+  "zh": "{value}%"
+ },
+ "detail.parent": {
+  "en": "Parent task",
+  "zh": "父任务"
+ },
+ "detail.parent.open": {
+  "en": "Open parent task",
+  "zh": "打开父任务"
+ },
+ "detail.subtasks": {
+  "en": "Subtasks",
+  "zh": "子任务"
+ },
+ "detail.subtasks.empty": {
+  "en": "No subtasks yet",
+  "zh": "还没有子任务"
+ },
+ "detail.subtasks.add": {
+  "en": "Add subtask",
+  "zh": "添加子任务"
+ },
+ "detail.subtasks.link": {
+  "en": "Link existing task",
+  "zh": "关联现有任务"
+ },
+ "detail.subtasks.detach": {
+  "en": "Detach",
+  "zh": "解除关联"
+ },
+ "detail.subtasks.runningLock": {
+  "en": "This subtask is running; it can be detached or re-linked once it settles",
+  "zh": "子任务正在执行，结算后才能解除关联或改挂父任务"
+ },
+ "detail.subtasks.runHint": {
+  "en": "Running this task also runs its {count} subtasks concurrently; one subtask failing does not stop the others.",
+  "zh": "执行本任务会同时并发执行它的 {count} 个子任务；子任务失败不影响其它子任务继续执行。"
+ },
+ "detail.subtasks.waiting": {
+  "en": "Waiting for subtasks",
+  "zh": "等待子任务结算"
+ },
+ "detail.subtasks.depthLimit": {
+  "en": "The subtask depth limit is {depth}; a subtask cannot create or link further subtasks.",
+  "zh": "当前子任务深度上限为 {depth} 层，子任务不能再创建或关联子任务。"
+ },
+ "detail.subtasks.hostOnly": {
+  "en": "Connect to the Host to create or link subtasks.",
+  "zh": "连接 Host 后才能创建或关联子任务。"
+ },
+ "new.subtaskTitle": {
+  "en": "New Subtask",
+  "zh": "新建子任务"
+ },
+ "new.subtaskInherit": {
+  "en": "Execution settings left unset inherit the parent (workspace, mode, permission, model); override any of them here.",
+  "zh": "未单独选择的执行设置继承父任务（工作区、模式、权限、模型），可在此覆盖。"
+ },
+ "link.subtask.title": {
+  "en": "Link an existing task",
+  "zh": "关联现有任务"
+ },
+ "link.subtask.hint": {
+  "en": "Only an on-board task without a parent can be linked; it then becomes a subtask of this task.",
+  "zh": "只能关联没有父任务的在看板任务；关联后它成为本任务的子任务。"
+ },
+ "link.subtask.empty": {
+  "en": "No task can be linked",
+  "zh": "没有可关联的任务"
+ },
+ "link.subtask.confirm": {
+  "en": "Link",
+  "zh": "关联"
+ },
+ "card.subtask": {
+  "en": "subtask",
+  "zh": "子任务"
+ },
+ "card.subtasks": {
+  "en": "{count} subtasks",
+  "zh": "{count} 子任务"
+ },
+ "card.subtasksFailed": {
+  "en": "{count} failed",
+  "zh": "{count} 失败"
+ },
+ "card.subtasksRunning": {
+  "en": "{count} running",
+  "zh": "{count} 运行中"
+ },
+ "card.subtasksBreakdown": {
+  "en": "Subtasks {total}: {done} done, {running} running, {failed} failed",
+  "zh": "子任务 {total}：已完成 {done}，运行中 {running}，失败 {failed}"
+ },
+ "card.result.succeeded": {
+  "en": "last succeeded",
+  "zh": "最近成功"
+ },
+ "card.result.failed": {
+  "en": "last failed",
+  "zh": "最近失败"
+ },
+ "card.result.cancelled": {
+  "en": "last cancelled",
+  "zh": "最近取消"
+ },
+ "card.declared": {
+  "en": "set by hand",
+  "zh": "手动结算"
+ },
+ "card.declaredHint": {
+  "en": "The column disagrees with the latest run: it was set by a manual move or an external system (such as a closed issue), not by that run settling.",
+  "zh": "卡片所在列与最近一次执行结果不一致：该列由人工移动或外部系统（如 Issue 关闭）设置，而不是这次执行的结算。"
+ },
+ "card.openSession": {
+  "en": "Open the latest execution session",
+  "zh": "打开最近执行的会话"
+ },
+ "card.tagsLabel": {
+  "en": "labels {tags}",
+  "zh": "标签 {tags}"
+ },
+ "card.time.created": {
+  "en": "Created {time}",
+  "zh": "创建于 {time}"
+ },
+ "card.time.started": {
+  "en": "Running {time}",
+  "zh": "已运行 {time}"
+ },
+ "card.time.settled": {
+  "en": "Settled {time}",
+  "zh": "结算于 {time}"
+ },
+ "card.time.archived": {
+  "en": "Archived {time}",
+  "zh": "归档于 {time}"
+ },
+ "card.time.updated": {
+  "en": "Updated {time}",
+  "zh": "更新于 {time}"
+ },
+ "board.density.compact": {
+  "en": "Switch to compact cards",
+  "zh": "切换为紧凑卡片"
+ },
+ "board.density.comfortable": {
+  "en": "Switch to full cards",
+  "zh": "切换为完整卡片"
+ },
+ "board.group.today": {
+  "en": "Today",
+  "zh": "今天"
+ },
+ "board.group.week": {
+  "en": "Last 7 days",
+  "zh": "近 7 天"
+ },
+ "board.group.earlier": {
+  "en": "Earlier",
+  "zh": "更早"
+ },
+ "board.group.expand": {
+  "en": "Show {count}",
+  "zh": "展开 {count} 张"
+ },
+ "board.group.collapse": {
+  "en": "Collapse",
+  "zh": "收起"
+ },
+ "board.hideSubtasks": {
+  "en": "Hide subtasks",
+  "zh": "隐藏子任务"
+ },
+ "board.showSubtasks": {
+  "en": "Show subtasks",
+  "zh": "显示子任务"
+ },
+ "board.subtaskFilterHint": {
+  "en": "The board shows parent tasks only; a text or label filter reveals the subtasks automatically.",
+  "zh": "看板默认只显示父任务；搜索或按标签筛选时会自动展开子任务。"
+ }
+}

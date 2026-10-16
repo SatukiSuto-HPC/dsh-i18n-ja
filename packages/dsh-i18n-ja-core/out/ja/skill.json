@@ -1,0 +1,10 @@
+{
+ "row.title": "スキル",
+ "row.running": "スキルをロード中",
+ "row.preparing": "スキルのロードを準備中",
+ "row.failed": "スキルのロードに失敗しました",
+ "row.stopped": "スキルのロードを中止しました",
+ "row.instructions": "説明",
+ "row.inspect": "表示",
+ "menu.userOnly": "ユーザーのみ"
+}

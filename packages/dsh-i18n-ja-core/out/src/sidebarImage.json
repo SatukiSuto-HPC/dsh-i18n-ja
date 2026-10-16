@@ -1,0 +1,46 @@
+{
+ "zoomControls": {
+  "en": "Zoom controls",
+  "zh": "缩放控件"
+ },
+ "zoomMenu": {
+  "en": "Choose zoom",
+  "zh": "选择缩放比例"
+ },
+ "zoomOut": {
+  "en": "Zoom out",
+  "zh": "缩小"
+ },
+ "zoomIn": {
+  "en": "Zoom in",
+  "zh": "放大"
+ },
+ "zoomFitWidth": {
+  "en": "Fit width",
+  "zh": "适应宽度"
+ },
+ "zoomValue": {
+  "en": "{percent}%",
+  "zh": "{percent}%"
+ },
+ "title": {
+  "en": "Image",
+  "zh": "图片"
+ },
+ "preview": {
+  "en": "Image preview: {name}",
+  "zh": "图片预览：{name}"
+ },
+ "loading": {
+  "en": "Rendering document...",
+  "zh": "文档渲染中..."
+ },
+ "failed": {
+  "en": "This image could not be displayed.",
+  "zh": "无法显示这张图片"
+ },
+ "unsupported": {
+  "en": "Image preview requires the complete file contents.",
+  "zh": "图片预览需要完整文件内容"
+ }
+}
