@@ -15,6 +15,7 @@
 
 ## インストール
 
+npm に公開済みです（[`dsh-i18n-ja`](https://www.npmjs.com/package/dsh-i18n-ja) / [`dsh-i18n-ja-core`](https://www.npmjs.com/package/dsh-i18n-ja-core)）。
 DSH のプラグイン管理（GUI のプラグイン管理画面、または `plugin_manager`）から次を追加します:
 
 ```
@@ -50,7 +51,7 @@ link:<このリポジトリ>/packages/dsh-i18n-ja-core
 
 ## npm 公開（Trusted Publishing）
 
-このリポジトリは npm の Trusted Publishing（GitHub OIDC）で公開しています。トークン不要で、公開はタグ push のみ:
+初回リリース（v0.1.0）は OTP 付きのローカル publish で行い、以後は npm の Trusted Publishing（GitHub OIDC）で公開する設計です。トークン不要で、公開はタグ push のみ:
 
 ```
 # packages/*/package.json の version を上げ
@@ -58,6 +59,7 @@ git tag v<version> && git push origin v<version>
 ```
 
 → `.github/workflows/publish.yml` が両パッケージを `npm publish --provenance` で公開します。
+（信頼設定は `npm trust github <pkg> --repo SatukiSuto-HPC/dsh-i18n-ja --file publish.yml --allow-publish` を 1 回実行して登録します。2FA 認証が対話的に必要です）
 
 ## ライセンス
 
