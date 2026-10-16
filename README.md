@@ -48,6 +48,17 @@ link:<このリポジトリ>/packages/dsh-i18n-ja-core
 
 翻訳の品質チェック: 全キーで en と ja のキー集合一致・`{...}` プレースホルダ一致を機械検証しています。
 
+## npm 公開（Trusted Publishing）
+
+このリポジトリは npm の Trusted Publishing（GitHub OIDC）で公開しています。トークン不要で、公開はタグ push のみ:
+
+```
+# packages/*/package.json の version を上げ
+git tag v<version> && git push origin v<version>
+```
+
+→ `.github/workflows/publish.yml` が両パッケージを `npm publish --provenance` で公開します。
+
 ## ライセンス
 
 Apache-2.0（各パッケージに `LICENSE` を同梱）。
