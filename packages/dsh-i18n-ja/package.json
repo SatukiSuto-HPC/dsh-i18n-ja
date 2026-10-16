@@ -1,7 +1,7 @@
 {
   "name": "dsh-i18n-ja",
   "description": "DSH Web GUI 日本語ロケールパック: registers the 日本語 language into the shared locale catalog and carries the ja dictionaries for every dsh-web-all family plugin namespace (missing keys fall back to English through the SDK chain).",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icon": "icon.svg",
   "type": "module",
   "main": "lib/index.js",

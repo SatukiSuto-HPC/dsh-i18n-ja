@@ -1,7 +1,7 @@
 {
   "name": "dsh-i18n-ja-core",
   "description": "DSH Web GUI 日本語ロケールパック（コア）: registers the 日本語 language and carries the ja dictionaries for every DSH core plugin namespace (common, settings.*, chat, workspace, …). Independent of dsh-i18n-ja (dsh-web-all family); missing keys fall back to English through the SDK chain.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icon": "icon.svg",
   "type": "module",
   "main": "lib/index.js",
