@@ -21,7 +21,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          registry-url: https://registry.npmjs.org
+        # 注意: registry-url を指定しないこと。指定すると setup-node が
+        # NODE_AUTH_TOKEN（GitHub トークン）を .npmrc に書き込み、
+        # Trusted Publishing の OIDC 認証を妨害する。
+
+      # Trusted Publishing には npm >= 11.3 が必要（Node 22 同梱の npm 10 では OIDC 不可）
+      - run: npm install -g npm@11
 
       - name: Verify tag matches package versions
         if: github.event_name == 'push'
