@@ -42,8 +42,22 @@ jobs:
 
       - name: Publish dsh-i18n-ja
         working-directory: packages/dsh-i18n-ja
-        run: npm publish --provenance --access public
+        run: |
+          PKG=$(node -p "require('./package.json').name")
+          VER=$(node -p "require('./package.json').version")
+          if npm view "$PKG@$VER" version >/dev/null 2>&1; then
+            echo "$PKG@$VER is already published — skipping."
+          else
+            npm publish --provenance --access public
+          fi
 
       - name: Publish dsh-i18n-ja-core
         working-directory: packages/dsh-i18n-ja-core
-        run: npm publish --provenance --access public
+        run: |
+          PKG=$(node -p "require('./package.json').name")
+          VER=$(node -p "require('./package.json').version")
+          if npm view "$PKG@$VER" version >/dev/null 2>&1; then
+            echo "$PKG@$VER is already published — skipping."
+          else
+            npm publish --provenance --access public
+          fi
