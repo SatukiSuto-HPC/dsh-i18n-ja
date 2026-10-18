@@ -6,7 +6,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const NM = process.argv[2] ?? String.raw`C:\Users\sirok\.dsh\profiles\desktop\node_modules\@linxin666`;
+const NM = process.argv[2];
+if (!NM) {
+  console.error("usage: node extract-locale.mjs <node_modules dir containing plugin packages> [out/locales.json]");
+  process.exit(1);
+}
 const OUT = process.argv[3] ?? "out/locales.json";
 
 function findLiteral(code, startIdx) {

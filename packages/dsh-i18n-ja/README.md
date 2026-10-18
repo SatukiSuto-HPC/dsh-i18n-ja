@@ -1,20 +1,48 @@
 # dsh-i18n-ja — DSH Web GUI 日本語ロケールパック
 
+> *Japanese locale pack for the DSH (DeepSeek Harness) Web GUI. Registers the* 日本語 *language and ~1,700 translated strings for the* `@linxin666/dsh-web-all` *plugin family. Install it by its npm name from the DSH plugin manager.*
+
 `@linxin666/dsh-web-all`（Web GUI プラグイン集）の UI を日本語表示にする言語パックプラグインです。
 公式の `@linxin666/dsh-i18n`（ロシア語パック）と同じ機構で、共有ロケールサービスに
 **日本語（`ja`、ラベル「日本語」、フォールバック `en`）** を登録し、ファミリー全 17 名前空間の
 日本語辞書をまとめて持ちます。
 
-## 使い方
+コア UI 向けの名前空間は別パック [`dsh-i18n-ja-core`](https://www.npmjs.com/package/dsh-i18n-ja-core) が担当します（重複ゼロ・同時有効化可）。
 
-1. インストール（このディレクトリを直接リンク）:
+## インストール（DSH での導入方法）
 
-   ```
-   dsh plugin --profile desktop add link:C:\Users\sirok\Documents\てｓｔ\i18n-ja
-   ```
+### 1. プラグイン管理から追加（推奨）
 
-2. DSH を再起動（または Web GUI をリロード）。
-3. **設定 → 一般 → 言語** で「日本語」を選択。
+DSH Web GUI の **プラグイン管理** で、次のパッケージ名を追加してください：
+
+```
+dsh-i18n-ja
+```
+
+（エージェント経由で管理する場合は `plugin_manager` の `install_bundle`、spec は `dsh-i18n-ja`）
+
+### 2. 有効化と適用
+
+プラグイン一覧で `dsh-i18n-ja` が **有効（enabled）／適用（applied）** になっていることを確認します。
+
+### 3. 反映
+
+Web GUI をリロード（ブラウザなら F5、デスクトップアプリなら再起動）し、
+**設定 → 一般 → 言語 → 日本語** を選択します。
+
+### エージェントに導入を任せる場合のプロンプト
+
+DSH のチャットに、次のプロンプトをそのまま貼り付けてください：
+
+```
+npm パッケージ「dsh-i18n-ja」を DSH のプラグインとして導入してください。
+手順:
+1. plugin_manager の install_bundle で spec "dsh-i18n-ja" をインストール
+2. list_plugins / set_plugin で有効化（enabled）と適用状態を確認
+3. 完了後、Web GUI の再読み込みと「設定 → 一般 → 言語 → 日本語」の手順を案内してください
+```
+
+（コア UI ごと日本語にしたい場合は `dsh-i18n-ja-core` も同様に導入してください）
 
 ## 対象名前空間（17 / 約1,700 キー）
 

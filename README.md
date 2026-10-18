@@ -1,5 +1,7 @@
 # dsh-i18n-ja — DeepSeek Harness Web GUI 日本語ロケールパック
 
+> *Japanese (日本語) locale packs for the DSH (DeepSeek Harness) Web GUI. Two npm packages cover the core UI (57 namespaces, ~2,600 keys) and the `dsh-web-all` extension family (17 namespaces, ~1,700 keys), with zero overlap. Install by npm name from the DSH plugin manager, then pick 日本語 in Settings → General → Language.*
+
 [DeepSeek Harness](https://deepseek.com)（DSH）の Web GUI を日本語表示にするロケールパック集です。
 言語カタログに `ja`（日本語）を登録し、各名前空間の日本語辞書を供給します。
 インストール後、**設定 → 一般 → 言語 → 日本語** を選ぶと UI が日本語になります。
@@ -13,23 +15,30 @@
 
 両者は名前空間が重複しない設計で、同時に有効化できます（`dsh-i18n-ja` がコア側の `ja` 言語登録も兼ねますが、コア単体でも動作します）。
 
-## インストール
+## インストール（DSH での導入方法）
 
-npm に公開済みです（[`dsh-i18n-ja`](https://www.npmjs.com/package/dsh-i18n-ja) / [`dsh-i18n-ja-core`](https://www.npmjs.com/package/dsh-i18n-ja-core)）。
-DSH のプラグイン管理（GUI のプラグイン管理画面、または `plugin_manager`）から次を追加します:
+**npm に公開済みです**（[`dsh-i18n-ja`](https://www.npmjs.com/package/dsh-i18n-ja) / [`dsh-i18n-ja-core`](https://www.npmjs.com/package/dsh-i18n-ja-core)）。コア UI まで含めて完全日本語化するには**両方**の導入を推奨します（名前空間の重複はなく、独立に有効化できます）。
+
+1. DSH Web GUI の**プラグイン管理**で、パッケージ名 `dsh-i18n-ja` と `dsh-i18n-ja-core` を追加（インストール）
+2. プラグイン一覧で両方が**有効（enabled）／適用（applied）**になっていることを確認
+3. Web GUI を**リロード**（ブラウザなら F5 / デスクトップアプリなら再起動）
+4. **設定 → 一般 → 言語 → 日本語** を選択
+
+ローカル Checkout から試す場合の spec は `link:<clone 先>/packages/dsh-i18n-ja` の形式（`link:` プレフィックス）です。
+
+### エージェントに導入を任せる場合のプロンプト
+
+DSH のチャットに、次のプロンプトをそのまま貼り付けてください：
 
 ```
-dsh-i18n-ja
-dsh-i18n-ja-core
-```
+DSH Web GUI を日本語化したいです。次の npm パッケージをプラグインとして導入してください。
+- dsh-i18n-ja
+- dsh-i18n-ja-core
 
-有効化後、Web GUI をリロード → **設定 → 一般 → 言語 → 日本語**。
-
-ローカルCheckoutから試す場合:
-
-```
-link:<このリポジトリ>/packages/dsh-i18n-ja
-link:<このリポジトリ>/packages/dsh-i18n-ja-core
+手順:
+1. plugin_manager の install_bundle で上記 2 つをインストール（spec はパッケージ名そのまま）
+2. list_plugins / set_plugin（または set_bundle）で有効化（enabled）と適用状態を確認
+3. 完了後、Web GUI の再読み込みと「設定 → 一般 → 言語 → 日本語」の手順を案内してください
 ```
 
 ## 仕組み

@@ -1,5 +1,7 @@
 # dsh-i18n-ja-core
 
+> *Japanese locale pack for the DSH (DeepSeek Harness) core Web GUI — 57 namespaces, ~2,600 strings. Install it by its npm name from the DSH plugin manager.*
+
 DSH Web GUI の**コア UI 向け日本語ロケールパック**です。アプリ本体（app.asar に同梱の
 `@deepseek-ai/*` コアプラグイン）が登録する名前空間 — `common`, `settings.*`, `chat`,
 `workspace`, `trajectory`, `pluginManager`, `schedule.*`, `sidebar*` など 57 名前空間・
@@ -31,14 +33,36 @@ DSH Web GUI の**コア UI 向け日本語ロケールパック**です。アプ
 4. `node tools/build-client.mjs` — プレースホルダ互換・キー整合を検証しつつ
    `lib/client.js` を生成
 
-## インストール
+## インストール（DSH での導入方法）
+
+### 1. プラグイン管理から追加（推奨）
+
+DSH Web GUI の **プラグイン管理** で、次のパッケージ名を追加してください：
 
 ```
-plugin_manager install_bundle → link:<このフォルダの絶対パス>
+dsh-i18n-ja-core
 ```
 
-インストール後、プラグイン一覧で `dsh-i18n-ja-core` を有効化し、GUI をリロードして
-**設定 → 一般 → 言語 → 日本語** を選択してください。
+（エージェント経由で管理する場合は `plugin_manager` の `install_bundle`、spec は `dsh-i18n-ja-core`）
+
+### 2. 有効化と反映
+
+プラグイン一覧で `dsh-i18n-ja-core` が **有効（enabled）／適用（applied）** になっていることを確認し、
+Web GUI をリロードして **設定 → 一般 → 言語 → 日本語** を選択してください。
+
+### エージェントに導入を任せる場合のプロンプト
+
+DSH のチャットに、次のプロンプトをそのまま貼り付けてください：
+
+```
+npm パッケージ「dsh-i18n-ja-core」を DSH のプラグインとして導入してください。
+手順:
+1. plugin_manager の install_bundle で spec "dsh-i18n-ja-core" をインストール
+2. list_plugins / set_plugin で有効化（enabled）と適用状態を確認
+3. 完了後、Web GUI の再読み込みと「設定 → 一般 → 言語 → 日本語」の手順を案内してください
+```
+
+（ソースから導入する場合: plugin_manager の spec に `link:<clone 先>/packages/dsh-i18n-ja-core` を指定します）
 
 ## ライセンス
 
